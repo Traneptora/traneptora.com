@@ -1,3 +1,17 @@
 # Backup files
 *~
 
+# Buzo Share
+/share/*
+
+# Sub-repos
+/AutoSwitch
+/EnchantView
+/LegacyModReleases
+/ThebombzenAPI
+/Orange-Diff
+/apt-repo
+/azur-lane
+/grimoire
+/Zen-GIFr
+
