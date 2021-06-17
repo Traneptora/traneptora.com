@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head>
+	<title>FFmpeg Tips and Tricks</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="description" content="FFmpeg Tips and Tricks">
+	<meta name="keywords" content="Leo,Izen,Website,LeoIzen,thebombzen,bombzen,ffmpeg,tipsandtricks,tips,and,tricks,tutorial">
+	<meta name="author" content="Leo Izen">
+	<meta property="og:image" content="https://thebombzen.com/images/avatar-current/avatar-current_256.png">
+	<meta property="og:title" content="FFmpeg Tips and Tricks">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://thebombzen.com/articles/ffmpeg/index.html">
+	<meta property="og:description" content="Various tips and tricks for using FFmpeg.">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
+	<script>
+		WebFont.load({
+			custom: {
+				families: ['Noto Sans Display', 'Noto Mono'],
+				urls: ['/fonts/noto/noto-sans/noto-sans-display/noto-sans-display.css', '/fonts/noto/noto-mono/noto-mono.css']
+			}
+		});
+	</script>
+</head>
+<body>
+<div id="wrapper">
+	<header id="maintitle">FFmpeg Tips and Tricks</header>
+	<hr>
+	<main>
+		<section id="table-of-contents">
+			<h2>Table of Contents</h2>
+			More will be added periodically as I remember to add them.
+			<ol class="linklist">
+				<li><a href="#dumping-attachments">Dumping Attachments from Matroska Files</a></li>
+				<li><a href="#extracting-audio">Extracting Audio Streams</a></li>
+				<li><a href="#extracting-subtitles">Extracting Subtitles Streams</a></li>
+				<li><a href="#shifting-subtitles">Shifting Subtitle Streams</a></li>
+				<li><a href="#remuxing-bdmv">Remuxing a BDMV</a></li>
+			</ol>
+		</section>
+		<section id="dumping-attachments">
+			<h3>Dumping Attachments from Matroska Files</h3>
+			<p><code class="codeblock">
+				ffmpeg -y -v quiet -dump_attachment:t "" -i input.mkv
+			</code></p>
+			<p>The <code>-y -v quiet</code> is not necessary but it prevents spam output if you script this, and automatically overwrites existing files.</p>
+		</section>
+		<section id="extracting-audio">
+			<h3>Extracting Audio Streams</h3>
+			<p><code class="codeblock">
+				ffmpeg -i input.mkv -map a:X -c copy output.mka
+			</code></p>
+			<p>Here, <code>X</code> is not to be taken literally but rather is the ID of the audio stream you wish to extract. It counts upward from 0 (not 1) and only counts audio streams (not video or subtitle).</p>
+		</section>
+		<section id="extracting-subtitles">
+			<h3>Extracting Subtitle Streams</h3>
+			<p><code class="codeblock">
+				ffmpeg -i input.mkv -map s:X -c copy output.ass
+			</code></p>
+			<p>Here, <code>X</code> is not to be taken literally but rather is the ID of the subtitle stream you wish to extract. It counts upward from 0 (not 1) and only counts subtitle streams (not video or audio).</p>
+		</section>
+		<section id="shifting-subtitles">
+			<h3>Shifting Subtitle Streams</h3>
+			<p>To add a fixed amount of subtitle delay to a subtitle file so the timestamps are all shifted, you can abuse ffmpeg's timestamp manipulation.</p>
+			<p><code class="codeblock">
+				ffmpeg -itsoffset AMOUNT_OF_DELAY_TO_ADD -i input.ass output.ass
+			</code></p>
+			<p>The timestamp <code>AMOUNT_OF_DELAY_TO_ADD</code> can be specified as a floating-point number of seconds, or also as <code>MM:SS</code> or <code>HH:MM:SS</code>. Basically if it makes sense as a time code then FFmpeg will interpret it correctly. (See <a href="http://ffmpeg.org/ffmpeg-utils.html#Time-duration">ffmpeg-utils(1)</a> for a rigorous description of time durations.) AMOUNT_OF_DELAY_TO_ADD can be either positive or negative. Positive shifts subtitles toward the end of the video, and negative will shift subtitles toward the start of the video. </p>
+		</section>
+		<section id="remuxing-bdmv">
+			<h3>Remuxing a BDMV</h3>
+			<p>You can remux a BDMV provided that FFmpeg has been compiled with libbluray support.</p>
+			<p><code class="codeblock">
+				ffmpeg -i bluray:"path/to/bluray/"
+			</code></p>
+			<p>If the above recognizes the bluray, it will list the streams. Make sure you use the path to the directoring containing <code>BDMV/</code> and not the <code>BDMV/</code> itself.</p><p>This will work: <code class="codeblock">ffmpeg -i bluray:paradox-spiral/</code>This will <i>not</i> work: <code class="codeblock">ffmpeg -i bluray:paradox-sprial/BDMV/</code></p>
+			<p>It's worth mentioning that you cannot truly remux to matroska since blurays use <code>bluray_pcm</code> as their audio codec and matroska doesn't support that. However, you can convert it safely to FLAC and not only will nobody care that it's not a "true remux" but the space saved is a bonus. Anyway, here's the command in full:</p>
+			<p><code class="codeblock">
+				ffmpeg -i bluray:"path/to/bluray/" -map 0 -c copy -c:a flac remuxed-bluray.mkv
+			</code></p>
+			<p>You should see some output <a href="bluray-output.txt">like this</a>. Note that this will be slow if you're going from one hard disk drive to the same one because the readhead will have to zigzag constantly, tho this is improved with a good filesystem and driver. Meaning, it should be faster on Linux than on Windows.</p><p>As for what the options do, <code>-map 0</code> tells it to transfer every stream from input number 0 (i.e. the only input), since by default FFmpeg transfers the first video and audio stream only (I'm not sure about subtitles). <code>-c copy</code> tells it to streamcopy the streams without re-encoding them (what we want) but <code>-c:a flac</code> tells it to re-encode audio streams to FLAC before muxing. This occurs later on the command line so it trumps <code>-c copy</code> for the streams it applies to (order matters). 
+		</section>
+	</main>
+	<hr>
+	<footer id="footer" class="home-page">
+		<p><div style="display: inline-block; width: 80%; vertical-align: middle;"><div style="float: left; font-size: 24px;">Thank you for reading this post. Until next time, thebombzen out.</div></div><div style="display: inline-block; width: 20%; vertical-align: middle;"><div style="float: right; width: 100%; text-align: right;"><img class="shadow" src="/images/avatar-current/avatar-current_128.png"></div></div></p>
+		<hr>
+		<a href="/index.html">Home Page</a>
+	</footer>
+</div>
+</body>
+</html>

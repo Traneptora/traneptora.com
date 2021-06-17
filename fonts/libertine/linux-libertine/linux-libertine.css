@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('LinLibertine-R.woff2') format('woff2'),
+    url('LinLibertine-R.woff') format('woff'),
+    url('LinLibertine-R.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: italic;
+  font-weight: 400;
+  src: url('LinLibertine-RI.woff2') format('woff2'),
+    url('LinLibertine-RI.woff') format('woff'),
+    url('LinLibertine-RI.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: normal;
+  font-weight: 600;
+  src: url('LinLibertine-RZ.woff2') format('woff2'),
+    url('LinLibertine-RZ.woff') format('woff'),
+    url('LinLibertine-RZ.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: italic;
+  font-weight: 600;
+  src: url('LinLibertine-RZI.woff2') format('woff2'),
+    url('LinLibertine-RZI.woff') format('woff'),
+    url('LinLibertine-RZI.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: normal;
+  font-weight: 700;
+  src: url('LinLibertine-RB.woff2') format('woff2'),
+    url('LinLibertine-RB.woff') format('woff'),
+    url('LinLibertine-RB.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: italic;
+  font-weight: 700;
+  src: url('LinLibertine-RBI.woff2') format('woff2'),
+    url('LinLibertine-RBI.woff') format('woff'),
+    url('LinLibertine-RBI.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: normal;
+  font-weight: 700;
+  src: url('LinLibertine-RB.woff2') format('woff2'),
+    url('LinLibertine-RB.woff') format('woff'),
+    url('LinLibertine-RB.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  font-style: italic;
+  font-weight: 700;
+  src: url('LinLibertine-RBI.woff2') format('woff2'),
+    url('LinLibertine-RBI.woff') format('woff'),
+    url('LinLibertine-RBI.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('LinLibertine-DR.woff2') format('woff2'),
+    url('LinLibertine-DR.woff') format('woff'),
+    url('LinLibertine-DR.otf') format('opentype');
+}

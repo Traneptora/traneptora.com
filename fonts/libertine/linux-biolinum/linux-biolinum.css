@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Linux Biolinum';
+  font-style: normal;
+  font-weight: 400;
+  src: url('LinBiolinum-R.woff2') format('woff2'),
+    url('LinBiolinum-R.woff') format('woff'),
+    url('LinBiolinum-R.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Biolinum';
+  font-style: italic;
+  font-weight: 400;
+  src: url('LinBiolinum-RI.woff2') format('woff2'),
+    url('LinBiolinum-RI.woff') format('woff'),
+    url('LinBiolinum-RI.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Linux Biolinum';
+  font-style: normal;
+  font-weight: 700;
+  src: url('LinBiolinum-RB.woff2') format('woff2'),
+    url('LinBiolinum-RB.woff') format('woff'),
+    url('LinBiolinum-RB.otf') format('opentype');
+}

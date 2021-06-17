@@ -1,0 +1,1 @@
+../js/konami_code.js

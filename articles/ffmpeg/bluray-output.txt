@@ -1,0 +1,52 @@
+leo@gauss ~/Torrents/blurays/kara-no-kyoukai :( $ ffmpeg -i bluray:paradox-spiral/ -map 0 -c copy -c:a flac remuxed-bluray.mkv
+ffmpeg version N-71364-g0caa33c60b Copyright (c) 2000-2018 the FFmpeg developers
+  built with gcc 8.2.1 (GCC) 20180831
+  configuration: --prefix=/home/leo/.local --enable-gpl --enable-version3 --enable-nonfree --enable-shared --disable-static --enable-htmlpages --enable-manpages --disable-podpages --disable-txtpages --enable-avisynth --enable-frei0r --enable-gcrypt --enable-gmp --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libbs2b --enable-libcaca --enable-libcelt --enable-libcdio --enable-libdc1394 --enable-libfdk-aac --enable-libfontconfig --enable-libfreetype --enable-libfribidi --enable-libgme --enable-libgsm --enable-libiec61883 --enable-libjack --enable-libkvazaar --enable-libmodplug --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopus --enable-libpulse --enable-librsvg --enable-librtmp --enable-librubberband --enable-libsnappy --enable-libsmbclient --enable-libsoxr --enable-libspeex --enable-libssh --enable-libtesseract --enable-libtheora --enable-libtwolame --enable-libv4l2 --enable-libvidstab --enable-libvorbis --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxcb --enable-libxcb-shm --enable-libxcb-xfixes --enable-libxcb-shape --enable-libxvid --enable-libzimg --enable-libzmq --enable-libzvbi --enable-openal --enable-opengl --disable-openssl --enable-pic --enable-ffnvcodec --enable-cuda-sdk --enable-libdrm --enable-libnpp --nvccflags='-gencode arch=compute_61,code=sm_61 -O3'
+  libavutil      56. 19.101 / 56. 19.101
+  libavcodec     58. 30.100 / 58. 30.100
+  libavformat    58. 18.100 / 58. 18.100
+  libavdevice    58.  4.103 / 58.  4.103
+  libavfilter     7. 29.100 /  7. 29.100
+  libswscale      5.  2.100 /  5.  2.100
+  libswresample   3.  2.100 /  3.  2.100
+  libpostproc    55.  2.100 / 55.  2.100
+[bluray @ 0x5619ebd006c0] 1 usable playlists:
+[bluray @ 0x5619ebd006c0] playlist 00000.mpls (1:53:53)
+[bluray @ 0x5619ebd006c0] selected 00000.mpls
+[mpegts @ 0x5619ebcffb40] start time for stream 3 is not set in estimate_timings_from_pts
+[mpegts @ 0x5619ebcffb40] start time for stream 4 is not set in estimate_timings_from_pts
+bluray.c:256: 00000.m2ts: no timestamp for SPN 0 (got 0). clip 188955000-496477215.
+[mpegts @ 0x5619ebcffb40] Could not find codec parameters for stream 3 (Subtitle: hdmv_pgs_subtitle (pgssub) ([144][0][0][0] / 0x0090)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+[mpegts @ 0x5619ebcffb40] Could not find codec parameters for stream 4 (Subtitle: hdmv_pgs_subtitle (pgssub) ([144][0][0][0] / 0x0090)): unspecified size
+Consider increasing the value for the 'analyzeduration' and 'probesize' options
+Input #0, mpegts, from 'bluray:paradox-spiral/':
+  Duration: 01:53:53.08, start: 4199.000000, bitrate: 46475 kb/s
+  Program 1 
+    Stream #0:0[0x1011]: Video: h264 (High) (HDMV / 0x564D4448), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 90k tbn, 47.95 tbc
+    Stream #0:1[0x1100]: Audio: pcm_bluray (HDMV / 0x564D4448), 48000 Hz, 5.1(side), s32 (24 bit), 6912 kb/s
+    Stream #0:2[0x1101]: Audio: pcm_bluray (HDMV / 0x564D4448), 48000 Hz, stereo, s32 (24 bit), 2304 kb/s
+    Stream #0:3[0x1200]: Subtitle: hdmv_pgs_subtitle ([144][0][0][0] / 0x0090)
+    Stream #0:4[0x1201]: Subtitle: hdmv_pgs_subtitle ([144][0][0][0] / 0x0090)
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+  Stream #0:1 -> #0:1 (pcm_bluray (native) -> flac (native))
+  Stream #0:2 -> #0:2 (pcm_bluray (native) -> flac (native))
+  Stream #0:3 -> #0:3 (copy)
+  Stream #0:4 -> #0:4 (copy)
+Press [q] to stop, [?] for help
+Output #0, matroska, to 'remuxed-bluray.mkv':
+  Metadata:
+    encoder         : Lavf58.18.100
+    Stream #0:0: Video: h264 (High) (H264 / 0x34363248), yuv420p(tv, bt709, progressive), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 23.98 fps, 23.98 tbr, 1k tbn, 90k tbc
+    Stream #0:1: Audio: flac ([172][241][0][0] / 0xF1AC), 48000 Hz, 5.1(side), s32 (24 bit), 128 kb/s
+    Metadata:
+      encoder         : Lavc58.30.100 flac
+    Stream #0:2: Audio: flac ([172][241][0][0] / 0xF1AC), 48000 Hz, stereo, s32 (24 bit), 128 kb/s
+    Metadata:
+      encoder         : Lavc58.30.100 flac
+    Stream #0:3: Subtitle: hdmv_pgs_subtitle ([255][255][255][255] / 0xFFFFFFFF)
+    Stream #0:4: Subtitle: hdmv_pgs_subtitle ([255][255][255][255] / 0xFFFFFFFF)
+frame= 3402 fps=591 q=-1.0 Lsize=  591905kB time=00:02:21.88 bitrate=34174.1kbits/s speed=24.7x    
+video:514161kB audio:77485kB subtitle:181kB other streams:0kB global headers:0kB muxing overhead: 0.013125%
+leo@gauss ~/Torrents/blurays/kara-no-kyoukai :) $ 
