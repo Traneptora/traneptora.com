@@ -1,9 +1,28 @@
+/*
+ * Global style definition file for thebombzen.com
+ * This file does not define @font-faces
+ * But it defines any styles that can and/or should be used for the whole site
+ */
+
+html {
+	/*
+	 * Prevent scrollbar apperance from changing the page design
+	 * html and not body for IE7 compat, apparently
+	 */
+	padding-left: calc(100vw - 100%);
+}
+
 body {
 	text-align: center;
 	background-color: #F8F8F8;
 }
 
 body, textarea {
+	/*
+	 * the actual @font-face is in
+	 * /fonts/noto/noto-sans/noto-sans-display/noto-sans-display.css
+	 * You must include it as well.
+	 */
 	font-family: "Noto Sans Display";
 	color: #081F5D;
 	line-height: 1.25;
@@ -101,46 +120,45 @@ ol.linklist {
 	font-style: italic;
 }
 
-img.shadow {
+/*
+ * Interesting trick to create a box shadow border on an element
+ */
+.shadow {
 	padding: 5px;
 	background-color: #000000;
     box-shadow: inset 0px 0px 3px 3px #777777;
 }
 
+/*
+ * Eventually I will get rid of tabledisplay in favor of centered-flow
+ */
 .tabledisplay {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
 }
-
 .tabledisplay div {
 	margin: auto;
 	display: inline-block;
 }
-
 .tabledisplay div div {
 	padding-bottom: 5px;
 }
-
 .tabledisplay div div:last-child {
 	padding-bottom: initial;
 }
-
 .tabledisplay div div div {
 	 padding-left: 5px;
 	 padding-right: 5px;
 	 float: left;
 }
-
 .tabledisplay div div div:last-child {
 	float: initial;
 }
-
 .tabledisplay div div div input {
 	width: 150px;
 	text-align: right;
 }
-
 .results {
 	width: 40%;
 	clear: both;
@@ -148,43 +166,48 @@ img.shadow {
 	padding-top: 5px;
 	display: block;
 }
-
 .results-row {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	clear: both;
 }
-
 .results-row div:first-child {
 	width: 50%;
 	float: left;
 }
-
 .results-row div:last-child {
 	text-align: right;
 	width: 50%;
 	float: right;
 }
 
+/*
+ * These should be unnecessary with flexbox
+ * TODO perhaps replace later?
+ */
 .rightalignedline > *, .rightalignedline p > * {
 	float: left;
 }
-
 .rightalignedline > .spacer {
 	overflow: hidden;
 	height: 1px;
 }
-
 .rightalignedline {
 	float: right;
 }
 
+/*
+ * Trick to center the web page but lock it to 900px render size
+ */
 #wrapper {
 	width: 900px;
 	text-align: left;
 	margin: 0 auto;
 }
 
+/*
+ * Big header at the top of the page with a title
+ */
 #maintitle {
 	font-weight: 600;
 	font-size: 48px;
@@ -192,25 +215,27 @@ img.shadow {
 	letter-spacing: 1px;
 }
 
+/*
+ * A lot of my website requires a "centered flow"
+ * A group of rows as you go down the page
+ * you must wrap a centered-flow around a centered-flow-content
+ */
 .centered-flow {
     margin: 0 auto;
     text-align: center;
     width: 80%;
 }
-
 .centered-flow-content {
     display: flex;
     flex-direction: column;
     text-align: left;
     width: 100%;
 }
-
 .centered-flow-rowgroup {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
-
 .centered-flow-row {
     display: flex;
     flex-direction: row;
@@ -218,18 +243,20 @@ img.shadow {
     margin-bottom: 5px;
 }
 
+/*
+ * Image off to the side of a main page
+ * see my avatar on my homepage
+ */
 .aside-image-container {
 	display: flex;
 	flex-direction: row;
 }
-
 .aside-image-container aside {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: center;
 	padding: 5px 15px 5px 15px;
 }
-
 .aside-image-container div {
 	display: inline-block;
 	vertical-align: middle;
