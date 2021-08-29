@@ -1,186 +1,186 @@
 <!DOCTYPE html>
 <html><head>
-	<title>Quad Caclulator</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Quad Caclulator</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
 
-	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-	<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-	<meta name="description" content="Quad Calculator">
-	<meta name="keywords" content="Leo,Izen,Website,LeoIzen,thebombzen,bombzen,uscf,chess,rating,estimator,ratingestimator,quad,calculator,quadcalulator">
-	<meta name="author" content="Leo Izen">
-	<meta property="og:image" content="https://thebombzen.com/images/avatar-current/avatar-current_256.png">
-	<meta property="og:title" content="Quad Calculator">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://thebombzen.com/programs/quads.html">
-	<meta property="og:description" content="A post-event quads rating calculator for the USCF rating system.">
+    <meta name="description" content="Quad Calculator">
+    <meta name="keywords" content="Leo,Izen,Website,LeoIzen,thebombzen,bombzen,uscf,chess,rating,estimator,ratingestimator,quad,calculator,quadcalulator">
+    <meta name="author" content="Leo Izen">
+    <meta property="og:image" content="https://thebombzen.com/images/avatar-current/avatar-current_256.png">
+    <meta property="og:title" content="Quad Calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thebombzen.com/programs/quads.html">
+    <meta property="og:description" content="A post-event quads rating calculator for the USCF rating system.">
 
-	<script type="text/javascript" src="rating.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
-	<script>
-		WebFont.load({
-			custom: {
-				families: ['Noto Sans Display', 'Noto Mono'],
-				urls: ['/fonts/noto/noto-sans/noto-sans-display/noto-sans-display.css', '/fonts/noto/noto-mono/noto-mono.css']
-			}
-		});
-	</script>
+    <script type="text/javascript" src="rating.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
+    <script>
+        WebFont.load({
+            custom: {
+                families: ['Noto Sans Display', 'Noto Mono'],
+                urls: ['/fonts/noto/noto-sans/noto-sans-display/noto-sans-display.css', '/fonts/noto/noto-mono/noto-mono.css']
+            }
+        });
+    </script>
 </head>
 <body>
 <div id="wrapper">
-	<div id="maintitle">
-	Quads Rating Estimator
-	</div>
-	<hr>
-	<p>
-		This calculates your estimated post-event USCF rating for a 4-player round-robin event, given the all players' pre-event ratings and everyone's scores. Unlike the <a href="estimator.html">Rating Estimator</a>, this only works for 4-player round-robin events but is perfectly accurate.
-	</p>
-	<form action="javascript:quad_calculateEverything()">
-		<div>
-			<div style="padding-top: 5px; padding-bottom: 5px;">
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 1 Rating: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent0"></div>
-					</div>
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 1 Score: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score0"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 2 Rating: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent1"></div>
-					</div>
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 2 Score: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score1"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 3 Rating: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent2"></div>
-					</div>
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 3 Score: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score2"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 4 Rating: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent3"></div>
-					</div>
-					<div style="float: left; width: 40%; margin-right: 10%;">
-						<div style="float: left; width: 60%;">Player 4 Score: </div>
-						<div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score3"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-			</div>
-			<div style="padding-top: 5px; padding-bottom: 5px;"><input type="submit" value="Calculate"></div>
-			<div style="padding-top: 5px; padding-bottom: 5px;">
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 1 Performance: </div>
-						<div style="float: right;" id="perf0"></div>
-					</div>
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 1 Expectancy: </div>
-						<div style="float: right;" id="exp0"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 2 Performance: </div>
-						<div style="float: right;" id="perf1"></div>
-					</div>
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 2 Expectancy: </div>
-						<div style="float: right;" id="exp1"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 3 Performance: </div>
-						<div style="float: right;" id="perf2"></div>
-					</div>
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 3 Expectancy: </div>
-						<div style="float: right;" id="exp2"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 4 Performance: </div>
-						<div style="float: right;" id="perf3"></div>
-					</div>
-					<div style="float: left; width: 35%; margin-right: 15%;">
-						<div style="float: left;">Player 4 Expectancy: </div>
-						<div style="float: right;" id="exp3"></div>
-					</div>
-					<br style="clear: both;">
-				</div>
-			</div>
-				<!--Divider here-->
-			<div style="padding-top: 5px; padding-bottom: 5px; width: 35%;">
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left;">Player 1 Post-event Rating: </div>
-					<div style="float: right;" id="est0"></div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left;">Player 2 Post-event Rating: </div>
-					<div style="float: right;" id="est1"></div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left;">Player 3 Post-event Rating: </div>
-					<div style="float: right;" id="est2"></div>
-					<br style="clear: both;">
-				</div>
-				<div style="padding-top: 5px; padding-bottom: 5px;">
-					<div style="float: left;">Player 4 Post-event Rating: </div>
-					<div style="float: right;" id="est3"></div>
-					<br style="clear: both;">
-				</div>
-			</div>
-		</div>
-	</form><hr>
-	This estimator makes some assumptions and if they all hold, it's dead accurate:
-	<ul>
-		<li>The event is dual-rated, which means it has a time control between G/30 and G/60;d5. This only matters if a player is near 2200 rating.</li>
-		<li>Every player enters with a rating. Nobody's unrated.</li>
-		<li>Every player has played at least 9 games before.</li>
-		<li>No player has won or lost every previous game he/she has played.</li>
-		<li>Every player has played enough previous games for their rating to be "well-established enough." (This will always be the case with 50 prior games or more.)</li>
-	</ul>
-	<hr>
-	<div id="footer" class="home-page"><a href="../index.html">Home Page</a></div>
+    <div id="maintitle">
+    Quads Rating Estimator
+    </div>
+    <hr>
+    <p>
+        This calculates your estimated post-event USCF rating for a 4-player round-robin event, given the all players' pre-event ratings and everyone's scores. Unlike the <a href="estimator.html">Rating Estimator</a>, this only works for 4-player round-robin events but is perfectly accurate.
+    </p>
+    <form action="javascript:quad_calculateEverything()">
+        <div>
+            <div style="padding-top: 5px; padding-bottom: 5px;">
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 1 Rating: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent0"></div>
+                    </div>
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 1 Score: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score0"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 2 Rating: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent1"></div>
+                    </div>
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 2 Score: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score1"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 3 Rating: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent2"></div>
+                    </div>
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 3 Score: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score2"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 4 Rating: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="preevent3"></div>
+                    </div>
+                    <div style="float: left; width: 40%; margin-right: 10%;">
+                        <div style="float: left; width: 60%;">Player 4 Score: </div>
+                        <div style="float: left; width: 40%;"><input style="text-align: right;" type="text" id="score3"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+            </div>
+            <div style="padding-top: 5px; padding-bottom: 5px;"><input type="submit" value="Calculate"></div>
+            <div style="padding-top: 5px; padding-bottom: 5px;">
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 1 Performance: </div>
+                        <div style="float: right;" id="perf0"></div>
+                    </div>
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 1 Expectancy: </div>
+                        <div style="float: right;" id="exp0"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 2 Performance: </div>
+                        <div style="float: right;" id="perf1"></div>
+                    </div>
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 2 Expectancy: </div>
+                        <div style="float: right;" id="exp1"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 3 Performance: </div>
+                        <div style="float: right;" id="perf2"></div>
+                    </div>
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 3 Expectancy: </div>
+                        <div style="float: right;" id="exp2"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 4 Performance: </div>
+                        <div style="float: right;" id="perf3"></div>
+                    </div>
+                    <div style="float: left; width: 35%; margin-right: 15%;">
+                        <div style="float: left;">Player 4 Expectancy: </div>
+                        <div style="float: right;" id="exp3"></div>
+                    </div>
+                    <br style="clear: both;">
+                </div>
+            </div>
+                <!--Divider here-->
+            <div style="padding-top: 5px; padding-bottom: 5px; width: 35%;">
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left;">Player 1 Post-event Rating: </div>
+                    <div style="float: right;" id="est0"></div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left;">Player 2 Post-event Rating: </div>
+                    <div style="float: right;" id="est1"></div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left;">Player 3 Post-event Rating: </div>
+                    <div style="float: right;" id="est2"></div>
+                    <br style="clear: both;">
+                </div>
+                <div style="padding-top: 5px; padding-bottom: 5px;">
+                    <div style="float: left;">Player 4 Post-event Rating: </div>
+                    <div style="float: right;" id="est3"></div>
+                    <br style="clear: both;">
+                </div>
+            </div>
+        </div>
+    </form><hr>
+    This estimator makes some assumptions and if they all hold, it's dead accurate:
+    <ul>
+        <li>The event is dual-rated, which means it has a time control between G/30 and G/60;d5. This only matters if a player is near 2200 rating.</li>
+        <li>Every player enters with a rating. Nobody's unrated.</li>
+        <li>Every player has played at least 9 games before.</li>
+        <li>No player has won or lost every previous game he/she has played.</li>
+        <li>Every player has played enough previous games for their rating to be "well-established enough." (This will always be the case with 50 prior games or more.)</li>
+    </ul>
+    <hr>
+    <div id="footer" class="home-page"><a href="../index.html">Home Page</a></div>
 </div>
 </body>
 </html>
