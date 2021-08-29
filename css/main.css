@@ -7,7 +7,7 @@
 html {
 	/*
 	 * Prevent scrollbar apperance from changing the page design
-	 * html and not body for IE7 compat, apparently
+	 * html and not body for IE7 compat, apparently /shrug
 	 */
 	padding-left: calc(100vw - 100%);
 }
@@ -20,7 +20,7 @@ body {
 body, textarea {
 	/*
 	 * the actual @font-face is in
-	 * /fonts/noto/noto-sans/noto-sans-display/noto-sans-display.css
+	 * /fonts/noto-sans-display/index.css
 	 * You must include it as well.
 	 */
 	font-family: "Noto Sans Display";
@@ -38,6 +38,10 @@ blockquote {
     padding-left: 10px;
 }
 
+/*
+ * https://web.archive.org/web/20210829192411/
+ * https://cdn.discordapp.com/attachments/759614141425385492/863882478136590366/a.gif
+ */
 a {
 	text-decoration: none;
 }
@@ -261,4 +265,11 @@ ol.linklist {
 	display: inline-block;
 	vertical-align: middle;
 	text-align: left;
+}
+
+/*
+ * Hidden!
+ */
+.hidden {
+	display: none;
 }
