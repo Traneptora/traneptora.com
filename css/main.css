@@ -5,34 +5,34 @@
  */
 
 html {
-	/*
-	 * Prevent scrollbar apperance from changing the page design
-	 * html and not body for IE7 compat, apparently /shrug
-	 */
-	padding-left: calc(100vw - 100%);
+    /*
+     * Prevent scrollbar apperance from changing the page design
+     * html and not body for IE7 compat, apparently /shrug
+     */
+    padding-left: calc(100vw - 100%);
 }
 
 body {
-	text-align: center;
-	background-color: #F8F8F8;
+    text-align: center;
+    background-color: #F8F8F8;
 }
 
 body, textarea {
-	/*
-	 * the actual @font-face is in
-	 * /fonts/noto-sans-display/index.css
-	 * You must include it as well.
-	 */
-	font-family: "Noto Sans Display";
-	color: #081F5D;
-	line-height: 1.25;
-	font-size: 17px;
-	letter-spacing: 0.125px;
-	font-weight: 400;
+    /*
+     * the actual @font-face is in
+     * /fonts/noto-sans-display/index.css
+     * You must include it as well.
+     */
+    font-family: "Noto Sans Display";
+    color: #081F5D;
+    line-height: 1.25;
+    font-size: 17px;
+    letter-spacing: 0.125px;
+    font-weight: 400;
 }
 
 blockquote {
-	border-left: 5px solid #DDDDDD;
+    border-left: 5px solid #DDDDDD;
     color: #081F5D;
     font-style: italic;
     padding-left: 10px;
@@ -43,52 +43,52 @@ blockquote {
  * https://cdn.discordapp.com/attachments/759614141425385492/863882478136590366/a.gif
  */
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a:link, a:visited {
-	color: #0F4FFF;
+    color: #0F4FFF;
 }
 
 a:active, a:focus, a:hover {
-	color: #200090;
+    color: #200090;
 }
 
 li {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-right: 10%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-right: 10%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 600;
+    font-weight: 600;
 }
 
 img {
-	background-color: #777777;
+    background-color: #777777;
 }
 
 a img:active,
 a img:focus,
 a img:hover {
-	background: #D0E000;
+    background: #D0E000;
 }
 
 code {
-	display: inline-block;
-	font-family: "Noto Mono";
+    display: inline-block;
+    font-family: "Noto Mono";
 }
 
 code.codeblock {
-	display: block;
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 footer {
-	text-align: right;
+    text-align: right;
 }
 
 footer a {
@@ -98,38 +98,38 @@ footer a {
 }
 
 a.importantlink {
-	font-weight: 600;
-	text-decoration: underline;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .linklist li a:first-of-type {
-	font-weight: 600;
-	text-decoration: underline;
+    font-weight: 600;
+    text-decoration: underline;
 }
 
 .linklist {
-	margin-left: -1.0em;
+    margin-left: -1.0em;
 }
 
 ol.linklist {
-	font-weight: 600;
+    font-weight: 600;
 }
 
 .section-header {
-	text-decoration: underline;
-	font-size: 24px;
-	letter-spacing: 0.25px;
-	margin-bottom: 0.15em;
-	font-weight: 600;
-	font-style: italic;
+    text-decoration: underline;
+    font-size: 24px;
+    letter-spacing: 0.25px;
+    margin-bottom: 0.15em;
+    font-weight: 600;
+    font-style: italic;
 }
 
 /*
  * Interesting trick to create a box shadow border on an element
  */
 .shadow {
-	padding: 5px;
-	background-color: #000000;
+    padding: 5px;
+    background-color: #000000;
     box-shadow: inset 0px 0px 3px 3px #777777;
 }
 
@@ -137,52 +137,52 @@ ol.linklist {
  * Eventually I will get rid of tabledisplay in favor of centered-flow
  */
 .tabledisplay {
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 .tabledisplay div {
-	margin: auto;
-	display: inline-block;
+    margin: auto;
+    display: inline-block;
 }
 .tabledisplay div div {
-	padding-bottom: 5px;
+    padding-bottom: 5px;
 }
 .tabledisplay div div:last-child {
-	padding-bottom: initial;
+    padding-bottom: initial;
 }
 .tabledisplay div div div {
-	 padding-left: 5px;
-	 padding-right: 5px;
-	 float: left;
+     padding-left: 5px;
+     padding-right: 5px;
+     float: left;
 }
 .tabledisplay div div div:last-child {
-	float: initial;
+    float: initial;
 }
 .tabledisplay div div div input {
-	width: 150px;
-	text-align: right;
+    width: 150px;
+    text-align: right;
 }
 .results {
-	width: 40%;
-	clear: both;
-	padding-bottom: 5px;
-	padding-top: 5px;
-	display: block;
+    width: 40%;
+    clear: both;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: block;
 }
 .results-row {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	clear: both;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both;
 }
 .results-row div:first-child {
-	width: 50%;
-	float: left;
+    width: 50%;
+    float: left;
 }
 .results-row div:last-child {
-	text-align: right;
-	width: 50%;
-	float: right;
+    text-align: right;
+    width: 50%;
+    float: right;
 }
 
 /*
@@ -190,33 +190,33 @@ ol.linklist {
  * TODO perhaps replace later?
  */
 .rightalignedline > *, .rightalignedline p > * {
-	float: left;
+    float: left;
 }
 .rightalignedline > .spacer {
-	overflow: hidden;
-	height: 1px;
+    overflow: hidden;
+    height: 1px;
 }
 .rightalignedline {
-	float: right;
+    float: right;
 }
 
 /*
  * Trick to center the web page but lock it to 900px render size
  */
 #wrapper {
-	width: 900px;
-	text-align: left;
-	margin: 0 auto;
+    width: 900px;
+    text-align: left;
+    margin: 0 auto;
 }
 
 /*
  * Big header at the top of the page with a title
  */
 #maintitle {
-	font-weight: 600;
-	font-size: 48px;
-	text-align: center;
-	letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 /*
@@ -252,24 +252,24 @@ ol.linklist {
  * see my avatar on my homepage
  */
 .aside-image-container {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 .aside-image-container aside {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-	padding: 5px 15px 5px 15px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px 15px 5px 15px;
 }
 .aside-image-container div {
-	display: inline-block;
-	vertical-align: middle;
-	text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
 }
 
 /*
  * Hidden!
  */
 .hidden {
-	display: none;
+    display: none;
 }
