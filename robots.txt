@@ -1,3 +1,27 @@
-User-agent: *
+# Share directory
+User-Agent: *
 Disallow: /share/
 
+# various things I don't use
+User-Agent: *
+Disallow: /pub/
+Disallow: /removed/
+Disallow: /docs/logs/
+Disallow: /private/
+Disallow: *.php
+
+# SCM directories
+User-Agent: *
+Disallow: CVS
+Disallow: .svn
+Disallow: .git
+
+# plagiarism and copyright bots
+User-Agent: TurnitinBot
+Disallow: /
+
+User-Agent: NPBot
+Disallow: /
+
+User-Agent: SlySearch
+Disallow: /
