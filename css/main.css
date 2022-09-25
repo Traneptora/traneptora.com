@@ -1,41 +1,44 @@
 /*
  * Global style definition file for thebombzen.com
  * This file does not define @font-faces
- * But it defines any styles that can and/or should be used for the whole site
  */
 
+ /* work sans font self-hosted */
+@import '/fonts/work-sans.css';
+
 html {
-    /*
-     * Prevent scrollbar apperance from changing the page design
-     * html and not body for IE7 compat, apparently /shrug
-     */
-    padding-left: calc(100vw - 100%);
+    /* allows the scrollbar to not interrupt flow */
+    padding-right: calc(100vw - 100%);
 }
 
 body {
     text-align: center;
-    background-color: #F8F8F8;
 }
 
 body, textarea {
-    /*
-     * the actual @font-face is in
-     * /fonts/noto-sans-display/index.css
-     * You must include it as well.
-     */
-    font-family: "Noto Sans Display";
-    color: #081F5D;
+    background-color: #080813;
+    color: #C0C0C0; 
+    font-family: 'Work Sans', system-ui, 'Segoe UI', Roboto, 'DejaVu Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
     line-height: 1.25;
-    font-size: 17px;
     letter-spacing: 0.125px;
     font-weight: 400;
 }
 
-blockquote {
-    border-left: 5px solid #DDDDDD;
-    color: #081F5D;
-    font-style: italic;
-    padding-left: 10px;
+#wrapper, .wrapper {
+    text-align: left;
+    margin: 0 auto;
+    width: 95%;
+}
+
+@media only screen and (min-width: 1024px) {
+    /* leave default font size unset on mobile */
+    body {
+        font-size: 18px;
+    }
+    /* leave default screen width on mobile */
+    #wrapper, .wrapper {
+        width: 1000px;
+    }
 }
 
 /*
@@ -47,11 +50,88 @@ a {
 }
 
 a:link, a:visited {
-    color: #0F4FFF;
+    color: #2F6FCF;
 }
 
-a:active, a:focus, a:hover {
-    color: #200090;
+a:hover {
+    color: #F49B43;
+}
+
+a:active, a:focus {
+    color: #DA4B33;
+}
+
+select, option, optgroup, input {
+    color: #080813;
+}
+
+select, input, option, optgroup {
+    font-size: 1.0em;
+}
+
+select, optgroup, input {
+    font-weight: 600;
+}
+
+option {
+    font-weight: 500;
+}
+
+select, input {
+    margin-top: 0.4em;
+}
+
+select, option, optgroup, input[type="text"] {
+    width: 100%;
+    border: none;
+}
+
+header, .sun-yellow {
+    color: #F2CE0B;
+}
+
+.heading, .banana, .section-header {
+    color: #BFA933;
+}
+
+.orange {
+    color: #F49B43;
+}
+
+b, strong, .bold, .rust {
+    color: #FF5715;
+}
+
+b, strong, .bold {
+    font-weight: 700;
+}
+
+section, .section {
+    margin-bottom: 1.0em;
+}
+
+li {
+    margin-bottom: 0.3em;
+}
+
+footer {
+    margin-top: 1em;
+    text-align: right;
+}
+
+footer a {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.heading {
+    font-weight: 600;
+}
+
+header {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 500;
 }
 
 li {
@@ -97,7 +177,83 @@ footer a {
     margin-bottom: 0.5em;
 }
 
-a.importantlink {
+@media only screen and (min-width: 1024px){
+    header {
+        font-size: 3.0em;
+    }
+}
+
+.mobile {
+    display: revert;
+}
+
+.desktop {
+    display: none;
+}
+
+::selection {
+    background-color: #404060;
+}
+
+.small-help {
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.hidden {
+    display: none;
+}
+
+.button-and-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: center;
+}
+
+.button-and-label
+:is(input[type=checkbox],
+    input[type=radiobutton],
+    input[type=button],
+    input[type=submit],
+    input[type=reset],
+    button
+) {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.button-and-label label {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expand-zone-box,
+.expand-zone-body,
+.expand-zone-default {
+    display: none;
+}
+
+.expand-zone-default {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.expand-zone-box:checked ~ label .expand-zone-body {
+    display: block;
+}
+
+.expand-zone-box:not(:checked) ~ label .expand-zone-default {
+    display: block;
+}
+
+.importantlink {
     font-weight: 600;
     text-decoration: underline;
 }
@@ -198,25 +354,6 @@ ol.linklist {
 }
 .rightalignedline {
     float: right;
-}
-
-/*
- * Trick to center the web page but lock it to 900px render size
- */
-#wrapper {
-    width: 900px;
-    text-align: left;
-    margin: 0 auto;
-}
-
-/*
- * Big header at the top of the page with a title
- */
-#maintitle {
-    font-weight: 600;
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: 1px;
 }
 
 /*
