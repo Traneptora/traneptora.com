@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Multiclass Spellcasting Calculator: Dungeons and Dragons 5e</title>
+    <link rel="preload" as="style" href="/css/main.css">
+    <link rel="preload" as="style" href="/fonts/work-sans.css">
+    <link rel="preload" as="script" type="text/javascript" href="orange-slots.js">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/avatar/avatar-256.png?v=2">
+    <link rel="icon" type="image/vnd.microsoft.icon" sizes="16x16" href="/images/avatar/favicon.ico">
+
+    <meta name="description" content="Multiclass Spellcasting Calculator: Dungeons and Dragons 5e">
+    <meta name="author" content="Leo Izen">
+    <meta property="og:image" content="https://thebombzen.com/images/avatar/avatar-256.png?v=2">
+    <meta property="og:title" content="Multiclass Spellcasting Calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thebombzen.com/orange-slots/">
+    <meta property="og:description" content="Calculator for your Spellcasting and Pact Magic slots and spells known in Dungeons and Dragons, 5th edition.">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/fonts/work-sans.css">
+    <link rel="stylesheet" href="/fonts/noto-mono/index.css">
+    <script defer type="text/javascript" src="orange-slots.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            Multiclass Spellcasting Calculator
+        </header>
+        <main>
+            <section>
+                This is a calculator to determine how many slots you have to cast spells in Dungeons and Dragons, 5th edition. Enter your level in each of the classes, and then watch the magic happen.
+            </section>
+            <section>
+                <div class="section-header" style="margin-bottom: 25px;">Individual Class Levels</div>
+                <div style="display: flex; flex-direction: row;">
+                    <div class="centered-flow-content">
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Artificer:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-artificer" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Bard:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-bard" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Cleric:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-cleric" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Druid:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-druid" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Eldritch Knight Fighter:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-fighter" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="centered-flow-content">
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Paladin:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-paladin" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Ranger:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-ranger" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Arcane Trickster Rogue:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-rogue" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Sorcerer:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-sorcerer" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Wizard:</div>
+                            </div>
+                            <div class="centered-flow-row">
+                                <input type="number" id="levels-wizard" value="0" min="0" max="20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-header" style="margin-bottom: 25px;">Slots Possessed:</div>
+                <div style="display: flex; flex-direction: row; justify-content: space-around;">
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">1st</div>
+                        <div id="slots-1" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">2nd</div>
+                        <div id="slots-2" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">3rd</div>
+                        <div id="slots-3" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">4th</div>
+                        <div id="slots-4" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">5th</div>
+                        <div id="slots-5" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">6th</div>
+                        <div id="slots-6" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">7th</div>
+                        <div id="slots-7" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">8th</div>
+                        <div id="slots-8" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                        <div class="heading rust">9th</div>
+                        <div id="slots-9" style="text-align: center; width: 100%;">0</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-header" style="margin-bottom: 25px;">
+                    Other Information:
+                </div>
+                <div class="centered-flow-content">
+                    <div class="centered-flow-rowgroup">
+                        <div class="heading rust">Where’s warlock?</div>
+                        <div>The Warlock class provides the <i>Pact Magic</i> feature, not the <i>Spellcasting</i> feature.
+                            Spell slots provided by Pact Magic coexist next to spell slots provided by Spellcasting,
+                            and don’t need a multiclassing calculation.</div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="heading rust">Source?</div>
+                        <div>You can find the source here: <a href="https://github.com/thebombzen/thebombzen.com/blob/main/orange-slots/">https://github.com/thebombzen/thebombzen.com/blob/main/orange-slots/</a></div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="heading rust">Questions? Bugs?</div>
+                        <div>Contact me on Discord, or open a bug report on github. My Discord username is <b>thebombzen#3287</b>.
+                            You can open a bug report here: <a href="https://github.com/thebombzen/thebombzen.com/issues">https://github.com/thebombzen/thebombzen.com/issues</a>.</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
