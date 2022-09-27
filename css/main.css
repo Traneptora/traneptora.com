@@ -273,11 +273,17 @@ ol.linklist {
 
 .section-header {
     text-decoration: underline;
-    font-size: 24px;
+    font-size: 1.25em;
     letter-spacing: 0.25px;
     margin-bottom: 0.15em;
     font-weight: 600;
     font-style: italic;
+}
+
+@media only screen and (min-width: 1024px) {
+    .section-header {
+        font-size: 1.5em;
+    }
 }
 
 /*
