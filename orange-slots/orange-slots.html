@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html><head>
-    <title>Multiclass Spellcasting Calculator: Dungeons and Dragons 5e</title>
     <link rel="preload" as="style" href="/css/main.css">
     <link rel="preload" as="style" href="/fonts/work-sans.css">
-    <link rel="preload" as="script" type="text/javascript" href="orange-slots.js">
+    <link rel="preload" as="style" href="orange-slots.css">
+    <link rel="preload" as="script" href="orange-slots.js">
 
     <link rel="icon" type="image/png" sizes="256x256" href="/images/avatar/avatar-256.png?v=2">
-    <link rel="icon" type="image/vnd.microsoft.icon" sizes="16x16" href="/images/avatar/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/images/avatar/favicon.ico">
 
+    <title>Multiclass Spellcasting Calculator: Dungeons and Dragons 5e</title>
     <meta name="description" content="Multiclass Spellcasting Calculator: Dungeons and Dragons 5e">
     <meta name="author" content="Leo Izen">
     <meta property="og:image" content="https://thebombzen.com/images/avatar/avatar-256.png?v=2">
@@ -16,10 +17,12 @@
     <meta property="og:url" content="https://thebombzen.com/orange-slots/">
     <meta property="og:description" content="Calculator for the number of spell slots possessed when multiclassing, in Dungeons and Dragons, 5th edition.">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/fonts/work-sans.css">
-    <link rel="stylesheet" href="/fonts/noto-mono/index.css">
-    <script defer type="text/javascript" src="orange-slots.js"></script>
+    <link rel="stylesheet" href="orange-slots.css">
+    <script defer src="orange-slots.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -31,8 +34,8 @@
                 This is a calculator to determine how many slots you have to cast spells in Dungeons and Dragons, 5th edition. Enter your level in each of the classes, and then watch the magic happen.
             </section>
             <section>
-                <div class="section-header" style="margin-bottom: 25px;">Individual Class Levels</div>
-                <div style="display: flex; flex-direction: row;">
+                <div class="section-header" style="margin-bottom: 1em;">Individual Class Levels</div>
+                <div class="flex-row-column">
                     <div class="centered-flow-content">
                         <div class="centered-flow-rowgroup">
                             <div class="centered-flow-row">
@@ -120,48 +123,48 @@
                 </div>
             </section>
             <section>
-                <div class="section-header" style="margin-bottom: 25px;">Slots Possessed:</div>
-                <div style="display: flex; flex-direction: row; justify-content: space-around;">
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                <div class="section-header" style="margin-bottom: 1em;">Slots Possessed:</div>
+                <div style="display: block;">
+                    <div class="slot-report-container">
                         <div class="heading rust">1st</div>
                         <div id="slots-1" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">2nd</div>
                         <div id="slots-2" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">3rd</div>
                         <div id="slots-3" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">4th</div>
                         <div id="slots-4" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">5th</div>
                         <div id="slots-5" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">6th</div>
                         <div id="slots-6" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">7th</div>
                         <div id="slots-7" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">8th</div>
                         <div id="slots-8" style="text-align: center; width: 100%;">0</div>
                     </div>
-                    <div style="padding: 10px; border: 2px solid #FF5715; border-radius: 25%; width: 50px; text-align: center;">
+                    <div class="slot-report-container">
                         <div class="heading rust">9th</div>
                         <div id="slots-9" style="text-align: center; width: 100%;">0</div>
                     </div>
                 </div>
             </section>
             <section>
-                <div class="section-header" style="margin-bottom: 25px;">
+                <div class="section-header" style="margin-bottom: 1em;">
                     Other Information:
                 </div>
                 <div class="centered-flow-content">
