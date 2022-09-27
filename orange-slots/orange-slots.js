@@ -93,10 +93,13 @@ async function getSlots() {
     if (clazzLevel !== null) {
         casterLevel = Math.ceil(clazzLevel);
     }
-    if (casterLevel < 0)
+
+    if (casterLevel < 0) {
         casterLevel = 0;
-    if (casterLevel > 20)
+    } else if (casterLevel > 20) {
         casterLevel = 20;
+    }
+
     for (let i = 0; i < 9; i++) {
         document.getElementById('slots-' + (1 + i)).textContent = slotTable[casterLevel][i];
     }
@@ -108,7 +111,7 @@ async function ready() {
             document.getElementById('levels-' + clazz).addEventListener('change', getSlots);
         }
     }
-    await getSlots();
+    return getSlots();
 }
 
 document.addEventListener("DOMContentLoaded", ready);
