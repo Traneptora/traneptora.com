@@ -86,19 +86,19 @@ select, option, optgroup, input[type="text"] {
     border: none;
 }
 
-header, .sun-yellow {
+header, .sun-yellow, .sunlist li::marker, .sunlist li {
     color: #F2CE0B;
 }
 
-.heading, .banana, .section-header {
+.heading, .banana, .section-header, .bananalist li::marker, .bananalist li {
     color: #BFA933;
 }
 
-.orange {
+.orange, .orangelist li::marker, .orangelist li {
     color: #F49B43;
 }
 
-b, strong, .bold, .rust {
+b, strong, .bold, .rust, .rustlist li::marker, .rustlist li {
     color: #FF5715;
 }
 
@@ -325,26 +325,28 @@ ol.linklist {
     width: 150px;
     text-align: right;
 }
+
 .results {
     width: 40%;
-    clear: both;
     padding-bottom: 5px;
     padding-top: 5px;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
+
 .results-row {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    clear: both;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-.results-row div:first-child {
+
+.results-row :last-child {
     width: 50%;
-    float: left;
-}
-.results-row div:last-child {
     text-align: right;
-    width: 50%;
-    float: right;
 }
 
 /*

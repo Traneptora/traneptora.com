@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html><head>
     <title>Rating Estimator</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="preload" as="style" href="/css/main.css">
+    <link rel="preload" as="style" href="/fonts/work-sans.css">
+    <link rel="preload" as="script" href="./rating.js">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/avatar/256.png?v=3">
+    <link rel="icon" type="image/vnd.microsoft.icon" sizes="16x16" href="/images/avatar/favicon.ico?v=3">
 
     <meta name="description" content="Rating Estimator">
     <meta name="keywords" content="Leo,Izen,Website,LeoIzen,thebombzen,bombzen,uscf,chess,rating,estimator,ratingestimator">
@@ -28,40 +14,38 @@
     <meta property="og:image" content="https://thebombzen.com/images/avatar/256.png?v=3">
     <meta property="og:title" content="Rating Estimator">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thebombzen.com/programs/estimator.html">
+    <meta property="og:url" content="https://thebombzen.com/programs/estimator">
     <meta property="og:description" content="A custom rating estimator for the USCF rating system.">
 
-    <script src="rating.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script>
-    <script>
-        WebFont.load({
-            custom: {
-                families: ['Noto Sans Display', 'Noto Mono'],
-                urls: ['/fonts/noto/noto-sans/noto-sans-display/noto-sans-display.css', '/fonts/noto/noto-mono/noto-mono.css']
-            }
-        });
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script defer src="./rating.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/fonts/work-sans.css">
 </head>
 <body>
-<div id="wrapper">
-    <div id="maintitle">
-    Rating Estimator
-    </div>
-    <hr>
-    This calculates your expectancy, performance, estimated post-event rating, and expected norm earned in a USCF dual-rated chess tournament. The advantage this has over the USCF's rating estimator is that this one shows your expectancy and your estimated norm earned. Unlike the <a href="quads.html">Quads Rating Estimator</a>, this one is not perfectly accurate and will tend to overestimate if you do particularly well and will tend to underestimate if you do particularly poorly.<br><br>
-    <form action="javascript:est_calculateExpAndPerf()">
+<div class="wrapper">
+    <header class="maintitle">Rating Estimator</header>
+    <main>
+        <section>
+            <p>
+                This calculates your expectancy, performance, estimated post-event rating, and expected norm earned in a USCF dual-rated chess tournament. The advantage this has over the USCF’s rating estimator is that this one shows your expectancy and your estimated norm earned. Unlike the <a href="quads">Quads Rating Estimator</a>, this one is not perfectly accurate and will tend to overestimate if you do particularly well and will tend to underestimate if you do particularly poorly.
+            </p>
+        </section>
+    <section>
+    <form action="javascript:est_calculateExpAndPerf();">
         <div>
-            <div style="width: 40%;">
-                <div style="padding-top: 5px; padding-bottom: 5px;">
-                    <div style="width: 50%; float: left;">Your Rating: </div><div style="width: 50%; float: left;"><input style="text-align: right;" type="text" id="rating"></div>
+            <div class="results">
+                <div class="results-row">
+                    <div class="heading">Your Rating:</div>
+                    <input type="text" id="rating">
                 </div>
-                <br style="clear: both;">
-                <div style="padding-top: 5px; padding-bottom: 5px;">
-                    <div style="width: 50%; float: left;">Your Score: </div><div style="width: 50%; float: left;"><input style="text-align: right;" type="text" id="score"></div>
-                <br style="clear: both;">
+                <div class="results-row">
+                    <div class="heading">Your Score:</div>
+                    <input type="text" id="score">
                 </div>
             </div>
-            <div style="padding-top: 5px; padding-bottom: 5px;">Others' ratings:</div>
+            <div class="heading">Others’ ratings:</div>
             <div class="tabledisplay">
                 <div>
                     <div>
@@ -87,28 +71,30 @@
             <div><input type="submit" value="Calculate"></div>
             <p>
             <div class="results">
-                <div class="results-row"><div>Expectancy: </div><div id="exp"></div></div>
-                <div class="results-row"><div>Performance: </div><div id="perf"></div></div>
-                <div class="results-row"><div>Post-event: </div><div id="post"></div></div>
-                <div class="results-row"><div>K-Factor: </div><div id="kfactor"></div></div>
-                <div class="results-row"><div>Norm Earned: </div><div id="norm"></div></div>
+                <div class="results-row"><span class="heading">Expectancy: </span><span id="exp"></span></div>
+                <div class="results-row"><span class="heading">Performance: </span><span id="perf"></span></div>
+                <div class="results-row"><span class="heading">Post-event: </span><span id="post"></span></div>
+                <div class="results-row"><span class="heading">K-Factor: </span><span id="kfactor"></span></div>
+                <div class="results-row"><span class="heading">Norm Earned: </span><span id="norm"></span></div>
             </div>
             </p>
         </div>
     </form>
-    <hr>
-    Norm key:
-    <ul>
-        <li>S: Life Senior Master, 2400</li>
-        <li>M: Life Master, 2200</li>
-        <li>C: Candidate Master, 2000</li>
-        <li>1: 1st Category, 1800</li>
-        <li>2: 2nd Category, 1600</li>
-        <li>3: 3rd Category, 1400</li>
-        <li>4: 4th Category, 1200</li>
-    </ul>
-    <hr>
-    <div id="footer" class="home-page"><a href="../index.html">Home Page</a></div>
+    </section>
+    <section>
+        <div class="heading rust">Norm key:</div>
+        <ul>
+            <li><b>S:</b> Life Senior Master, 2400</li>
+            <li><b>M:</b> Life Master, 2200</li>
+            <li><b>C:</b> Candidate Master, 2000</li>
+            <li><b>1:</b> 1st Category, 1800</li>
+            <li><b>2:</b> 2nd Category, 1600</li>
+            <li><b>3:</b> 3rd Category, 1400</li>
+            <li><b>4:</b> 4th Category, 1200</li>
+        </ul>
+    </section>
+    </main>
+    <footer><a href="/">Home Page</a></footer>
 </div>
 </body>
 </html>
