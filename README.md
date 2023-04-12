@@ -1,2 +1,2 @@
-# thebombzen.com
-My website source for https://thebombzen.com/
+# traneptora.com
+My website source for https://traneptora.com/
