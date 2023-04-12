@@ -1,0 +1,71 @@
+/*
+ * airstrike.css
+ */
+
+.plane-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+}
+
+.plane-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plane-column:first-child {
+    width: 100%;
+}
+
+.plane-select-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.plane-column input[type="text"] {
+    width: 100%;
+}
+
+.plane-row :is(input[type="text"]) {
+    margin-bottom: 0.5em;
+}
+
+.plane-row :is(select, option) {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: left;
+}
+
+@media only screen and (min-width: 1024px){
+    .plane-row, .plane-select-row {
+        flex-direction: row;
+    }
+    .plane-column input[type="text"] {
+        width: 60%;
+    }
+    .plane-row :is(select, option) {
+        width: 60%;
+    }
+    .plane-row input[type="text"] {
+        margin-bottom: 0px;
+    }
+    .plane-column {
+        width: 33%;
+    }
+    .plane-column:first-of-type {
+        width: 67%;
+    }
+    .plane-select-row {
+        align-items: flex-end;
+    }
+    .plane-select-row input[type="text"] {
+        margin-left: 5px;
+        width: 30%;
+    }
+}
