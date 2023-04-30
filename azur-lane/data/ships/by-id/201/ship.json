@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u6728shiyo",
-    "ArtistLink": "[https://weibo.com/u/2481339344 \u6728shiyo]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=40222 \u6728shiyo]",
-    "ArtistTwitter": "[https://twitter.com/kishiyo1943 \u6728shiyo]",
-    "CNName": "\u72ac",
+    "Artist": "木shiyo",
+    "ArtistLink": "[https://weibo.com/u/2481339344 木shiyo]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=40222 木shiyo]",
+    "ArtistTwitter": "[https://twitter.com/kishiyo1943 木shiyo]",
+    "CNName": "犬",
     "Class": "Takao",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3897",
-    "JPName": "\u611b\u5b95",
+    "JPName": "愛宕",
     "Luck": "48",
     "Name": "Atago",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "232",
     "Type": "Heavy Cruiser",
-    "VA": "CN: [https://osawa-inc.co.jp/women/ookisaeko/ Saeko Ooki] &lt;br&gt;JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
+    "VA": "CN: [https://osawa-inc.co.jp/women/ookisaeko/ Saeko Ooki] <br>JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
 }

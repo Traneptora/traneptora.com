@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u5168\u73ed\u6700\u83dc\u5624\u5624\u5624",
-    "ArtistLink": "[https://weibo.com/u/7477949468 \u5168\u73ed\u6700\u83dc\u5624\u5624\u5624]",
+    "Artist": "全班最菜嘤嘤嘤",
+    "ArtistLink": "[https://weibo.com/u/7477949468 全班最菜嘤嘤嘤]",
     "ArtistPixiv": null,
     "ArtistTwitter": "[https://twitter.com/zelda10010 zelda10010]",
-    "CNName": "\u3b74",
+    "CNName": "㭴",
     "Class": "Kashino",
     "ConstructTime": "01:30:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "4504",
-    "JPName": "\u6a2b\u91ce",
+    "JPName": "樫野",
     "Luck": "58",
     "Name": "Kashino",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Munition Ship",
-    "VA": "[[:wikipedia:Reina_Kond%C5%8D|Reina Kondou]]"
+    "VA": "[[wikipedia:Reina Kondō|Reina Kondou]]"
 }

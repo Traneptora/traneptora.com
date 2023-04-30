@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u7fbd\u7e54\u30a4\u30aa",
+    "Artist": "羽織イオ",
     "ArtistLink": null,
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 \u7fbd\u7e54\u30a4\u30aa]",
-    "ArtistTwitter": "[https://twitter.com/haori_crescendo \u7fbd\u7e54\u30a4\u30aa]",
-    "CNName": "\u535a\u5c14\u624e\u8bfa",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 羽織イオ]",
+    "ArtistTwitter": "[https://twitter.com/haori_crescendo 羽織イオ]",
+    "CNName": "博尔扎诺",
     "Class": "Bolzano",
     "ConstructTime": "01:54:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "4006",
-    "JPName": "\u30dc\u30eb\u30c4\u30a1\u30fc\u30ce",
+    "JPName": "ボルツァーノ",
     "Luck": "46",
     "Name": "Bolzano",
     "Nationality": "Sardegna Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "150",
     "Type": "Heavy Cruiser",
-    "VA": "[https://www.atomicmonkey.jp/jp/archives/talent/maekawaryoko Maekawa Ryoko]"
+    "VA": "[https://www.atomicmonkey.jp/jp/archives/talent/maekawaryoko Ryoko Maekawa]"
 }

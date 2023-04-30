@@ -31,9 +31,9 @@
     "Armor": "Medium",
     "Artist": "Byulzzi",
     "ArtistLink": null,
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5882726 \u30d3\u30e7\u30eb\u30c1\u22c6]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5882726 ビョルチ⋆]",
     "ArtistTwitter": "[https://twitter.com/byul_zzi Byul_zzi]",
-    "CNName": "\u7f57\u6069(\u03bc\u5175\u88c5)",
+    "CNName": "罗恩(μ兵装)",
     "Class": "Roon",
     "ConstructTime": "Can't Be Constructed",
     "ConsumptionInitial": "4",
@@ -77,9 +77,9 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "5494",
-    "JPName": "\u30ed\u30fc\u30f3(\u03bc\u5175\u88c5)",
+    "JPName": "ローン(μ兵装)",
     "Luck": "0",
-    "Name": "Roon \u00b5",
+    "Name": "Roon µ",
     "Nationality": "Iron Blood",
     "Oxygen": "0",
     "Rarity": "Super Rare",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "204",
     "Type": "Heavy Cruiser",
-    "VA": "[[:wikipedia:Satomi_Sat%C5%8D|Satomi Satou]]"
+    "VA": "[[wikipedia:Satomi Satō|Satomi Satou]]"
 }

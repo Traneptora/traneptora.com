@@ -29,10 +29,10 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u3055\u304f\u3089\u5c0f\u6625",
+    "Artist": "さくら小春",
     "ArtistLink": "[http://qp.banbi.net/ QP Flapper Web site]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=10538 \u3055\u304f\u3089\u5c0f\u6625]",
-    "ArtistTwitter": "[https://twitter.com/pimopimo \u3055\u304f\u3089\u5c0f\u6625]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=10538 さくら小春]",
+    "ArtistTwitter": "[https://twitter.com/pimopimo さくら小春]",
     "CNName": "Z35",
     "Class": "Type 1936B",
     "ConstructTime": "Cannot Be Constructed",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "418",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Ayaka_%C5%8Chashi|Ayaka Ouhashi]]"
+    "VA": "[[wikipedia:Ayaka Ōhashi|Ayaka Ouhashi]]"
 }

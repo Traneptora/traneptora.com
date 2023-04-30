@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Medium",
     "Artist": "Criin",
-    "ArtistLink": "[https://weibo.com/cirini Hanasa_\u82b1\u6d12]",
+    "ArtistLink": "[https://weibo.com/cirini Hanasa_花洒]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=4460847 Criin]",
     "ArtistTwitter": "[https://twitter.com/hanasa_criin Criin]",
-    "CNName": "\u9ca4",
+    "CNName": "鲤",
     "Class": "Kongou",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "5",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "5971",
-    "JPName": "\u91d1\u525b",
+    "JPName": "金剛",
     "Luck": "43",
     "Name": "Kongou",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Battlecruiser",
-    "VA": "[[:wikipedia:Chiwa_Sait%C5%8D|Chiwa Saitou]]"
+    "VA": "[[wikipedia:Chiwa Saitō|Chiwa Saitou]]"
 }

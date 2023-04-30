@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u5927\u6708\u7d05\u8449",
-    "ArtistLink": "[http://weibo.com/ootsukimomiji \u5927\u6708\u7d05\u8449]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=591937 \u5927\u6708\u7d05\u8449]",
-    "ArtistTwitter": "[https://twitter.com/ootsukimomiji \u5927\u6708\u7d05\u8449]",
-    "CNName": "\u67da",
+    "Artist": "大月紅葉",
+    "ArtistLink": "[http://weibo.com/ootsukimomiji 大月紅葉]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=591937 大月紅葉]",
+    "ArtistTwitter": "[https://twitter.com/ootsukimomiji 大月紅葉]",
+    "CNName": "柚",
     "Class": "Fubuki",
     "ConstructTime": "00:23:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "1963",
     "HealthKai125": "2007",
     "HealthMax": "1623",
-    "JPName": "\u7dbe\u6ce2",
+    "JPName": "綾波",
     "Luck": "36",
     "Name": "Ayanami",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "576",
     "TorpMax": "484",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Y%C5%8D_Taichi|You Taichi]]"
+    "VA": "[[wikipedia:Yō Taichi|You Taichi]]"
 }

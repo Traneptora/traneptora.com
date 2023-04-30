@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u5927\u6708\u7d05\u8449",
-    "ArtistLink": "[http://weibo.com/ootsukimomiji \u5927\u6708\u7d05\u8449]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=591937 \u5927\u6708\u7d05\u8449]",
-    "ArtistTwitter": "[https://twitter.com/ootsukimomiji \u5927\u6708\u7d05\u8449]",
-    "CNName": "\u5361\u8f9b",
+    "Artist": "大月紅葉",
+    "ArtistLink": "[http://weibo.com/ootsukimomiji 大月紅葉]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=591937 大月紅葉]",
+    "ArtistTwitter": "[https://twitter.com/ootsukimomiji 大月紅葉]",
+    "CNName": "卡辛",
     "Class": "Mahan",
     "ConstructTime": "00:23:00",
     "ConsumptionInitial": "1",
@@ -77,7 +77,7 @@
     "HealthKai120": "1900",
     "HealthKai125": "1942",
     "HealthMax": "1566",
-    "JPName": "\u30ab\u30c3\u30b7\u30f3",
+    "JPName": "カッシン",
     "Luck": "66",
     "Name": "Cassin",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "297",
     "TorpMax": "268",
     "Type": "Destroyer",
-    "VA": "[https://enpedia.rxy.jp/wiki/%E6%98%A5%E6%9D%91%E5%A5%88%E3%80%85 Nana Harumura]"
+    "VA": "[https://enpedia.rxy.jp/wiki/春村奈々 Nana Harumura]"
 }

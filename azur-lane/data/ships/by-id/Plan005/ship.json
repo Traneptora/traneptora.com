@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Medium",
     "Artist": "Terras",
-    "ArtistLink": "[https://weibo.com/u/3086653641 \u6d32\u5dddTerras-\u9e2d\u5634\u517d]",
+    "ArtistLink": "[https://weibo.com/u/3086653641 洲川Terras-鸭嘴兽]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5968035 Terras]",
-    "ArtistTwitter": "[https://twitter.com/Terras59495424 \u6d32\u5dddTerras]",
-    "CNName": "\u7f57\u6069",
+    "ArtistTwitter": "[https://twitter.com/Terras59495424 洲川Terras]",
+    "CNName": "罗恩",
     "Class": "Roon",
     "ConstructTime": "Research",
     "ConsumptionInitial": "7",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "5382",
-    "JPName": "\u30ed\u30fc\u30f3",
+    "JPName": "ローン",
     "Luck": "0",
     "Name": "Roon",
     "Nationality": "Iron Blood",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "197",
     "Type": "Heavy Cruiser",
-    "VA": "[[:wikipedia:Satomi_Sat%C5%8D|Satomi Satou]]"
+    "VA": "[[wikipedia:Satomi Satō|Satomi Satou]]"
 }

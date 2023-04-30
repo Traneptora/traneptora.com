@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Heavy",
-    "Artist": "\u68a6\u54b2\u67ab",
-    "ArtistLink": "[http://weibo.com/u/3558369570 \u68a6\u54b2\u67ab]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 \u304b\u3048\u3067]",
-    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ \u304b\u3048\u3067]",
-    "CNName": "\u7f57\u5fb7\u5c3c",
+    "Artist": "梦咲枫",
+    "ArtistLink": "[http://weibo.com/u/3558369570 梦咲枫]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 かえで]",
+    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ かえで]",
+    "CNName": "罗德尼",
     "Class": "Nelson",
     "ConstructTime": "04:40:00",
     "ConsumptionInitial": "5",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "6906",
-    "JPName": "\u30ed\u30c9\u30cb\u30fc",
+    "JPName": "ロドニー",
     "Luck": "81",
     "Name": "Rodney",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Battleship",
-    "VA": "[[:wikipedia:Y%C5%8D_Taichi|You Taichi]]"
+    "VA": "[[wikipedia:Yō Taichi|You Taichi]]"
 }

@@ -29,11 +29,11 @@
     "AirMax": "408",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u767e\u8db3",
-    "ArtistLink": "[https://weibo.com/guszx \u767e\u8db3_]",
-    "ArtistPixiv": "[https://www.pixiv.net/en/users/2835802 \u767e\u8db3]",
-    "ArtistTwitter": "[https://twitter.com/baizu2012 \u767e\u8db3]",
-    "CNName": "\u5e1d\u56fd",
+    "Artist": "百足",
+    "ArtistLink": "[https://weibo.com/guszx 百足_]",
+    "ArtistPixiv": "[https://www.pixiv.net/en/users/2835802 百足]",
+    "ArtistTwitter": "[https://twitter.com/baizu2012 百足]",
+    "CNName": "帝国",
     "Class": "Vittorio Veneto",
     "ConstructTime": "05:15:00",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "6387",
-    "JPName": "\u30a4\u30f3\u30da\u30ed",
+    "JPName": "インペロ",
     "Luck": "32",
     "Name": "Impero",
     "Nationality": "Sardegna Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Aircraft Carrier",
-    "VA": "[[:wikipedia:Nichika_\u014cmori|Nichika Oomori]]"
+    "VA": "[[:wikipedia:Nichika_Ōmori|Nichika Oomori]]"
 }

@@ -33,7 +33,7 @@
     "ArtistLink": null,
     "ArtistPixiv": null,
     "ArtistTwitter": null,
-    "CNName": "\u79d1\u6d1b\u8482\u5a05\u00b7\u5df4\u5170\u8328",
+    "CNName": "科洛蒂娅·巴兰茨",
     "Class": null,
     "ConstructTime": "02:23:00",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "5473",
-    "JPName": "\u30af\u30e9\u30a6\u30c7\u30a3\u30a2\u30fb\u30d0\u30ec\u30f3\u30c4",
+    "JPName": "クラウディア・バレンツ",
     "Luck": "54",
     "Name": "Klaudia Valentz",
     "Nationality": "Atelier Ryza",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Aircraft Carrier",
-    "VA": "[[:wikipedia:Hitomi_%C5%8Cwada | Hitomi Oowada]]"
+    "VA": "[[wikipedia:Hitomi Ōwada | Hitomi Oowada]]"
 }

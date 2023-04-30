@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u5927\u6708\u7d05\u8449",
-    "ArtistLink": "[http://weibo.com/ootsukimomiji \u5927\u6708\u7d05\u8449]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=591937 \u5927\u6708\u7d05\u8449]",
-    "ArtistTwitter": "[https://twitter.com/ootsukimomiji \u5927\u6708\u7d05\u8449]",
-    "CNName": "\u8c89",
+    "Artist": "大月紅葉",
+    "ArtistLink": "[http://weibo.com/ootsukimomiji 大月紅葉]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=591937 大月紅葉]",
+    "ArtistTwitter": "[https://twitter.com/ootsukimomiji 大月紅葉]",
+    "CNName": "貉",
     "Class": "Nagara",
     "ConstructTime": "Drop Only",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "3454",
     "HealthKai125": "3529",
     "HealthMax": "2915",
-    "JPName": "\u4e94\u5341\u9234",
+    "JPName": "五十鈴",
     "Luck": "33",
     "Name": "Isuzu",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "233",
     "TorpMax": "208",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Akari_Kit%C5%8D|Akari Kitou]]"
+    "VA": "[[wikipedia:Akari Kitō|Akari Kitou]]"
 }

@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Light",
     "Artist": "Mkiiiiii33",
-    "ArtistLink": "[https://weibo.com/kawa33 MKiiiiii_\u4e09\u4e09]",
+    "ArtistLink": "[https://weibo.com/kawa33 MKiiiiii_三三]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=661601 MKiiiiii]",
     "ArtistTwitter": "[https://twitter.com/mkiiiiiimk MKiiiiii]",
-    "CNName": "\u547d\u8fd0\u5973\u795e\u00b7META",
+    "CNName": "命运女神·META",
     "Class": null,
     "ConstructTime": "META",
     "ConsumptionInitial": "6",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "1640",
-    "JPName": "\u30d5\u30a9\u30fc\u30c1\u30e5\u30f3(META)",
+    "JPName": "フォーチュン(META)",
     "Luck": "68",
     "Name": "Fortune META",
     "Nationality": "META",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "365",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Y%C5%ABko_Got%C5%8D|Yuuko Gotou]]"
+    "VA": "[[wikipedia:Yūko Gotō|Yuuko Gotou]]"
 }

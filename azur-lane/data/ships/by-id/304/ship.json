@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u4e91\u6851",
-    "ArtistLink": "[https://weibo.com/yunsang -\u4e91\u6851]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5358936 \u96f2\u6851]",
+    "Artist": "云桑",
+    "ArtistLink": "[https://weibo.com/yunsang -云桑]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5358936 雲桑]",
     "ArtistTwitter": "[https://twitter.com/_Yunsang Yunsang]",
-    "CNName": "\u706b\u5974\u9c81\u9c81",
+    "CNName": "火奴鲁鲁",
     "Class": "Brooklyn",
     "ConstructTime": "Drop Only",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3148",
-    "JPName": "\u30db\u30ce\u30eb\u30eb",
+    "JPName": "ホノルル",
     "Luck": "50",
     "Name": "Honolulu",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Y%C5%8Dko_Hikasa|Yoko Hikasa]]"
+    "VA": "[[wikipedia:Yōko Hikasa|Yoko Hikasa]]"
 }

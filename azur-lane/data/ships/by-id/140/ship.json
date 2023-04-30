@@ -29,11 +29,11 @@
     "AirMax": "266",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u68a6\u54b2\u67ab",
-    "ArtistLink": "[http://weibo.com/u/3558369570 \u68a6\u54b2\u67ab]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 \u304b\u3048\u3067]",
-    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ \u304b\u3048\u3067]",
-    "CNName": "\u7ade\u6280\u795e",
+    "Artist": "梦咲枫",
+    "ArtistLink": "[http://weibo.com/u/3558369570 梦咲枫]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 かえで]",
+    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ かえで]",
+    "CNName": "竞技神",
     "Class": "Hermes",
     "ConstructTime": "02:10:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "4368",
     "HealthKai125": "4467",
     "HealthMax": "3760",
-    "JPName": "\u30cf\u30fc\u30df\u30fc\u30ba",
+    "JPName": "ハーミーズ",
     "Luck": "41",
     "Name": "Hermes",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Aircraft Carrier",
-    "VA": "[[:wikipedia:Y%C5%ABna_Inamura|Yuuna Inamura]]"
+    "VA": "[[wikipedia:Yūna Inamura|Yuuna Inamura]]"
 }

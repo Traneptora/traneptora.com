@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u4e91\u6851",
-    "ArtistLink": "[https://weibo.com/yunsang -\u4e91\u6851]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5358936 \u96f2\u6851]",
+    "Artist": "云桑",
+    "ArtistLink": "[https://weibo.com/yunsang -云桑]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=5358936 雲桑]",
     "ArtistTwitter": "[https://twitter.com/_Yunsang Yunsang]",
-    "CNName": "\u5723\u8def\u6613\u65af",
+    "CNName": "圣路易斯",
     "Class": "Brooklyn",
     "ConstructTime": "01:15:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3270",
-    "JPName": "\u30bb\u30f3\u30c8\u30eb\u30a4\u30b9",
+    "JPName": "セントルイス",
     "Luck": "65",
     "Name": "St. Louis",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Y%C5%8Dko_Hikasa|Yoko Hikasa]]"
+    "VA": "[[wikipedia:Yōko Hikasa|Yoko Hikasa]]"
 }

@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u516b\u624d\u63d0\u7763",
-    "ArtistLink": "[http://weibo.com/vihao \u516b\u624d\u63d0\u7763]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1393609 \u30cf\u30aa]",
-    "ArtistTwitter": "[https://twitter.com/hao660a \u30cf\u30aa]",
-    "CNName": "\u514b\u5229\u592b\u5170",
+    "Artist": "八才提督",
+    "ArtistLink": "[http://weibo.com/vihao 八才提督]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1393609 ハオ]",
+    "ArtistTwitter": "[https://twitter.com/hao660a ハオ]",
+    "CNName": "克利夫兰",
     "Class": "Cleveland",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3913",
-    "JPName": "\u30af\u30ea\u30fc\u30d6\u30e9\u30f3\u30c9",
+    "JPName": "クリーブランド",
     "Luck": "71",
     "Name": "Cleveland",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:ja:\u5800\u7c60\u6c99\u8036|Saya Horigome]]"
+    "VA": "[[:wikipedia:ja:堀籠沙耶|Saya Horigome]]"
 }

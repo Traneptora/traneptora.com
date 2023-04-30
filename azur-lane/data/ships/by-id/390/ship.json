@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Light",
     "Artist": "Alisa",
-    "ArtistLink": "[https://weibo.com/u/6056658230 \u599e\u599e\u540c\u5b66\u63d0\u4e0d\u8d77\u52b2]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1966676 \u9ed2\u306e\u685c]",
+    "ArtistLink": "[https://weibo.com/u/6056658230 妞妞同学提不起劲]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1966676 黒の桜]",
     "ArtistTwitter": "[https://twitter.com/16119831274 Alisa]",
-    "CNName": "\u5c0f\u6d77\u4f26\u5a1c",
+    "CNName": "小海伦娜",
     "Class": "Brooklyn",
     "ConstructTime": "01:10:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "2945",
-    "JPName": "\u30ea\u30c8\u30eb\u30fb\u30d8\u30ec\u30ca",
+    "JPName": "リトル・ヘレナ",
     "Luck": "33",
     "Name": "Lena",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:ja:\u4e2d\u6761\u667a\u4e16|Tomoyo Chuujou]]"
+    "VA": "[[:wikipedia:ja:中条智世|Tomoyo Chuujou]]"
 }

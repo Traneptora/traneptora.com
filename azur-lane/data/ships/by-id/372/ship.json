@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u3082\u306d\u3066\u3043",
-    "ArtistLink": "[http://monety1285.blog.shinobi.jp/ \u3050\u3060\uff5e\u3063\u3068\u4f5c\u696d]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3066815 \u3082\u306d\u3066\u3043]",
-    "ArtistTwitter": "[https://twitter.com/monety1285 \u3082\u306d\u3066\u3043]",
-    "CNName": "\u5e93\u62c9\u7d22",
+    "Artist": "もねてぃ",
+    "ArtistLink": "[http://monety1285.blog.shinobi.jp/ ぐだ～っと作業]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3066815 もねてぃ]",
+    "ArtistTwitter": "[https://twitter.com/monety1285 もねてぃ]",
+    "CNName": "库拉索",
     "Class": "Ceres",
     "ConstructTime": "01:07:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "3221",
     "HealthKai125": "3290",
     "HealthMax": "2704",
-    "JPName": "\u30ad\u30e5\u30e9\u30bd\u30fc",
+    "JPName": "キュラソー",
     "Luck": "24",
     "Name": "Curacoa",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[wikipedia:ja:\u85e4\u6ca2\u73b2\u82b1|Fujisawa Reika]]"
+    "VA": "[[wikipedia:ja:藤沢玲花|Reika Fujisawa]]"
 }

@@ -29,11 +29,25 @@
             "dataJSON": "ships/by-id/516/ship.json"
         },
         {
+            "DataDir": "ships/by-id/589",
+            "Name": "Little Formidable",
+            "ShipID": "589",
+            "carrierJSON": "ships/by-id/589/carrier.json",
+            "dataJSON": "ships/by-id/589/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10066",
             "Name": "Nyotengu",
             "ShipID": "10066",
             "carrierJSON": "ships/by-id/10066/carrier.json",
             "dataJSON": "ships/by-id/10066/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10068",
+            "Name": "Luna",
+            "ShipID": "10068",
+            "carrierJSON": "ships/by-id/10068/carrier.json",
+            "dataJSON": "ships/by-id/10068/ship.json"
         },
         {
             "DataDir": "ships/by-id/10072",
@@ -496,7 +510,7 @@
         },
         {
             "DataDir": "ships/by-id/419",
-            "Name": "Akagi \u00b5",
+            "Name": "Akagi µ",
             "ShipID": "419",
             "carrierJSON": "ships/by-id/419/carrier.json",
             "dataJSON": "ships/by-id/419/ship.json"
@@ -524,7 +538,7 @@
         },
         {
             "DataDir": "ships/by-id/458",
-            "Name": "B\u00e9arn",
+            "Name": "Béarn",
             "ShipID": "458",
             "carrierJSON": "ships/by-id/458/carrier.json",
             "dataJSON": "ships/by-id/458/ship.json"
@@ -559,14 +573,14 @@
         },
         {
             "DataDir": "ships/by-id/474",
-            "Name": "Taihou \u00b5",
+            "Name": "Taihou µ",
             "ShipID": "474",
             "carrierJSON": "ships/by-id/474/carrier.json",
             "dataJSON": "ships/by-id/474/ship.json"
         },
         {
             "DataDir": "ships/by-id/480",
-            "Name": "Illustrious \u00b5",
+            "Name": "Illustrious µ",
             "ShipID": "480",
             "carrierJSON": "ships/by-id/480/carrier.json",
             "dataJSON": "ships/by-id/480/ship.json"

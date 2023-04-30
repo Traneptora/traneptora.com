@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Light",
     "Artist": "Alisa",
-    "ArtistLink": "[https://weibo.com/u/6056658230 \u599e\u599e\u540c\u5b66\u63d0\u4e0d\u8d77\u52b2]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1966676 \u9ed2\u306e\u685c]",
+    "ArtistLink": "[https://weibo.com/u/6056658230 妞妞同学提不起劲]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1966676 黒の桜]",
     "ArtistTwitter": "[https://twitter.com/16119831274 Alisa]",
-    "CNName": "\u67a5",
+    "CNName": "枥",
     "Class": "Akizuki",
     "ConstructTime": "Drop Only",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "2207",
-    "JPName": "\u65b0\u6708",
+    "JPName": "新月",
     "Luck": "32",
     "Name": "Niizuki",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "351",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Rumi_%C5%8Ckubo|Rumi Ookubo]]"
+    "VA": "[[wikipedia:Rumi Ōkubo|Rumi Ookubo]]"
 }

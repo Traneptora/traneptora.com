@@ -29,11 +29,11 @@
     "AirMax": "239",
     "Ammo": "2",
     "Armor": "Light",
-    "Artist": "Amoeba\u539f\u866b",
-    "ArtistLink": "[https://www.weibo.com/p/1005052732245883 Amoeba\u539f\u866b]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=8931555 \u963f\u7c73\u5df4\u539f\u866b]",
+    "Artist": "Amoeba原虫",
+    "ArtistLink": "[https://www.weibo.com/p/1005052732245883 Amoeba原虫]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=8931555 阿米巴原虫]",
     "ArtistTwitter": null,
-    "CNName": "\u4f0a13",
+    "CNName": "伊13",
     "Class": "Type AM",
     "ConstructTime": "00:34:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "2399",
-    "JPName": "\u4f0a13",
+    "JPName": "伊13",
     "Luck": "20",
     "Name": "I-13",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "489",
     "Type": "Submarine Carrier",
-    "VA": "[[:wikipedia:ja:\u67f3\u539f\u304b\u306a\u3053|Kanako Yanagihara]]"
+    "VA": "[[:wikipedia:ja:柳原かなこ|Kanako Yanagihara]]"
 }

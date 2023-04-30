@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Medium",
     "Artist": "Liduke",
-    "ArtistLink": "[https://weibo.com/liduke \u9ebb\u75f9\u7684\u5c0f\u65e5\u5b50]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=38088 Liduke(\u65e5\u5b50)]",
-    "ArtistTwitter": "[https://twitter.com/lidukelaya liduke(\u65e5\u5b50)]",
-    "CNName": "\u7f8e\u56e0\u8328",
+    "ArtistLink": "[https://weibo.com/liduke 麻痹的小日子]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=38088 Liduke(日子)]",
+    "ArtistTwitter": "[https://twitter.com/lidukelaya liduke(日子)]",
+    "CNName": "美因茨",
     "Class": "Mainz",
     "ConstructTime": "Research",
     "ConsumptionInitial": "7",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "4784",
-    "JPName": "\u30de\u30a4\u30f3\u30c4",
+    "JPName": "マインツ",
     "Luck": "0",
     "Name": "Mainz",
     "Nationality": "Iron Blood",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "176",
     "Type": "Light Cruiser",
-    "VA": "[https://en.wikipedia.org/wiki/Y%C5%ABko_Kaida Yuuko Kaida]"
+    "VA": "[[wikipedia:Yūko Kaida|Yuuko Kaida]]"
 }

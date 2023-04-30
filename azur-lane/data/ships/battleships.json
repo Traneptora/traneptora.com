@@ -36,6 +36,13 @@
             "dataJSON": "ships/by-id/10065/ship.json"
         },
         {
+            "DataDir": "ships/by-id/10069",
+            "Name": "Tamaki",
+            "ShipID": "10069",
+            "battleshipJSON": "ships/by-id/10069/battleship.json",
+            "dataJSON": "ships/by-id/10069/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10073",
             "Name": "Iori Minase",
             "ShipID": "10073",
@@ -120,8 +127,15 @@
             "dataJSON": "ships/by-id/30017/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30019",
+            "Name": "Queen Elizabeth META",
+            "ShipID": "30019",
+            "battleshipJSON": "ships/by-id/30019/battleship.json",
+            "dataJSON": "ships/by-id/30019/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
-            "Name": "Friedrich der Gro\u00dfe",
+            "Name": "Friedrich der Große",
             "ShipID": "20011",
             "battleshipJSON": "ships/by-id/20011/battleship.json",
             "dataJSON": "ships/by-id/20011/ship.json"
@@ -566,7 +580,7 @@
         },
         {
             "DataDir": "ships/by-id/418",
-            "Name": "Gascogne \u00b5",
+            "Name": "Gascogne µ",
             "ShipID": "418",
             "battleshipJSON": "ships/by-id/418/battleship.json",
             "dataJSON": "ships/by-id/418/ship.json"
@@ -650,14 +664,14 @@
         },
         {
             "DataDir": "ships/by-id/544",
-            "Name": "L\u00fctzow",
+            "Name": "Lützow",
             "ShipID": "544",
             "battleshipJSON": "ships/by-id/544/battleship.json",
             "dataJSON": "ships/by-id/544/ship.json"
         },
         {
             "DataDir": "ships/by-id/545",
-            "Name": "Th\u00fcringen",
+            "Name": "Thüringen",
             "ShipID": "545",
             "battleshipJSON": "ships/by-id/545/battleship.json",
             "dataJSON": "ships/by-id/545/ship.json"
@@ -678,7 +692,7 @@
         },
         {
             "DataDir": "ships/by-id/566",
-            "Name": "Br\u00fcnhilde",
+            "Name": "Brünhilde",
             "ShipID": "566",
             "battleshipJSON": "ships/by-id/566/battleship.json",
             "dataJSON": "ships/by-id/566/ship.json"
@@ -689,6 +703,13 @@
             "ShipID": "582",
             "battleshipJSON": "ships/by-id/582/battleship.json",
             "dataJSON": "ships/by-id/582/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/587",
+            "Name": "Sevastopol",
+            "ShipID": "587",
+            "battleshipJSON": "ships/by-id/587/battleship.json",
+            "dataJSON": "ships/by-id/587/ship.json"
         }
     ]
 }

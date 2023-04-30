@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u7fbd\u7e54\u30a4\u30aa",
+    "Artist": "羽織イオ",
     "ArtistLink": null,
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 \u7fbd\u7e54\u30a4\u30aa]",
-    "ArtistTwitter": "[https://twitter.com/haori_crescendo \u7fbd\u7e54\u30a4\u30aa]",
-    "CNName": "\u6d77\u4f26\u5a1c\u00b7META",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 羽織イオ]",
+    "ArtistTwitter": "[https://twitter.com/haori_crescendo 羽織イオ]",
+    "CNName": "海伦娜·META",
     "Class": null,
     "ConstructTime": "META",
     "ConsumptionInitial": "7",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3918",
-    "JPName": "\u30d8\u30ec\u30ca(META)",
+    "JPName": "ヘレナ(META)",
     "Luck": "33",
     "Name": "Helena META",
     "Nationality": "META",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:ja:\u4e2d\u6761\u667a\u4e16|Tomoyo Chuujou]]"
+    "VA": "[[:wikipedia:ja:中条智世|Tomoyo Chuujou]]"
 }

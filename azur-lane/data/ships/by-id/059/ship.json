@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Heavy",
-    "Artist": "\u5c0f\u53f6",
-    "ArtistLink": "[http://weibo.com/u/1810348711 xiao\u8449\u6709\u56cd\u662fAI]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=617248 xiao\u8449\u6709\u56cd]",
-    "ArtistTwitter": "[https://twitter.com/leaf_plus \u56cd]",
-    "CNName": "\u52a0\u5229\u798f\u5c3c\u4e9a",
+    "Artist": "小叶",
+    "ArtistLink": "[http://weibo.com/u/1810348711 xiao葉有囍是AI]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=617248 xiao葉有囍]",
+    "ArtistTwitter": "[https://twitter.com/leaf_plus 囍]",
+    "CNName": "加利福尼亚",
     "Class": "Tennessee",
     "ConstructTime": "04:20:00",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "6682",
-    "JPName": "\u30ab\u30ea\u30d5\u30a9\u30eb\u30cb\u30a2",
+    "JPName": "カリフォルニア",
     "Luck": "36",
     "Name": "California",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Battleship",
-    "VA": "[[:wikipedia:Rina_Sat%C5%8D|Rina Satou]]"
+    "VA": "[[wikipedia:Rina Satō|Rina Satou]]"
 }

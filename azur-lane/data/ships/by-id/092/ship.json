@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u54c8\u8def\u5361",
-    "ArtistLink": "[https://weibo.com/u/1952889047 \u753b\u591a\u70b9-\u54c8\u8def\u5361]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=12785336 \u54c8\u8def\u5361]",
+    "Artist": "哈路卡",
+    "ArtistLink": "[https://weibo.com/u/1952889047 画多点-哈路卡]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=12785336 哈路卡]",
     "ArtistTwitter": null,
-    "CNName": "\u547d\u8fd0\u5973\u795e",
+    "CNName": "命运女神",
     "Class": "F",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "1567",
     "HealthKai125": "1601",
     "HealthMax": "1265",
-    "JPName": "\u30d5\u30a9\u30fc\u30c1\u30e5\u30f3",
+    "JPName": "フォーチュン",
     "Luck": "68",
     "Name": "Fortune",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "362",
     "TorpMax": "339",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Y%C5%ABko_Got%C5%8D|Yuuko Gotou]]"
+    "VA": "[[wikipedia:Yūko Gotō|Yuuko Gotou]]"
 }

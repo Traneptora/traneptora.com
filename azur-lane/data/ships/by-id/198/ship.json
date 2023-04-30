@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u9244\u4eba\u6843\u5b50",
+    "Artist": "鉄人桃子",
     "ArtistLink": null,
-    "ArtistPixiv": "[https://www.pixiv.net/fanbox/creator/54749 \u9244\u4eba\u6843\u5b50]",
-    "ArtistTwitter": "[https://twitter.com/te2momo \u9244\u4eba\u6843\u5b50]",
-    "CNName": "\u72f3",
+    "ArtistPixiv": "[https://www.pixiv.net/fanbox/creator/54749 鉄人桃子]",
+    "ArtistTwitter": "[https://twitter.com/te2momo 鉄人桃子]",
+    "CNName": "狳",
     "Class": "Myoukou",
     "ConstructTime": "01:55:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3783",
-    "JPName": "\u8db3\u67c4",
+    "JPName": "足柄",
     "Luck": "60",
     "Name": "Ashigara",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "211",
     "Type": "Heavy Cruiser",
-    "VA": "[[:wikipedia:Chiwa_Sait%C5%8D|Chiwa Saitou]]"
+    "VA": "[[wikipedia:Chiwa Saitō|Chiwa Saitou]]"
 }

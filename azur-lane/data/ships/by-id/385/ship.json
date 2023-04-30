@@ -29,11 +29,11 @@
     "AirMax": "357",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u68a6\u54b2\u67ab",
-    "ArtistLink": "[http://weibo.com/u/3558369570 \u68a6\u54b2\u67ab]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 \u304b\u3048\u3067]",
-    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ \u304b\u3048\u3067]",
-    "CNName": "\u5c0f\u9f50\u67cf\u6797",
+    "Artist": "梦咲枫",
+    "ArtistLink": "[http://weibo.com/u/3558369570 梦咲枫]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 かえで]",
+    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ かえで]",
+    "CNName": "小齐柏林",
     "Class": "Graf Zeppelin",
     "ConstructTime": "04:30:00",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "6348",
-    "JPName": "\u30c4\u30a7\u30c3\u30da\u30ea\u30f3\u3061\u3083\u3093",
+    "JPName": "ツェッペリンちゃん",
     "Luck": "45",
     "Name": "Zeppy",
     "Nationality": "Iron Blood",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Aircraft Carrier",
-    "VA": "CN: [[:wikipedia:Yumi_Uchiyama|Yumi Uchiyama]] &lt;br/&gt;JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
+    "VA": "CN: [[:wikipedia:Yumi_Uchiyama|Yumi Uchiyama]] <br/>JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
 }

@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u96eb\u7dba\u4e00\u751f",
-    "ArtistLink": "[https://weibo.com/u/7208541982 \u96eb\u7dba\u4e00\u751f]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2799637 \u3081\u3075\u3043\u3059\u3068]",
-    "ArtistTwitter": "[https://twitter.com/MEPHIST0216 \u3081\u3075\u3043\u3059\u3068/\u96eb\u7dba\u4e00\u751f]",
-    "CNName": "\u660e\u5c3c\u963f\u6ce2\u5229\u65af",
+    "Artist": "雫綺一生",
+    "ArtistLink": "[https://weibo.com/u/7208541982 雫綺一生]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2799637 めふぃすと]",
+    "ArtistTwitter": "[https://twitter.com/MEPHIST0216 めふぃすと/雫綺一生]",
+    "CNName": "明尼阿波利斯",
     "Class": "New Orleans",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3769",
-    "JPName": "\u30df\u30cd\u30a2\u30dd\u30ea\u30b9",
+    "JPName": "ミネアポリス",
     "Luck": "76",
     "Name": "Minneapolis",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Heavy Cruiser",
-    "VA": "[[:wikipedia:Y%C5%AB_Shimamura|Yu Shimamura]]"
+    "VA": "[[wikipedia:Yū Shimamura|Yu Shimamura]]"
 }

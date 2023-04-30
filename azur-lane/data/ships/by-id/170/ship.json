@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "Saru(\u7334\u5988)",
-    "ArtistLink": "[http://weibo.com/p/1005051054234800 \u6d45\u4e95\u7334\u7334_Saru]",
+    "Artist": "Saru(猴妈)",
+    "ArtistLink": "[http://weibo.com/p/1005051054234800 浅井猴猴_Saru]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1422579 Saru]",
     "ArtistTwitter": "[https://twitter.com/saru_1127 Saru]",
-    "CNName": "\u82d3",
+    "CNName": "苓",
     "Class": "Kagerou",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "1936",
-    "JPName": "\u91ce\u5206",
+    "JPName": "野分",
     "Luck": "72",
     "Name": "Nowaki",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "500",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Emiri_Kat%C5%8D|Emiri Katou]]"
+    "VA": "[[wikipedia:Emiri Katō|Emiri Katou]]"
 }

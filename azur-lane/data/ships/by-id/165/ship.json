@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "Saru(\u7334\u5988)",
-    "ArtistLink": "[http://weibo.com/p/1005051054234800 \u6d45\u4e95\u7334\u7334_Saru]",
+    "Artist": "Saru(猴妈)",
+    "ArtistLink": "[http://weibo.com/p/1005051054234800 浅井猴猴_Saru]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1422579 Saru]",
     "ArtistTwitter": "[https://twitter.com/saru_1127 Saru]",
-    "CNName": "\u6834",
+    "CNName": "栴",
     "Class": "Shiratsuyu",
     "ConstructTime": "Drop Only",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "1928",
     "HealthKai125": "1971",
     "HealthMax": "1591",
-    "JPName": "\u6642\u96e8",
+    "JPName": "時雨",
     "Luck": "84",
     "Name": "Shigure",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "596",
     "TorpMax": "499",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Y\u016bki_Kuwahara|Yuuki Kuwahara]]"
+    "VA": "[[:wikipedia:Yūki_Kuwahara|Yuuki Kuwahara]]"
 }

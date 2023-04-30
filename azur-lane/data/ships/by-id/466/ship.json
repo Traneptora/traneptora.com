@@ -29,10 +29,10 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u30b9\u30a4\u30ab01",
+    "Artist": "スイカ01",
     "ArtistLink": null,
-    "ArtistPixiv": "[https://www.pixiv.net/en/users/4678580 \u30b9\u30a4\u30ab01]",
-    "ArtistTwitter": "[https://twitter.com/xiba_01 \u30b9\u30a4\u30ab01]",
+    "ArtistPixiv": "[https://www.pixiv.net/en/users/4678580 スイカ01]",
+    "ArtistTwitter": "[https://twitter.com/xiba_01 スイカ01]",
     "CNName": "Z26",
     "Class": "Type 1936A",
     "ConstructTime": "00:33:00",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "310",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:ja:\u5929\u91ce\u8061\u7f8e_(\u58f0\u512a)|Satomi Amano]]"
+    "VA": "[[:wikipedia:ja:天野聡美_(声優)|Satomi Amano]]"
 }

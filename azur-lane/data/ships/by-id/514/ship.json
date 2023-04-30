@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u7fbd\u7e54\u30a4\u30aa",
+    "Artist": "羽織イオ",
     "ArtistLink": null,
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 \u7fbd\u7e54\u30a4\u30aa]",
-    "ArtistTwitter": "[https://twitter.com/haori_crescendo \u7fbd\u7e54\u30a4\u30aa]",
-    "CNName": "\u535a\u4f0a\u897f",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 羽織イオ]",
+    "ArtistTwitter": "[https://twitter.com/haori_crescendo 羽織イオ]",
+    "CNName": "博伊西",
     "Class": "Brooklyn",
     "ConstructTime": "01:15:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3231",
-    "JPName": "\u30dc\u30a4\u30b7",
+    "JPName": "ボイシ",
     "Luck": "70",
     "Name": "Boise",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Y\u016b Sasahara|Yuu Sasahara]]"
+    "VA": "[[:wikipedia:Yū Sasahara|Yuu Sasahara]]"
 }

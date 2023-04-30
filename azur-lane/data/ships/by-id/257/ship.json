@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u6728shiyo",
-    "ArtistLink": "[https://weibo.com/u/2481339344 \u6728shiyo]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=40222 \u6728shiyo]",
-    "ArtistTwitter": "[https://twitter.com/kishiyo1943 \u6728shiyo]",
-    "CNName": "\u9038\u4ed9",
+    "Artist": "木shiyo",
+    "ArtistLink": "[https://weibo.com/u/2481339344 木shiyo]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=40222 木shiyo]",
+    "ArtistTwitter": "[https://twitter.com/kishiyo1943 木shiyo]",
+    "CNName": "逸仙",
     "Class": "Yat Sen",
     "ConstructTime": "00:40:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "2124",
     "HealthKai125": "2168",
     "HealthMax": "1712",
-    "JPName": "\u9038\u4ed9",
+    "JPName": "逸仙",
     "Luck": "64",
     "Name": "Yat Sen",
     "Nationality": "Dragon Empery",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Y%C5%AB_Asakawa|Yuu Asakawa]]"
+    "VA": "[[wikipedia:Yū Asakawa|Yuu Asakawa]]"
 }

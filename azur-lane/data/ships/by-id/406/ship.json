@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u6216\u4e00",
-    "ArtistLink": "[http://bcy.net/u/1495574 \u6216\u4e00]",
-    "ArtistPixiv": "[http://www.pixiv.net/member.php?id=1904395 \u6216\u4e00]",
+    "Artist": "或一",
+    "ArtistLink": "[http://bcy.net/u/1495574 或一]",
+    "ArtistPixiv": "[http://www.pixiv.net/member.php?id=1904395 或一]",
     "ArtistTwitter": null,
-    "CNName": "\u827e\u5c14\u6e29",
+    "CNName": "艾尔温",
     "Class": "Farragut",
     "ConstructTime": "Drop Only",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "1516",
-    "JPName": "\u30a8\u30fc\u30eb\u30a6\u30a3\u30f3",
+    "JPName": "エールウィン",
     "Luck": "83",
     "Name": "Aylwin",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "264",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Ayaka_%C5%8Chashi|Ayaka Ouhashi]]"
+    "VA": "[[wikipedia:Ayaka Ōhashi|Ayaka Ouhashi]]"
 }

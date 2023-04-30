@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u54c8\u8def\u5361",
-    "ArtistLink": "[https://weibo.com/u/1952889047 \u753b\u591a\u70b9-\u54c8\u8def\u5361]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=12785336 \u54c8\u8def\u5361]",
+    "Artist": "哈路卡",
+    "ArtistLink": "[https://weibo.com/u/1952889047 画多点-哈路卡]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=12785336 哈路卡]",
     "ArtistTwitter": null,
-    "CNName": "\u85ee",
+    "CNName": "藮",
     "Class": "Kagerou",
     "ConstructTime": "00:27:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "1880",
-    "JPName": "\u89aa\u6f6e",
+    "JPName": "親潮",
     "Luck": "34",
     "Name": "Oyashio",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "487",
     "Type": "Destroyer",
-    "VA": "[[:wikipedia:Y%C5%ABko_%C5%8Cno|Yuuko Oono]]"
+    "VA": "[[wikipedia:Yūko Ōno|Yuuko Oono]]"
 }

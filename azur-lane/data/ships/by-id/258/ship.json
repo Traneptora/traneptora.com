@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u9ed1\u732b",
-    "ArtistLink": "[https://weibo.com/u/2959771544 \u9ed1\u732b\u6843\u56ed-\u4e13\u6ce8\u6f5c\u6c3420\u5e74]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2331978 \u8fd1\u6240\u9ed2\u30e2\u30e2]",
+    "Artist": "黑猫",
+    "ArtistLink": "[https://weibo.com/u/2959771544 黑猫桃园-专注潜水20年]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2331978 近所黒モモ]",
     "ArtistTwitter": null,
-    "CNName": "\u5b81\u6d77",
+    "CNName": "宁海",
     "Class": "Ning Hai",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "2192",
     "HealthKai125": "2238",
     "HealthMax": "1801",
-    "JPName": "\u5be7\u6d77",
+    "JPName": "寧海",
     "Luck": "51",
     "Name": "Ning Hai",
     "Nationality": "Dragon Empery",
@@ -112,5 +112,5 @@
     "TorpKai125": "237",
     "TorpMax": "221",
     "Type": "Light Cruiser",
-    "VA": "CN: [https://weibo.com/p/1005051782536741 _Hanser_] &lt;br/&gt;JP: [[:wikipedia:Marie_Miyake|Marie Miyake]]"
+    "VA": "CN: [https://weibo.com/p/1005051782536741 _Hanser_] <br/>JP: [[:wikipedia:Marie_Miyake|Marie Miyake]]"
 }

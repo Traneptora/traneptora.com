@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "Saru(\u7334\u5988)",
-    "ArtistLink": "[http://weibo.com/p/1005051054234800 \u6d45\u4e95\u7334\u7334_Saru]",
+    "Artist": "Saru(猴妈)",
+    "ArtistLink": "[http://weibo.com/p/1005051054234800 浅井猴猴_Saru]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1422579 Saru]",
     "ArtistTwitter": "[https://twitter.com/saru_1127 Saru]",
-    "CNName": "\u9ed1\u6697\u754c",
+    "CNName": "黑暗界",
     "Class": "Erebus",
     "ConstructTime": "01:00:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3287",
-    "JPName": "\u30a8\u30ec\u30d0\u30b9",
+    "JPName": "エレバス",
     "Luck": "91",
     "Name": "Erebus",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Monitor",
-    "VA": "[[:wikipedia:ja:\u5800\u7c60\u6c99\u8036|Saya Horigome]]"
+    "VA": "[[:wikipedia:ja:堀籠沙耶|Saya Horigome]]"
 }

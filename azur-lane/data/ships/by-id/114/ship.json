@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u6df1\u84dd\u7684\u6770\u514b",
-    "ArtistLink": "[https://weibo.com/u/1889884713 \u706fand\u6df1\u84dd\u6770\u514b]",
+    "Artist": "深蓝的杰克",
+    "ArtistLink": "[https://weibo.com/u/1889884713 灯and深蓝杰克]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1562284 JackNavy]",
     "ArtistTwitter": "[https://twitter.com/JackNavy6 JackNavy]",
-    "CNName": "\u7231\u4e01\u5821",
+    "CNName": "爱丁堡",
     "Class": "Town",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "4078",
-    "JPName": "\u30a8\u30c7\u30a3\u30f3\u30d0\u30e9",
+    "JPName": "エディンバラ",
     "Luck": "37",
     "Name": "Edinburgh",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "266",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Y%C5%ABko_Got%C5%8D|Yuuko Gotou]]"
+    "VA": "[[wikipedia:Yūko Gotō|Yuuko Gotou]]"
 }

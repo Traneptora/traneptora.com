@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u30df\u30e2\u30b6",
+    "Artist": "ミモザ",
     "ArtistLink": null,
     "ArtistPixiv": "[https://www.pixiv.net/en/users/29811192 mimo]",
-    "ArtistTwitter": "[https://twitter.com/96mimo414 \u30df\u30e2\u30b6]",
-    "CNName": "\u96c5\u52aa\u65af",
+    "ArtistTwitter": "[https://twitter.com/96mimo414 ミモザ]",
+    "CNName": "雅努斯",
     "Class": "J",
     "ConstructTime": "00:27:00",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "1863",
-    "JPName": "\u30b8\u30a7\u30fc\u30ca\u30b9",
+    "JPName": "ジェーナス",
     "Luck": "53",
     "Name": "Janus",
     "Nationality": "Royal Navy",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "443",
     "Type": "Destroyer",
-    "VA": "Kino Hina"
+    "VA": "[[:wikipedia:Hina_Kino|Hina Kino]]"
 }

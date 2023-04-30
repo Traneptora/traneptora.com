@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u68a6\u54b2\u67ab",
-    "ArtistLink": "[http://weibo.com/u/3558369570 \u68a6\u54b2\u67ab]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 \u304b\u3048\u3067]",
-    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ \u304b\u3048\u3067]",
-    "CNName": "\u54c8\u66fc",
+    "Artist": "梦咲枫",
+    "ArtistLink": "[http://weibo.com/u/3558369570 梦咲枫]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 かえで]",
+    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ かえで]",
+    "CNName": "哈曼",
     "Class": "Sims",
     "ConstructTime": "00:26:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "2025",
     "HealthKai125": "2069",
     "HealthMax": "1638",
-    "JPName": "\u30cf\u30e0\u30de\u30f3",
+    "JPName": "ハムマン",
     "Luck": "47",
     "Name": "Hammann",
     "Nationality": "Eagle Union",
@@ -112,5 +112,5 @@
     "TorpKai125": "290",
     "TorpMax": "271",
     "Type": "Destroyer",
-    "VA": "[https://anidb.net/perl-bin/animedb.pl?show=creator&amp;creatorid=12596 Asuka Itou]"
+    "VA": "[https://anidb.net/perl-bin/animedb.pl?show=creator&creatorid=12596 Asuka Itou]"
 }

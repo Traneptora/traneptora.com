@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u68a6\u54b2\u67ab",
-    "ArtistLink": "[http://weibo.com/u/3558369570 \u68a6\u54b2\u67ab]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 \u304b\u3048\u3067]",
-    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ \u304b\u3048\u3067]",
-    "CNName": "\u83b1\u6bd4\u9521",
+    "Artist": "梦咲枫",
+    "ArtistLink": "[http://weibo.com/u/3558369570 梦咲枫]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1023957 かえで]",
+    "ArtistTwitter": "[https://twitter.com/yumesaki_kaede/ かえで]",
+    "CNName": "莱比锡",
     "Class": "Leipzig",
     "ConstructTime": "01:20:00",
     "ConsumptionInitial": "2",
@@ -77,7 +77,7 @@
     "HealthKai120": "3735",
     "HealthKai125": "3816",
     "HealthMax": "3171",
-    "JPName": "\u30e9\u30a4\u30d7\u30c4\u30a3\u30d2",
+    "JPName": "ライプツィヒ",
     "Luck": "67",
     "Name": "Leipzig",
     "Nationality": "Iron Blood",
@@ -112,5 +112,5 @@
     "TorpKai125": "329",
     "TorpMax": "256",
     "Type": "Light Cruiser",
-    "VA": "[[:wikipedia:Ry%C5%8Dko_Ono|Ryouko Ono]]"
+    "VA": "[[wikipedia:Ryōko Ono|Ryouko Ono]]"
 }

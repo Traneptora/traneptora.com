@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Heavy",
-    "Artist": "\u516b\u624d\u63d0\u7763",
-    "ArtistLink": "[https://weibo.com/vihao \u516b\u624d\u63d0\u7763]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1393609 \u30cf\u30aa]",
-    "ArtistTwitter": "[https://twitter.com/hao660a \u30cf\u30aa]",
-    "CNName": "\u9e3e",
+    "Artist": "八才提督",
+    "ArtistLink": "[https://weibo.com/vihao 八才提督]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=1393609 ハオ]",
+    "ArtistTwitter": "[https://twitter.com/hao660a ハオ]",
+    "CNName": "鸾",
     "Class": "Tosa",
     "ConstructTime": "04:30:00",
     "ConsumptionInitial": "5",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "7512",
-    "JPName": "\u52a0\u8cc0",
+    "JPName": "加賀",
     "Luck": "42",
     "Name": "Kaga (Battleship)",
     "Nationality": "Sakura Empire",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "205",
     "Type": "Battleship",
-    "VA": "CN: [[:wikipedia:Yuka Iguchi|Yuka Iguchi]] &lt;br/&gt;JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
+    "VA": "CN: [[:wikipedia:Yuka Iguchi|Yuka Iguchi]] <br/>JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
 }

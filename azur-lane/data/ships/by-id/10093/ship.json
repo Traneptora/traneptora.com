@@ -33,7 +33,7 @@
     "ArtistLink": null,
     "ArtistPixiv": null,
     "ArtistTwitter": null,
-    "CNName": "\u5e15\u7279\u8389\u590f\u00b7\u963f\u8d1d\u5c14\u6d77\u59c6",
+    "CNName": "帕特莉夏·阿贝尔海姆",
     "Class": null,
     "ConstructTime": "06:15:00",
     "ConsumptionInitial": "5",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "7545",
-    "JPName": "\u30d1\u30c8\u30ea\u30c4\u30a3\u30a2\u30fb\u30a2\u30fc\u30d9\u30eb\u30cf\u30a4\u30e0",
+    "JPName": "パトリツィア・アーベルハイム",
     "Luck": "52",
     "Name": "Patricia Abelheim",
     "Nationality": "Atelier Ryza",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Battleship",
-    "VA": "[[:wikipedia:Naomi_\u014czora|Naomi Ohzora]]"
+    "VA": "[[:wikipedia:Naomi_Ōzora|Naomi Ohzora]]"
 }

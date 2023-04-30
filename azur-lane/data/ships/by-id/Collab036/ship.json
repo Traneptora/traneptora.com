@@ -29,11 +29,11 @@
     "AirMax": "319",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": "\u7518\u9732\u6a39",
+    "Artist": "甘露樹",
     "ArtistLink": null,
     "ArtistPixiv": null,
-    "ArtistTwitter": "[https://twitter.com/amaduyu \u7518\u9732\u6a39]",
-    "CNName": "\u8299\u7c73\u9732\u9732",
+    "ArtistTwitter": "[https://twitter.com/amaduyu 甘露樹]",
+    "CNName": "芙米露露",
     "Class": null,
     "ConstructTime": "Can't Be Constructed",
     "ConsumptionInitial": "4",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "4643",
-    "JPName": "\u30d5\u30df\u30eb\u30a3\u30eb",
+    "JPName": "フミルィル",
     "Luck": "43",
     "Name": "Fumiruiru",
     "Nationality": "Utawarerumono",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Aircraft Carrier",
-    "VA": "[[:wikipedia:Y%C5%ABko_Gibu|Yuuko Gibu]]"
+    "VA": "[[wikipedia:Yūko Gibu|Yuuko Gibu]]"
 }

@@ -30,10 +30,10 @@
     "Ammo": "0",
     "Armor": "Medium",
     "Artist": "Mkiiiiii33",
-    "ArtistLink": "[https://weibo.com/kawa33 MKiiiiii_\u4e09\u4e09]",
+    "ArtistLink": "[https://weibo.com/kawa33 MKiiiiii_三三]",
     "ArtistPixiv": "[https://www.pixiv.net/member.php?id=661601 MKiiiiii]",
     "ArtistTwitter": "[https://twitter.com/mkiiiiiimk MKiiiiii]",
-    "CNName": "\u7687\u5bb6\u65b9\u821f\u00b7META",
+    "CNName": "皇家方舟·META",
     "Class": null,
     "ConstructTime": "META",
     "ConsumptionInitial": "8",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "5941",
-    "JPName": "\u30a2\u30fc\u30af\u30fb\u30ed\u30a4\u30e4\u30eb(META)",
+    "JPName": "アーク・ロイヤル(META)",
     "Luck": "87",
     "Name": "Ark Royal META",
     "Nationality": "META",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Aircraft Carrier",
-    "VA": "[https://anidb.net/perl-bin/animedb.pl?show=creator&amp;creatorid=12596 Asuka Itou]"
+    "VA": "[https://anidb.net/perl-bin/animedb.pl?show=creator&creatorid=12596 Asuka Itou]"
 }

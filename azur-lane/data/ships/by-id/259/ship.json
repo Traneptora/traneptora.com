@@ -29,11 +29,11 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": "\u9ed1\u732b",
-    "ArtistLink": "[https://weibo.com/u/2959771544 \u9ed1\u732b\u6843\u56ed-\u4e13\u6ce8\u6f5c\u6c3420\u5e74]",
-    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2331978 \u8fd1\u6240\u9ed2\u30e2\u30e2]",
+    "Artist": "黑猫",
+    "ArtistLink": "[https://weibo.com/u/2959771544 黑猫桃园-专注潜水20年]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2331978 近所黒モモ]",
     "ArtistTwitter": null,
-    "CNName": "\u5e73\u6d77",
+    "CNName": "平海",
     "Class": "Ning Hai",
     "ConstructTime": "Cannot Be Constructed",
     "ConsumptionInitial": "3",
@@ -77,7 +77,7 @@
     "HealthKai120": "2160",
     "HealthKai125": "2205",
     "HealthMax": "1771",
-    "JPName": "\u5e73\u6d77",
+    "JPName": "平海",
     "Luck": "47",
     "Name": "Ping Hai",
     "Nationality": "Dragon Empery",
@@ -112,5 +112,5 @@
     "TorpKai125": "237",
     "TorpMax": "221",
     "Type": "Light Cruiser",
-    "VA": "CN: [https://weibo.com/p/1005051782536741 _Hanser_] &lt;br/&gt;JP: [[:wikipedia:Misaki_Kuno|Misaki Kuno]]"
+    "VA": "CN: [https://weibo.com/p/1005051782536741 _Hanser_] <br/>JP: [[:wikipedia:Misaki_Kuno|Misaki Kuno]]"
 }
