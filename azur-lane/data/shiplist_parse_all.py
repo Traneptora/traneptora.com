@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 
+import html
 import json
 import os
+import re
 from shiplist_parse_battleship import parse_battleship_json
 from shiplist_parse_carrier import parse_carrier_json
 
 cargolist = []
 
 def dump_json(obj, jsonfile):
-    json.dump(obj, jsonfile, sort_keys=True, indent=4)
+    json.dump(obj, jsonfile, sort_keys=True, indent=4, ensure_ascii=False)
     jsonfile.write('\n')
 
 for shiplist_json in ["shiplist_0.json", "shiplist_1.json"]:
     with open(shiplist_json, "r", encoding="UTF-8") as jsonfile:
         jsonlist = json.load(jsonfile)
+    json_string = json.dumps(jsonlist)
+    json_string = re.sub(r'&quot;', '\\"', json_string)
+    json_string = html.unescape(json_string)
+    jsonlist = json.loads(json_string)
     with open(shiplist_json, "w", encoding="UTF-8") as jsonfile:
         dump_json(jsonlist, jsonfile)
     cargolist += jsonlist["cargoquery"]
