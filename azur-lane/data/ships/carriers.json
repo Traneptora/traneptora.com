@@ -717,6 +717,13 @@
             "ShipID": "583",
             "carrierJSON": "ships/by-id/583/carrier.json",
             "dataJSON": "ships/by-id/583/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/591",
+            "Name": "Jade",
+            "ShipID": "591",
+            "carrierJSON": "ships/by-id/591/carrier.json",
+            "dataJSON": "ships/by-id/591/ship.json"
         }
     ]
 }

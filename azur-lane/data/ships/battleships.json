@@ -710,6 +710,13 @@
             "ShipID": "587",
             "battleshipJSON": "ships/by-id/587/battleship.json",
             "dataJSON": "ships/by-id/587/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/593",
+            "Name": "Bismarck Zwei",
+            "ShipID": "593",
+            "battleshipJSON": "ships/by-id/593/battleship.json",
+            "dataJSON": "ships/by-id/593/ship.json"
         }
     ]
 }

@@ -593,6 +593,12 @@
             "dataJSON": "ships/by-id/30020/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30022",
+            "Name": "Vestal META",
+            "ShipID": "30022",
+            "dataJSON": "ships/by-id/30022/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
@@ -2316,6 +2322,12 @@
             "dataJSON": "ships/by-id/300/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30021",
+            "Name": "U-556 META",
+            "ShipID": "30021",
+            "dataJSON": "ships/by-id/30021/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/301",
             "Name": "Nicholas",
             "ShipID": "301",
@@ -3960,6 +3972,32 @@
             "Name": "Voroshilov",
             "ShipID": "588",
             "dataJSON": "ships/by-id/588/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/590",
+            "Name": "Otto von Alvensleben",
+            "ShipID": "590",
+            "dataJSON": "ships/by-id/590/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/591",
+            "Name": "Jade",
+            "ShipID": "591",
+            "carrierJSON": "ships/by-id/591/carrier.json",
+            "dataJSON": "ships/by-id/591/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/592",
+            "Name": "Regensburg",
+            "ShipID": "592",
+            "dataJSON": "ships/by-id/592/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/593",
+            "Name": "Bismarck Zwei",
+            "ShipID": "593",
+            "battleshipJSON": "ships/by-id/593/battleship.json",
+            "dataJSON": "ships/by-id/593/ship.json"
         }
     ]
 }
