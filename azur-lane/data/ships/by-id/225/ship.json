@@ -35,7 +35,7 @@
     "ArtistTwitter": "[https://twitter.com/hao660a ハオ]",
     "CNName": "鸾",
     "Class": "Kaga",
-    "ConstructTime": "Drop Only",
+    "ConstructTime": "Drop only",
     "ConsumptionInitial": "4",
     "ConsumptionMax": "13",
     "Eq1BaseKai": null,
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Aircraft Carrier",
-    "VA": "CN: [[:wikipedia:Yuka Iguchi|Yuka Iguchi]] <br/>JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
+    "VA": "CN: [[:wikipedia:Yuka Iguchi|Yuka Iguchi]]<br>JP: [[:wikipedia:Ai_Kayano|Ai Kayano]]"
 }

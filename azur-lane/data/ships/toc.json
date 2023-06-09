@@ -606,6 +606,12 @@
             "dataJSON": "ships/by-id/30022/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30023",
+            "Name": "Algérie META",
+            "ShipID": "30023",
+            "dataJSON": "ships/by-id/30023/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
