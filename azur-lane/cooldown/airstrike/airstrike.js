@@ -81,7 +81,7 @@ function update_textfields(idnumber){
 }
 
 var fighters = [
-    { 'value': '11.11', 'text': 'FW-190 A-6/R6 Prototype', 'name': 'fuck-wolf'},
+    { 'value': '11.10', 'text': 'FW-190 A-6/R6 Prototype', 'name': 'fuck-wolf'},
     { 'value': '11.00', 'text': 'XF5U Flying Flapjack', 'name': 'xf5u-flapjack' },
     { 'value': '10.90', 'text': 'F6F Hellcat', 'name': 'hellcat' },
     { 'value': '10.81', 'text': 'F7F Tigercat', 'name': 'tigercat' },
