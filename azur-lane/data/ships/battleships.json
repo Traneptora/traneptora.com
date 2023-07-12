@@ -717,6 +717,13 @@
             "ShipID": "593",
             "battleshipJSON": "ships/by-id/593/battleship.json",
             "dataJSON": "ships/by-id/593/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/595",
+            "Name": "Andrea Doria",
+            "ShipID": "595",
+            "battleshipJSON": "ships/by-id/595/battleship.json",
+            "dataJSON": "ships/by-id/595/ship.json"
         }
     ]
 }

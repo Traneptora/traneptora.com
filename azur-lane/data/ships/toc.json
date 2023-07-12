@@ -4011,6 +4011,25 @@
             "ShipID": "593",
             "battleshipJSON": "ships/by-id/593/battleship.json",
             "dataJSON": "ships/by-id/593/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/595",
+            "Name": "Andrea Doria",
+            "ShipID": "595",
+            "battleshipJSON": "ships/by-id/595/battleship.json",
+            "dataJSON": "ships/by-id/595/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/596",
+            "Name": "Attilio Regolo",
+            "ShipID": "596",
+            "dataJSON": "ships/by-id/596/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/597",
+            "Name": "Gorizia",
+            "ShipID": "597",
+            "dataJSON": "ships/by-id/597/ship.json"
         }
     ]
 }
