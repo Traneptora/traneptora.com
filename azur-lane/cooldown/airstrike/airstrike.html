@@ -114,13 +114,12 @@
             <input type="text" id="reloadbufftextfield" value="0.0">
           </section>
           <section class="reload-column">
-            <div class="button-and-label">
-              <input type="checkbox" id="beaconbox" onclick="javascript:calculate_reload();">
-              <label for="beaconbox">
-                <div class="heading">Homing Beacon Equipped?</div>
-                <div class="small-help">(only one, it doesn’t stack with itself)</div>
-              </label>
-            </div>
+            <div class="heading">Timing Adjustment Aux:</div>
+            <select id="beaconbox" onchange="javascript:calculate_reload();">
+              <option value="0">None</option>
+              <option value="1">Homing Beacon</option>
+              <option value="-1">Maintenance Manjuu</option>
+            </select>
           </section>
         </section>
         <section class="reload-row">

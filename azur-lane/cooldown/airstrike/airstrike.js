@@ -13,8 +13,10 @@ function get_airstrike_cooldown(plane1time, plane1count, plane2time, plane2count
     let init_cooldown = cooldown;
     let cd_reduction = +cooldown_reduction;
     let init_cd_reduction = +init_cooldown_reduction;
-    if (beacon){
+    if (beacon === 1) {
         cd_reduction = +cd_reduction + 4.00;
+    } else if (beacon === -1) {
+        cd_reduction = +cd_reduction - 4.00;
     }
     init_cd_reduction += cd_reduction;
     init_cooldown = init_cooldown * (1.0 - init_cd_reduction / 100.0);
@@ -46,8 +48,8 @@ function calculate_reload(){
     let plane3count = document.getElementById("plane3counttextfield").value;
     let cooldown_reduction = document.getElementById("cdreduction1textfield").value;
     let initial_cooldown_reduction = document.getElementById("cdreduction2textfield").value;
-    let beacon = document.getElementById("beaconbox").checked;
-    let cooldown = get_airstrike_cooldown(+plane1time, +plane1count, +plane2time, +plane2count, +plane3time, +plane3count, +reloadstat, +reloadbonus, +reloadbuff, beacon, +cooldown_reduction, +initial_cooldown_reduction);
+    let beacon = document.getElementById("beaconbox").value;
+    let cooldown = get_airstrike_cooldown(+plane1time, +plane1count, +plane2time, +plane2count, +plane3time, +plane3count, +reloadstat, +reloadbonus, +reloadbuff, +beacon, +cooldown_reduction, +initial_cooldown_reduction);
     if (cooldown[0] > 0.0){
         document.getElementById("finalcooldown").textContent = cooldown.shift() + "s";
         document.getElementById("initcooldown").textContent = cooldown[0] + "s";
@@ -223,8 +225,8 @@ function handle_loadout_data_impl(data){
 var param_map = {
     'beacon': {
         'id': 'beaconbox',
-        'type': 'bool',
-        'default': false,
+        'type': 'number',
+        'default': 0,
     },
     'oath': {
         'id': 'box-affinity',
