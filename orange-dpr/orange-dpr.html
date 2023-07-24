@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="preload" as="style" href="/css/main.css">
+    <link rel="preload" as="style" href="/fonts/work-sans.css">
+    <link rel="preload" as="script" href="orange-dpr.js">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/avatar/256.png?v=3">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/images/avatar/favicon.ico?v=3">
+
+    <title>DPR Calculator: Dungeons and Dragons 5e</title>
+    <meta name="description" content="DPR Calculator: Dungeons and Dragons 5e">
+    <meta name="author" content="Leo Izen">
+    <meta property="og:image" content="https://traneptora.com/images/avatar/256.png?v=3">
+    <meta property="og:title" content="D&D DPR Calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://traneptora.com/orange-dpr/">
+    <meta property="og:description" content="Calculator for the damage per round in Dungeons and Dragons, 5th edition.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/fonts/work-sans.css">
+    <script defer src="orange-slots.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            Damage-per-round Calculator
+        </header>
+        <main>
+            <section>
+                This is a calculator to determine your damage per round in Dungeons and Dragons, 5th edition.
+            </section>
+            <section>
+                <div class="section-header" style="margin-bottom: 1em;">Descriptions</div>
+                <div class="centered-flow-content">
+                    <div class="centered-flow-rowgroup">
+                        <div class="centered-flow-row">
+                            <div class="heading">Attack Count</div>
+                        </div>
+                        <div class="centered-flow-row small-help"><span>
+                            The number of this type of attack you are making.
+                            Labeled <span class="sun-yellow">Attack</span>.
+                        </span></div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="centered-flow-row">
+                            <div class="heading">Target on the <i>d20</i> to hit:</div>
+                        </div>
+                        <div class="centered-flow-row small-help"><span>
+                            For most player levels against most enemy ACs, 8 is a good estimate.
+                        </span></div>
+                        <div class="centered-flow-row small-help"><span>
+                            If your stats are atypical, adjust as necessary.
+                            Labeled <span class="sun-yellow">Target</span>.
+                        </span></div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="centered-flow-row">
+                            <div class="heading">Additional Bonuses to Hit</div>
+                        </div>
+                        <div class="centered-flow-row small-help"><span>
+                            This includes both positive bonuses, such as <i>Fighting Style: Archery</i>,
+                            and negative bonuses, such as from <i>Sharpshooter.</i>
+                        </span></div>
+                        <div class="centered-flow-row small-help"><span>
+                            Labeled <span class="sun-yellow">Extra to-hit</span>.
+                        </span></div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="centered-flow-row">
+                            <div class="heading">Critical Threshold</div>
+                        </div>
+                        <div class="centered-flow-row small-help"><span>
+                            Threshold to score a critical hit. This will be 20 unless you have a feature that says otherwise.
+                            Labeled <span class="sun-yellow">Crit</span>.
+                        </span></div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Flat Damage</div>
+                            </div>
+                            <div class="centered-flow-row small-help"><span>
+                                Damage that is simply added, such as from <i>Fighting Style: Dueling</i> or <i>Rage</i> damage bonus.
+                                Labeled <span class="sun-yellow">Flat</span>.
+                            </span></div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Damage Dice</div>
+                            </div>
+                            <div class="centered-flow-row small-help"><span>
+                                Various damage dice for your attack's damage roll.
+                                Labeled <span class="sun-yellow">d12s, d10s, d8s, d6s, and d4s</span>.
+                            </span></div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Critical Damage Dice</div>
+                            </div>
+                            <div class="centered-flow-row small-help"><span>
+                                Additional damage dice rolled when you score a critical hit, beyond the usual. These will be zero unless you have a feature that says otherwise, such as <i>Piercer</i> or <i>Brutal Critical</i>.
+                                Labeled <span class="sun-yellow">Crit d12s through Crit d4s</span>.
+                            </span></div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Reroll Threshold</div>
+                            </div>
+                            <div class="centered-flow-row small-help"><span>
+                                This is the die reroll threshold. You are rerolling dice that get this number or lower, once, such as with <i>Fighting Style: Great Weapon Fighting</i>.
+                                Labeled <span class="sun-yellow">RRT d12 through RRT d4</span>.
+                            </span></div>
+                        </div>
+                        <div class="centered-flow-rowgroup">
+                            <div class="centered-flow-row">
+                                <div class="heading">Maximum Rerolls</div>
+                            </div>
+                            <div class="centered-flow-row small-help"><span>
+                                The maximum number of dice that you may reroll. Zero means no rerolls occur. Several features such as <i>Piercer</i> allow you to only reroll the weapon's dice, so you can control that here.
+                                Labeled <span class="sun-yellow">MRR d12s through MRR d4s</span>.
+                            </span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-header" style="margin-bottom: 1em;">The Math</div>
+                <div style="display: flex; flex-direction: column; justify-content: flex-start;">
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Attacks</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="2" min="0" max="20" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Target</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="8" min="1" max="20" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Extra to-hit</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="-20" max="20" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Crit</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="20" min="1" max="20" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Flat</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="-50" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">&nbsp;</div>
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">d12s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">d10s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">d8s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">d6s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">d4s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Crit d12s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Crit d10s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Crit d8s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Crit d6s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">Crit d4s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">RRT d12</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="2" min="1" max="12" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">RRT d10</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="2" min="1" max="10" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">RRT d8</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="2" min="1" max="8" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">RRT d6</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="2" min="1" max="6" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">RRT d4</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="2" min="1" max="4" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">MRR d12s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">MRR d10s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">MRR d8s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">MRR d6s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding-left: 5px; padding-right: 5px;">
+                            <div class="centered-flow-content">
+                                <div class="centered-flow-rowgroup">
+                                    <div class="centered-flow-row">
+                                        <div class="sun-yellow">MRR d4s</div>
+                                    </div>
+                                    <div class="centered-flow-row">
+                                        <input type="number" value="0" min="0" max="50" style="width: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="section-header" style="margin-bottom: 1em;">
+                    Other Information
+                </div>
+                <div class="centered-flow-content">
+                    <div class="centered-flow-rowgroup">
+                        <div class="heading rust">Is this average or maximum damage-per-round?</div>
+                        <div>The only reported DPR is <em>average</em> DPR, not maximum.</div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="heading rust">Source?</div>
+                        <div>You can find the source here: <a href="https://github.com/Traneptora/traneptora.com/blob/main/orange-dpr/">https://github.com/Traneptora/traneptora.com/blob/main/orange-dpr/</a></div>
+                    </div>
+                    <div class="centered-flow-rowgroup">
+                        <div class="heading rust">Questions? Bugs?</div>
+                        <div>
+                            Contact me on Discord, or open a bug report on github. My Discord username is <b>Traneptora</b>.
+                            You can open a bug report here: <a href="https://github.com/Traneptora/traneptora.com/issues">https://github.com/Traneptora/traneptora.com/issues</a>.
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
