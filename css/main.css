@@ -191,6 +191,16 @@ footer a {
     display: none;
 }
 
+@media only screen and (min-width: 1024px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: revert;
+    }
+}
+
 ::selection {
     background-color: #404060;
 }
