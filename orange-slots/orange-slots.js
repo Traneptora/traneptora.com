@@ -44,59 +44,58 @@ const slotTable = [
 ];
 
 async function getSlots() {
-    let casterLevel = 0.0;
-    let clazzLevel = null;
+    let casterLevel = 0;
+    let classLevel = null;
+
     for (const clazz of classes.full) {
         let n = +document.getElementById('levels-' + clazz).value;
-        if (n > 0.0) {
-            clazzLevel = casterLevel > 0.0 ? null : n;
+        if (n > 0) {
+            classLevel = casterLevel > 0 ? null : 6 * n;
         }
-        casterLevel += n;
+        casterLevel += 6 * n;
     }
+
     for (const clazz of classes.half) {
         let n = +document.getElementById('levels-' + clazz).value;
-        if (n < 2.0) {
-            n = 0.0;
+        if (n < 2)
+            n = 0;
+        if (n > 0) {
+            classLevel = casterLevel > 0 ? null : 3 * n;
         }
-        if (n > 0.0) {
-            clazzLevel = casterLevel > 0.0 ? null : n / 2.01;
-        }
-        casterLevel += n / 1.99;
+        casterLevel += 3 * n;
     }
-    casterLevel = Math.floor(casterLevel);
+    casterLevel -= casterLevel % 6;
+
     for (const clazz of classes.halfup) {
         let n = +document.getElementById('levels-' + clazz).value;
-        if (n > 0.0) {
-            clazzLevel = casterLevel > 0.0 ? null : n / 2.01;
+        if (n > 0) {
+            classLevel = casterLevel > 0 ? null : 3 * n;
         }
-        casterLevel += n / 2.01;
+        casterLevel += 3 * n;
     }
-    casterLevel = Math.ceil(casterLevel);
-    /*
-     * We're using 1.0 / 2.99 here because 1/3 is not
-     * perfectly representable as a floating point. This way Math.floor()
-     * works the way we want it to by increasing it slightly.
-     */
+    casterLevel += 5 - (casterLevel + 5) % 6;
+
     for (const clazz of classes.third) {
         let n = +document.getElementById('levels-' + clazz).value;
-        if (n < 3.0) {
-            n = 0.0;
+        if (n < 3) {
+            n = 0;
         }
-        if (n > 0.0) {
-            clazzLevel = casterLevel > 0.0 ? null : n / 3.01;
+        if (n > 0) {
+            classLevel = casterLevel > 0 ? null : 2 * n;
         }
-        casterLevel += n / 2.99;
+        casterLevel += 2 * n;
     }
-    casterLevel = Math.floor(casterLevel);
+    casterLevel -= casterLevel % 6;
 
-
-    if (clazzLevel !== null) {
-        casterLevel = Math.ceil(clazzLevel);
+    if (classLevel !== null) {
+        casterLevel = classLevel + 5 - (classLevel + 5) % 6;
     }
 
     if (casterLevel < 0) {
         casterLevel = 0;
-    } else if (casterLevel > 20) {
+    }
+    casterLevel = Math.trunc(casterLevel / 6);
+    if (casterLevel > 20) {
         casterLevel = 20;
     }
 
