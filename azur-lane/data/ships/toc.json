@@ -256,6 +256,20 @@
             "dataJSON": "ships/by-id/10087/ship.json"
         },
         {
+            "DataDir": "ships/by-id/10088",
+            "Name": "The 2nd",
+            "ShipID": "10088",
+            "battleshipJSON": "ships/by-id/10088/battleship.json",
+            "carrierJSON": "ships/by-id/10088/carrier.json",
+            "dataJSON": "ships/by-id/10088/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10089",
+            "Name": "Princess Hime",
+            "ShipID": "10089",
+            "dataJSON": "ships/by-id/10089/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10091",
             "Name": "Reisalin Stout",
             "ShipID": "10091",
@@ -600,6 +614,12 @@
             "dataJSON": "ships/by-id/30020/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30021",
+            "Name": "U-556 META",
+            "ShipID": "30021",
+            "dataJSON": "ships/by-id/30021/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/30022",
             "Name": "Vestal META",
             "ShipID": "30022",
@@ -610,6 +630,12 @@
             "Name": "Algérie META",
             "ShipID": "30023",
             "dataJSON": "ships/by-id/30023/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/30024",
+            "Name": "Hatakaze META",
+            "ShipID": "30024",
+            "dataJSON": "ships/by-id/30024/ship.json"
         },
         {
             "DataDir": "ships/by-id/20011",
@@ -649,6 +675,39 @@
             "Name": "Brest",
             "ShipID": "20027",
             "dataJSON": "ships/by-id/20027/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20028",
+            "Name": "Kearsarge",
+            "ShipID": "20028",
+            "battleshipJSON": "ships/by-id/20028/battleship.json",
+            "carrierJSON": "ships/by-id/20028/carrier.json",
+            "dataJSON": "ships/by-id/20028/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20029",
+            "Name": "Shimanto",
+            "ShipID": "20029",
+            "dataJSON": "ships/by-id/20029/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20030",
+            "Name": "Felix Schultz",
+            "ShipID": "20030",
+            "dataJSON": "ships/by-id/20030/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20031",
+            "Name": "Hindenburg",
+            "ShipID": "20031",
+            "dataJSON": "ships/by-id/20031/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20032",
+            "Name": "Flandre",
+            "ShipID": "20032",
+            "battleshipJSON": "ships/by-id/20032/battleship.json",
+            "dataJSON": "ships/by-id/20032/ship.json"
         },
         {
             "DataDir": "ships/by-id/Plan001",
@@ -2333,12 +2392,6 @@
             "Name": "Jenkins",
             "ShipID": "300",
             "dataJSON": "ships/by-id/300/ship.json"
-        },
-        {
-            "DataDir": "ships/by-id/30021",
-            "Name": "U-556 META",
-            "ShipID": "30021",
-            "dataJSON": "ships/by-id/30021/ship.json"
         },
         {
             "DataDir": "ships/by-id/301",
@@ -4030,6 +4083,51 @@
             "Name": "Gorizia",
             "ShipID": "597",
             "dataJSON": "ships/by-id/597/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/598",
+            "Name": "Marseillaise",
+            "ShipID": "598",
+            "dataJSON": "ships/by-id/598/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/599",
+            "Name": "Painlevé",
+            "ShipID": "599",
+            "carrierJSON": "ships/by-id/599/carrier.json",
+            "dataJSON": "ships/by-id/599/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/600",
+            "Name": "Suffren",
+            "ShipID": "600",
+            "dataJSON": "ships/by-id/600/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/601",
+            "Name": "Kersaint",
+            "ShipID": "601",
+            "dataJSON": "ships/by-id/601/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/602",
+            "Name": "Lyon",
+            "ShipID": "602",
+            "battleshipJSON": "ships/by-id/602/battleship.json",
+            "dataJSON": "ships/by-id/602/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/603",
+            "Name": "Guichen",
+            "ShipID": "603",
+            "dataJSON": "ships/by-id/603/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/605",
+            "Name": "Clemenceau",
+            "ShipID": "605",
+            "battleshipJSON": "ships/by-id/605/battleship.json",
+            "dataJSON": "ships/by-id/605/ship.json"
         }
     ]
 }

@@ -43,7 +43,7 @@
     "Eq1EffInit": "120%",
     "Eq1EffInitKai": null,
     "Eq1EffInitMax": "130%",
-    "Eq1Type": "DD Guns",
+    "Eq1Type": "DD Main Guns",
     "Eq2BaseKai": null,
     "Eq2BaseMax": "1",
     "Eq2EffInit": "120%",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "317",
     "Type": "Destroyer",
-    "VA": null
+    "VA": "[https://mausu.net/talent/tsuda-riho.html Riho Tsuda]"
 }

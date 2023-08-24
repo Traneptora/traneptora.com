@@ -29,12 +29,12 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": null,
-    "ArtistLink": null,
-    "ArtistPixiv": null,
-    "ArtistTwitter": null,
+    "Artist": "Mkiiiiii33",
+    "ArtistLink": "[https://weibo.com/kawa33 MKiiiiii_三三]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=661601 MKiiiiii]",
+    "ArtistTwitter": "[https://twitter.com/mkiiiiiimk MKiiiiii]",
     "CNName": "拉·加利索尼埃·META",
-    "Class": "La Galissonnière",
+    "Class": null,
     "ConstructTime": "META",
     "ConsumptionInitial": "6",
     "ConsumptionMax": "11",
@@ -43,7 +43,7 @@
     "Eq1EffInit": "120%",
     "Eq1EffInitKai": null,
     "Eq1EffInitMax": "135%",
-    "Eq1Type": "CL Guns",
+    "Eq1Type": "CL Main Guns",
     "Eq2BaseKai": null,
     "Eq2BaseMax": "2",
     "Eq2EffInit": "140%",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "299",
     "Type": "Light Cruiser",
-    "VA": null
+    "VA": "[[:wikipedia:Yui_Makino|Yui Makino]]"
 }

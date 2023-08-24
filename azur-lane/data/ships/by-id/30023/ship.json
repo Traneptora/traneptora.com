@@ -34,7 +34,7 @@
     "ArtistPixiv": null,
     "ArtistTwitter": null,
     "CNName": "阿尔及利亚·META",
-    "Class": "Algérie",
+    "Class": null,
     "ConstructTime": "META",
     "ConsumptionInitial": "7",
     "ConsumptionMax": "13",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "217",
     "Type": "Heavy Cruiser",
-    "VA": null
+    "VA": "[[wikipedia:Shizuka Itō|Shizuka Itou]]"
 }

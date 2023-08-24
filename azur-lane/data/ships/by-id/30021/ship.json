@@ -55,7 +55,7 @@
     "Eq3EffInit": "85%",
     "Eq3EffInitKai": null,
     "Eq3EffInitMax": "85%",
-    "Eq3Type": "DD Guns",
+    "Eq3Type": "DD Main Guns",
     "Evade120": "31",
     "Evade125": "32",
     "EvadeInitial": "6",
@@ -92,7 +92,7 @@
     "ReloadMax": "109",
     "Remodel": null,
     "RemodelId": null,
-    "ShipGroup": "Standard",
+    "ShipGroup": "META",
     "ShipID": "30021",
     "Speed": "18",
     "SpeedKai": "0",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "527",
     "Type": "Submarine",
-    "VA": null
+    "VA": "[[:wikipedia:Ayaka_Fukuhara|Ayaka Fukuhara]]"
 }

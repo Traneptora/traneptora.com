@@ -71,6 +71,14 @@
             "dataJSON": "ships/by-id/10086/ship.json"
         },
         {
+            "DataDir": "ships/by-id/10088",
+            "Name": "The 2nd",
+            "ShipID": "10088",
+            "battleshipJSON": "ships/by-id/10088/battleship.json",
+            "carrierJSON": "ships/by-id/10088/carrier.json",
+            "dataJSON": "ships/by-id/10088/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10092",
             "Name": "Klaudia Valentz",
             "ShipID": "10092",
@@ -188,6 +196,14 @@
             "ShipID": "20026",
             "carrierJSON": "ships/by-id/20026/carrier.json",
             "dataJSON": "ships/by-id/20026/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20028",
+            "Name": "Kearsarge",
+            "ShipID": "20028",
+            "battleshipJSON": "ships/by-id/20028/battleship.json",
+            "carrierJSON": "ships/by-id/20028/carrier.json",
+            "dataJSON": "ships/by-id/20028/ship.json"
         },
         {
             "DataDir": "ships/by-id/Plan019",
@@ -731,6 +747,13 @@
             "ShipID": "591",
             "carrierJSON": "ships/by-id/591/carrier.json",
             "dataJSON": "ships/by-id/591/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/599",
+            "Name": "Painlevé",
+            "ShipID": "599",
+            "carrierJSON": "ships/by-id/599/carrier.json",
+            "dataJSON": "ships/by-id/599/ship.json"
         }
     ]
 }
