@@ -638,6 +638,12 @@
             "dataJSON": "ships/by-id/30024/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30025",
+            "Name": "Jintsuu META",
+            "ShipID": "30025",
+            "dataJSON": "ships/by-id/30025/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
