@@ -756,11 +756,18 @@
             "dataJSON": "ships/by-id/602/ship.json"
         },
         {
-            "DataDir": "ships/by-id/605",
+            "DataDir": "ships/by-id/604",
             "Name": "Clemenceau",
-            "ShipID": "605",
-            "battleshipJSON": "ships/by-id/605/battleship.json",
-            "dataJSON": "ships/by-id/605/ship.json"
+            "ShipID": "604",
+            "battleshipJSON": "ships/by-id/604/battleship.json",
+            "dataJSON": "ships/by-id/604/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/606",
+            "Name": "Owari",
+            "ShipID": "606",
+            "battleshipJSON": "ships/by-id/606/battleship.json",
+            "dataJSON": "ships/by-id/606/ship.json"
         }
     ]
 }
