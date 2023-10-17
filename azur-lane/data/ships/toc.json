@@ -644,6 +644,13 @@
             "dataJSON": "ships/by-id/30025/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30026",
+            "Name": "Princeton META",
+            "ShipID": "30026",
+            "carrierJSON": "ships/by-id/30026/carrier.json",
+            "dataJSON": "ships/by-id/30026/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
