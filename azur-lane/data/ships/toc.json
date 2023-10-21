@@ -4172,6 +4172,12 @@
             "Name": "Asanagi",
             "ShipID": "608",
             "dataJSON": "ships/by-id/608/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/609",
+            "Name": "Houston II",
+            "ShipID": "609",
+            "dataJSON": "ships/by-id/609/ship.json"
         }
     ]
 }
