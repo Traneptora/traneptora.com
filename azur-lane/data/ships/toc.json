@@ -4178,6 +4178,36 @@
             "Name": "Houston II",
             "ShipID": "609",
             "dataJSON": "ships/by-id/609/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/610",
+            "Name": "Golden Hind",
+            "ShipID": "610",
+            "dataJSON": "ships/by-id/610/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/611",
+            "Name": "Mary Celeste",
+            "ShipID": "611",
+            "dataJSON": "ships/by-id/611/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/612",
+            "Name": "Adventure Galley",
+            "ShipID": "612",
+            "dataJSON": "ships/by-id/612/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/613",
+            "Name": "São Martinho",
+            "ShipID": "613",
+            "dataJSON": "ships/by-id/613/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/614",
+            "Name": "Whydah",
+            "ShipID": "614",
+            "dataJSON": "ships/by-id/614/ship.json"
         }
     ]
 }
