@@ -18995,7 +18995,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Sailing Frigate",
-                "VA": null
+                "VA": "[https://www.hinatayuka-amadoro.com/ Yuka Hinata]"
             }
         },
         {
@@ -19035,8 +19035,8 @@
                 "ArtistPixiv": null,
                 "ArtistTwitter": null,
                 "CNName": "玛丽·西莱斯特号",
-                "Class": "Mary Celeste",
-                "ConstructTime": null,
+                "Class": null,
+                "ConstructTime": "00:31:01",
                 "ConsumptionInitial": "3",
                 "ConsumptionMax": "7",
                 "Eq1BaseKai": null,
@@ -19113,7 +19113,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Sailing Frigate",
-                "VA": null
+                "VA": "[https://www.amuse.co.jp/artist/A8258/ Hinata Sato]"
             }
         },
         {
@@ -19231,7 +19231,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Sailing Frigate",
-                "VA": null
+                "VA": "[https://clare-voice.co.jp/talent/hayama_ikumi Ikumi Hayama]"
             }
         },
         {
@@ -19349,7 +19349,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Sailing Frigate",
-                "VA": null
+                "VA": "[https://clare-voice.co.jp/subtalent/kuramochi_wakana Wakana Kuramochi]"
             }
         },
         {
@@ -19467,7 +19467,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Sailing Frigate",
-                "VA": null
+                "VA": "[https://www.aoni.co.jp/search/kawaguchi-rina.html Rina Kawaguchi]"
             }
         }
     ]

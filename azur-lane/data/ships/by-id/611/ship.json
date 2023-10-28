@@ -34,8 +34,8 @@
     "ArtistPixiv": null,
     "ArtistTwitter": null,
     "CNName": "玛丽·西莱斯特号",
-    "Class": "Mary Celeste",
-    "ConstructTime": null,
+    "Class": null,
+    "ConstructTime": "00:31:01",
     "ConsumptionInitial": "3",
     "ConsumptionMax": "7",
     "Eq1BaseKai": null,
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Sailing Frigate",
-    "VA": null
+    "VA": "[https://www.amuse.co.jp/artist/A8258/ Hinata Sato]"
 }
