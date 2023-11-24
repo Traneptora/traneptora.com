@@ -309,6 +309,51 @@
             "dataJSON": "ships/by-id/10096/ship.json"
         },
         {
+            "DataDir": "ships/by-id/10101",
+            "Name": "Asuka",
+            "ShipID": "10101",
+            "dataJSON": "ships/by-id/10101/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10102",
+            "Name": "Ikaruga",
+            "ShipID": "10102",
+            "dataJSON": "ships/by-id/10102/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10103",
+            "Name": "Homura",
+            "ShipID": "10103",
+            "dataJSON": "ships/by-id/10103/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10104",
+            "Name": "Yumi",
+            "ShipID": "10104",
+            "carrierJSON": "ships/by-id/10104/carrier.json",
+            "dataJSON": "ships/by-id/10104/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10105",
+            "Name": "Fubuki (Senran Kagura)",
+            "ShipID": "10105",
+            "battleshipJSON": "ships/by-id/10105/battleship.json",
+            "dataJSON": "ships/by-id/10105/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10106",
+            "Name": "Murasaki",
+            "ShipID": "10106",
+            "carrierJSON": "ships/by-id/10106/carrier.json",
+            "dataJSON": "ships/by-id/10106/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10107",
+            "Name": "Yuuyaki",
+            "ShipID": "10107",
+            "dataJSON": "ships/by-id/10107/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/Collab001",
             "Name": "Neptune (Neptunia)",
             "ShipID": "Collab001",
@@ -649,6 +694,13 @@
             "ShipID": "30026",
             "carrierJSON": "ships/by-id/30026/carrier.json",
             "dataJSON": "ships/by-id/30026/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/30027",
+            "Name": "Erebus META",
+            "ShipID": "30027",
+            "battleshipJSON": "ships/by-id/30027/battleship.json",
+            "dataJSON": "ships/by-id/30027/ship.json"
         },
         {
             "DataDir": "ships/by-id/20011",

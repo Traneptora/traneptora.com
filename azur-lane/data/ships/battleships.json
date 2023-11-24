@@ -79,6 +79,13 @@
             "dataJSON": "ships/by-id/10093/ship.json"
         },
         {
+            "DataDir": "ships/by-id/10105",
+            "Name": "Fubuki (Senran Kagura)",
+            "ShipID": "10105",
+            "battleshipJSON": "ships/by-id/10105/battleship.json",
+            "dataJSON": "ships/by-id/10105/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/Collab044",
             "Name": "Super Gamer Kizuna AI",
             "ShipID": "Collab044",
@@ -140,6 +147,13 @@
             "ShipID": "30019",
             "battleshipJSON": "ships/by-id/30019/battleship.json",
             "dataJSON": "ships/by-id/30019/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/30027",
+            "Name": "Erebus META",
+            "ShipID": "30027",
+            "battleshipJSON": "ships/by-id/30027/battleship.json",
+            "dataJSON": "ships/by-id/30027/ship.json"
         },
         {
             "DataDir": "ships/by-id/20011",
