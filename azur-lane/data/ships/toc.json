@@ -703,6 +703,12 @@
             "dataJSON": "ships/by-id/30027/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30028",
+            "Name": "Kirov META",
+            "ShipID": "30028",
+            "dataJSON": "ships/by-id/30028/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
