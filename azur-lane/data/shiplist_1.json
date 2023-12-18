@@ -15690,7 +15690,7 @@
                 "TorpKai120": "0",
                 "TorpKai125": "0",
                 "TorpMax": "0",
-                "Type": "Sailing Frigate",
+                "Type": "Sailing Frigate (Submarine)",
                 "VA": "[https://en.wikipedia.org/wiki/Aimi_Tanaka Aimi Tanaka]"
             }
         },
@@ -18209,7 +18209,7 @@
                 "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 羽織イオ]",
                 "ArtistTwitter": "[https://twitter.com/haori_crescendo 羽織イオ]",
                 "CNName": "安德烈亚·多利亚",
-                "Class": "Andrea Doria-class",
+                "Class": "Andrea Doria",
                 "ConstructTime": "04:15:00",
                 "ConsumptionInitial": "5",
                 "ConsumptionMax": "14",
@@ -20056,7 +20056,7 @@
                 "TorpKai120": "0",
                 "TorpKai125": "0",
                 "TorpMax": "0",
-                "Type": "Sailing Frigate",
+                "Type": "Sailing Frigate (Vanguard)",
                 "VA": "[https://www.hinatayuka-amadoro.com/ Yuka Hinata]"
             }
         },
@@ -20174,7 +20174,7 @@
                 "TorpKai120": "0",
                 "TorpKai125": "0",
                 "TorpMax": "0",
-                "Type": "Sailing Frigate",
+                "Type": "Sailing Frigate (Submarine)",
                 "VA": "[https://www.amuse.co.jp/artist/A8258/ Hinata Sato]"
             }
         },
@@ -20292,7 +20292,7 @@
                 "TorpKai120": "0",
                 "TorpKai125": "0",
                 "TorpMax": "0",
-                "Type": "Sailing Frigate",
+                "Type": "Sailing Frigate (Vanguard)",
                 "VA": "[https://clare-voice.co.jp/talent/hayama_ikumi Ikumi Hayama]"
             }
         },
@@ -20410,7 +20410,7 @@
                 "TorpKai120": "0",
                 "TorpKai125": "0",
                 "TorpMax": "0",
-                "Type": "Sailing Frigate",
+                "Type": "Sailing Frigate (Main)",
                 "VA": "[https://clare-voice.co.jp/subtalent/kuramochi_wakana Wakana Kuramochi]"
             }
         },
@@ -20528,7 +20528,7 @@
                 "TorpKai120": "0",
                 "TorpKai125": "0",
                 "TorpMax": "0",
-                "Type": "Sailing Frigate",
+                "Type": "Sailing Frigate (Submarine)",
                 "VA": "[https://www.aoni.co.jp/search/kawaguchi-rina.html Rina Kawaguchi]"
             }
         }
