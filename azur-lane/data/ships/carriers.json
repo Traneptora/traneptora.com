@@ -775,6 +775,13 @@
             "ShipID": "599",
             "carrierJSON": "ships/by-id/599/carrier.json",
             "dataJSON": "ships/by-id/599/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/618",
+            "Name": "San Jacinto",
+            "ShipID": "618",
+            "carrierJSON": "ships/by-id/618/carrier.json",
+            "dataJSON": "ships/by-id/618/ship.json"
         }
     ]
 }

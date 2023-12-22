@@ -4266,6 +4266,44 @@
             "Name": "Whydah",
             "ShipID": "614",
             "dataJSON": "ships/by-id/614/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/615",
+            "Name": "Laffey II",
+            "ShipID": "615",
+            "dataJSON": "ships/by-id/615/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/616",
+            "Name": "Guam",
+            "ShipID": "616",
+            "dataJSON": "ships/by-id/616/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/617",
+            "Name": "Constellation",
+            "ShipID": "617",
+            "battleshipJSON": "ships/by-id/617/battleship.json",
+            "dataJSON": "ships/by-id/617/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/618",
+            "Name": "San Jacinto",
+            "ShipID": "618",
+            "carrierJSON": "ships/by-id/618/carrier.json",
+            "dataJSON": "ships/by-id/618/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/619",
+            "Name": "Louisville",
+            "ShipID": "619",
+            "dataJSON": "ships/by-id/619/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/620",
+            "Name": "Flasher",
+            "ShipID": "620",
+            "dataJSON": "ships/by-id/620/ship.json"
         }
     ]
 }

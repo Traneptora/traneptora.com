@@ -782,6 +782,13 @@
             "ShipID": "606",
             "battleshipJSON": "ships/by-id/606/battleship.json",
             "dataJSON": "ships/by-id/606/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/617",
+            "Name": "Constellation",
+            "ShipID": "617",
+            "battleshipJSON": "ships/by-id/617/battleship.json",
+            "dataJSON": "ships/by-id/617/ship.json"
         }
     ]
 }
