@@ -108,6 +108,18 @@
             "dataJSON": "ships/by-id/594/ship.json"
         },
         {
+            "DataDir": "ships/by-id/10021",
+            "Name": "22",
+            "ShipID": "10021",
+            "dataJSON": "ships/by-id/10021/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/10022",
+            "Name": "33",
+            "ShipID": "10022",
+            "dataJSON": "ships/by-id/10022/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10061",
             "Name": "Marie Rose",
             "ShipID": "10061",
@@ -402,18 +414,6 @@
             "ShipID": "Collab008",
             "carrierJSON": "ships/by-id/Collab008/carrier.json",
             "dataJSON": "ships/by-id/Collab008/ship.json"
-        },
-        {
-            "DataDir": "ships/by-id/Collab021",
-            "Name": "22",
-            "ShipID": "Collab021",
-            "dataJSON": "ships/by-id/Collab021/ship.json"
-        },
-        {
-            "DataDir": "ships/by-id/Collab022",
-            "Name": "33",
-            "ShipID": "Collab022",
-            "dataJSON": "ships/by-id/Collab022/ship.json"
         },
         {
             "DataDir": "ships/by-id/Collab031",
