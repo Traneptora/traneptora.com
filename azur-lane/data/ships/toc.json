@@ -716,6 +716,12 @@
             "dataJSON": "ships/by-id/20011/ship.json"
         },
         {
+            "DataDir": "ships/by-id/20020",
+            "Name": "Ägir",
+            "ShipID": "20020",
+            "dataJSON": "ships/by-id/20020/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20023",
             "Name": "Plymouth",
             "ShipID": "20023",
@@ -894,12 +900,6 @@
             "ShipID": "Plan019",
             "carrierJSON": "ships/by-id/Plan019/carrier.json",
             "dataJSON": "ships/by-id/Plan019/ship.json"
-        },
-        {
-            "DataDir": "ships/by-id/Plan020",
-            "Name": "Ägir",
-            "ShipID": "Plan020",
-            "dataJSON": "ships/by-id/Plan020/ship.json"
         },
         {
             "DataDir": "ships/by-id/Plan021",
