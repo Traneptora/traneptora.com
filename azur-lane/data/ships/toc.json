@@ -709,11 +709,24 @@
             "dataJSON": "ships/by-id/30028/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30029",
+            "Name": "970104",
+            "ShipID": "30029",
+            "dataJSON": "ships/by-id/30029/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
             "battleshipJSON": "ships/by-id/20011/battleship.json",
             "dataJSON": "ships/by-id/20011/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20019",
+            "Name": "Hakuryuu",
+            "ShipID": "20019",
+            "carrierJSON": "ships/by-id/20019/carrier.json",
+            "dataJSON": "ships/by-id/20019/ship.json"
         },
         {
             "DataDir": "ships/by-id/20020",
@@ -893,13 +906,6 @@
             "Name": "Anchorage",
             "ShipID": "Plan018",
             "dataJSON": "ships/by-id/Plan018/ship.json"
-        },
-        {
-            "DataDir": "ships/by-id/Plan019",
-            "Name": "Hakuryuu",
-            "ShipID": "Plan019",
-            "carrierJSON": "ships/by-id/Plan019/carrier.json",
-            "dataJSON": "ships/by-id/Plan019/ship.json"
         },
         {
             "DataDir": "ships/by-id/Plan021",
@@ -4304,6 +4310,37 @@
             "Name": "Flasher",
             "ShipID": "620",
             "dataJSON": "ships/by-id/620/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/621",
+            "Name": "50401",
+            "ShipID": "621",
+            "battleshipJSON": "ships/by-id/621/battleship.json",
+            "dataJSON": "ships/by-id/621/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/622",
+            "Name": "50209",
+            "ShipID": "622",
+            "dataJSON": "ships/by-id/622/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/623",
+            "Name": "50105",
+            "ShipID": "623",
+            "dataJSON": "ships/by-id/623/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/624",
+            "Name": "50106",
+            "ShipID": "624",
+            "dataJSON": "ships/by-id/624/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/625",
+            "Name": "50107",
+            "ShipID": "625",
+            "dataJSON": "ships/by-id/625/ship.json"
         }
     ]
 }
