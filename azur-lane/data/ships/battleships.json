@@ -792,7 +792,7 @@
         },
         {
             "DataDir": "ships/by-id/621",
-            "Name": "50401",
+            "Name": "Huan Ch'ang",
             "ShipID": "621",
             "battleshipJSON": "ships/by-id/621/battleship.json",
             "dataJSON": "ships/by-id/621/ship.json"

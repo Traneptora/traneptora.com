@@ -710,7 +710,7 @@
         },
         {
             "DataDir": "ships/by-id/30029",
-            "Name": "970104",
+            "Name": "Kimberly META",
             "ShipID": "30029",
             "dataJSON": "ships/by-id/30029/ship.json"
         },
@@ -4313,32 +4313,32 @@
         },
         {
             "DataDir": "ships/by-id/621",
-            "Name": "50401",
+            "Name": "Huan Ch'ang",
             "ShipID": "621",
             "battleshipJSON": "ships/by-id/621/battleship.json",
             "dataJSON": "ships/by-id/621/ship.json"
         },
         {
             "DataDir": "ships/by-id/622",
-            "Name": "50209",
+            "Name": "Chi An",
             "ShipID": "622",
             "dataJSON": "ships/by-id/622/ship.json"
         },
         {
             "DataDir": "ships/by-id/623",
-            "Name": "50105",
+            "Name": "Lung Wu",
             "ShipID": "623",
             "dataJSON": "ships/by-id/623/ship.json"
         },
         {
             "DataDir": "ships/by-id/624",
-            "Name": "50106",
+            "Name": "Hu Pen",
             "ShipID": "624",
             "dataJSON": "ships/by-id/624/ship.json"
         },
         {
             "DataDir": "ships/by-id/625",
-            "Name": "50107",
+            "Name": "Fei Yuen",
             "ShipID": "625",
             "dataJSON": "ships/by-id/625/ship.json"
         }
