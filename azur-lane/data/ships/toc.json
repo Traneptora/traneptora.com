@@ -715,6 +715,12 @@
             "dataJSON": "ships/by-id/30029/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30030",
+            "Name": "Pamiat' Merkuria META",
+            "ShipID": "30030",
+            "dataJSON": "ships/by-id/30030/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
@@ -3233,6 +3239,13 @@
             "dataJSON": "ships/by-id/437/ship.json"
         },
         {
+            "DataDir": "ships/by-id/438",
+            "Name": "Sovetsky Soyuz",
+            "ShipID": "438",
+            "battleshipJSON": "ships/by-id/438/battleship.json",
+            "dataJSON": "ships/by-id/438/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/440",
             "Name": "Sovetskaya Belorussiya",
             "ShipID": "440",
@@ -4341,6 +4354,25 @@
             "Name": "Fei Yuen",
             "ShipID": "625",
             "dataJSON": "ships/by-id/625/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/626",
+            "Name": "Ognevoy",
+            "ShipID": "626",
+            "dataJSON": "ships/by-id/626/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/627",
+            "Name": "Svirepy",
+            "ShipID": "627",
+            "dataJSON": "ships/by-id/627/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/628",
+            "Name": "Poltava",
+            "ShipID": "628",
+            "battleshipJSON": "ships/by-id/628/battleship.json",
+            "dataJSON": "ships/by-id/628/ship.json"
         }
     ]
 }

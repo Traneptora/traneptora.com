@@ -637,6 +637,13 @@
             "dataJSON": "ships/by-id/437/ship.json"
         },
         {
+            "DataDir": "ships/by-id/438",
+            "Name": "Sovetsky Soyuz",
+            "ShipID": "438",
+            "battleshipJSON": "ships/by-id/438/battleship.json",
+            "dataJSON": "ships/by-id/438/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/440",
             "Name": "Sovetskaya Belorussiya",
             "ShipID": "440",
@@ -796,6 +803,13 @@
             "ShipID": "621",
             "battleshipJSON": "ships/by-id/621/battleship.json",
             "dataJSON": "ships/by-id/621/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/628",
+            "Name": "Poltava",
+            "ShipID": "628",
+            "battleshipJSON": "ships/by-id/628/battleship.json",
+            "dataJSON": "ships/by-id/628/ship.json"
         }
     ]
 }
