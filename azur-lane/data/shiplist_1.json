@@ -908,7 +908,7 @@
                 "HealthMax": "2779",
                 "JPName": "パーミャチ・メルクーリヤ",
                 "Luck": "88",
-                "Name": "Pamiat Merkuria",
+                "Name": "Pamiat' Merkuria",
                 "Nationality": "Northern Parliament",
                 "Oxygen": "0",
                 "Rarity": "Elite",
@@ -1413,7 +1413,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Battleship",
-                "VA": null
+                "VA": "[[:wikipedia:Haruka_Tomatsu|Haruka Tomatsu]]"
             }
         },
         {
@@ -22216,12 +22216,12 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
+                "Artist": "春口",
                 "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistPixiv": "[https://www.pixiv.net/en/users/20473754 春口]",
+                "ArtistTwitter": "[https://twitter.com/_Haruguchi_ 春口]",
                 "CNName": "火力",
-                "Class": "Kiev",
+                "Class": "Ognevoy",
                 "ConstructTime": "00:41:00",
                 "ConsumptionInitial": "3",
                 "ConsumptionMax": "10",
@@ -22299,7 +22299,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "231",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[https://www.imdb.com/name/nm9670058/ Narumi Kaho]"
             }
         },
         {
@@ -22417,7 +22417,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "223",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[http://www.az-creative.com/agent/more.php?a=1000079 Marika]"
             }
         },
         {
@@ -22535,7 +22535,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Battleship",
-                "VA": null
+                "VA": "[[:wikipedia:Sawako_Hata|Sawako Hata]]"
             }
         }
     ]

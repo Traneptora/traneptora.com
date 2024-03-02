@@ -13017,7 +13017,7 @@
                 "ArtistPixiv": null,
                 "ArtistTwitter": null,
                 "CNName": "水星纪念·META",
-                "Class": "Pamiat' Merkuria META",
+                "Class": null,
                 "ConstructTime": "01:17:00",
                 "ConsumptionInitial": "7",
                 "ConsumptionMax": "12",
@@ -13095,7 +13095,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "183",
                 "Type": "Light Cruiser",
-                "VA": null
+                "VA": "[https://www.imdb.com/name/nm2933394/ Maya Yoshioka]"
             }
         },
         {
