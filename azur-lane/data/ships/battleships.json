@@ -156,6 +156,13 @@
             "dataJSON": "ships/by-id/30027/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30031",
+            "Name": "Rodney META",
+            "ShipID": "30031",
+            "battleshipJSON": "ships/by-id/30031/battleship.json",
+            "dataJSON": "ships/by-id/30031/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
