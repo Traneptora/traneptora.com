@@ -2666,6 +2666,12 @@
             "dataJSON": "ships/by-id/337/ship.json"
         },
         {
+            "DataDir": "ships/by-id/338",
+            "Name": "I-19",
+            "ShipID": "338",
+            "dataJSON": "ships/by-id/338/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/339",
             "Name": "I-26",
             "ShipID": "339",
