@@ -728,6 +728,12 @@
             "dataJSON": "ships/by-id/30031/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30032",
+            "Name": "Vampire META",
+            "ShipID": "30032",
+            "dataJSON": "ships/by-id/30032/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
@@ -4380,6 +4386,30 @@
             "ShipID": "628",
             "battleshipJSON": "ships/by-id/628/battleship.json",
             "dataJSON": "ships/by-id/628/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/630",
+            "Name": "Nubian",
+            "ShipID": "630",
+            "dataJSON": "ships/by-id/630/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/631",
+            "Name": "Liverpool",
+            "ShipID": "631",
+            "dataJSON": "ships/by-id/631/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/632",
+            "Name": "Devonshire",
+            "ShipID": "632",
+            "dataJSON": "ships/by-id/632/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/640",
+            "Name": "Friedrich Carl",
+            "ShipID": "640",
+            "dataJSON": "ships/by-id/640/ship.json"
         }
     ]
 }
