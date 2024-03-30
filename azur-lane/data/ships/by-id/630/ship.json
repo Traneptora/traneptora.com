@@ -29,13 +29,13 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": null,
-    "ArtistLink": null,
-    "ArtistPixiv": null,
+    "Artist": "黑猫",
+    "ArtistLink": "[https://weibo.com/u/2959771544 黑猫桃园-专注潜水20年]",
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2331978 近所黒モモ]",
     "ArtistTwitter": null,
     "CNName": "努比亚人",
     "Class": "Tribal",
-    "ConstructTime": null,
+    "ConstructTime": "00:29:00",
     "ConsumptionInitial": "3",
     "ConsumptionMax": "10",
     "Eq1BaseKai": null,
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "398",
     "Type": "Destroyer",
-    "VA": null
+    "VA": "[https://www.imdb.com/name/nm11766918/ Emiri Iwai]"
 }

@@ -22806,13 +22806,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
-                "ArtistLink": null,
-                "ArtistPixiv": null,
+                "Artist": "黑猫",
+                "ArtistLink": "[https://weibo.com/u/2959771544 黑猫桃园-专注潜水20年]",
+                "ArtistPixiv": "[https://www.pixiv.net/member.php?id=2331978 近所黒モモ]",
                 "ArtistTwitter": null,
                 "CNName": "努比亚人",
                 "Class": "Tribal",
-                "ConstructTime": null,
+                "ConstructTime": "00:29:00",
                 "ConsumptionInitial": "3",
                 "ConsumptionMax": "10",
                 "Eq1BaseKai": null,
@@ -22889,7 +22889,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "398",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[https://www.imdb.com/name/nm11766918/ Emiri Iwai]"
             }
         },
         {
@@ -22924,13 +22924,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
+                "Artist": "Dsmile",
                 "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistPixiv": "[https://www.pixiv.net/en/users/795196 DSマイル]",
+                "ArtistTwitter": "[https://twitter.com/DSmile9 DSマイル]",
                 "CNName": "利物浦",
                 "Class": "Gloucester",
-                "ConstructTime": null,
+                "ConstructTime": "01:25:00",
                 "ConsumptionInitial": "3",
                 "ConsumptionMax": "10",
                 "Eq1BaseKai": null,
@@ -23007,7 +23007,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "266",
                 "Type": "Light Cruiser",
-                "VA": null
+                "VA": "[https://www.behindthevoiceactors.com/Mizuki-Mano/ Mizuki Mano]"
             }
         },
         {
@@ -23042,13 +23042,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
+                "Artist": "nys",
                 "ArtistLink": null,
                 "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistTwitter": "[https://twitter.com/0_0nys nys]",
                 "CNName": "德文郡",
                 "Class": "London",
-                "ConstructTime": null,
+                "ConstructTime": "Cannot be Constructed",
                 "ConsumptionInitial": "3",
                 "ConsumptionMax": "11",
                 "Eq1BaseKai": null,
@@ -23125,7 +23125,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "205",
                 "Type": "Heavy Cruiser",
-                "VA": null
+                "VA": "[[:wikipedia:Kaoru Sakura|Kaoru Sakura]]"
             }
         },
         {
@@ -23166,7 +23166,7 @@
                 "ArtistTwitter": null,
                 "CNName": "腓德雷卡·卡尔",
                 "Class": "P",
-                "ConstructTime": null,
+                "ConstructTime": "02:05:00",
                 "ConsumptionInitial": "4",
                 "ConsumptionMax": "12",
                 "Eq1BaseKai": null,

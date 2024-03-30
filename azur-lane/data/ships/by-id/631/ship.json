@@ -29,13 +29,13 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": null,
+    "Artist": "Dsmile",
     "ArtistLink": null,
-    "ArtistPixiv": null,
-    "ArtistTwitter": null,
+    "ArtistPixiv": "[https://www.pixiv.net/en/users/795196 DSマイル]",
+    "ArtistTwitter": "[https://twitter.com/DSmile9 DSマイル]",
     "CNName": "利物浦",
     "Class": "Gloucester",
-    "ConstructTime": null,
+    "ConstructTime": "01:25:00",
     "ConsumptionInitial": "3",
     "ConsumptionMax": "10",
     "Eq1BaseKai": null,
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "266",
     "Type": "Light Cruiser",
-    "VA": null
+    "VA": "[https://www.behindthevoiceactors.com/Mizuki-Mano/ Mizuki Mano]"
 }
