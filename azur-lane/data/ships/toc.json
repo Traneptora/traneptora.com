@@ -108,6 +108,13 @@
             "dataJSON": "ships/by-id/594/ship.json"
         },
         {
+            "DataDir": "ships/by-id/639",
+            "Name": "Shinano-chan",
+            "ShipID": "639",
+            "carrierJSON": "ships/by-id/639/carrier.json",
+            "dataJSON": "ships/by-id/639/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10021",
             "Name": "22",
             "ShipID": "10021",
@@ -4404,6 +4411,44 @@
             "Name": "Devonshire",
             "ShipID": "632",
             "dataJSON": "ships/by-id/632/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/633",
+            "Name": "Formidable µ",
+            "ShipID": "633",
+            "carrierJSON": "ships/by-id/633/carrier.json",
+            "dataJSON": "ships/by-id/633/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/634",
+            "Name": "Prinz Eugen µ",
+            "ShipID": "634",
+            "dataJSON": "ships/by-id/634/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/635",
+            "Name": "Noshiro µ",
+            "ShipID": "635",
+            "dataJSON": "ships/by-id/635/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/636",
+            "Name": "Kongou µ",
+            "ShipID": "636",
+            "battleshipJSON": "ships/by-id/636/battleship.json",
+            "dataJSON": "ships/by-id/636/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/637",
+            "Name": "Le Téméraire µ",
+            "ShipID": "637",
+            "dataJSON": "ships/by-id/637/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/638",
+            "Name": "Boise µ",
+            "ShipID": "638",
+            "dataJSON": "ships/by-id/638/ship.json"
         },
         {
             "DataDir": "ships/by-id/640",

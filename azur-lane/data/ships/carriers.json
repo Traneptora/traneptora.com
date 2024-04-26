@@ -43,6 +43,13 @@
             "dataJSON": "ships/by-id/594/ship.json"
         },
         {
+            "DataDir": "ships/by-id/639",
+            "Name": "Shinano-chan",
+            "ShipID": "639",
+            "carrierJSON": "ships/by-id/639/carrier.json",
+            "dataJSON": "ships/by-id/639/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/10066",
             "Name": "Nyotengu",
             "ShipID": "10066",
@@ -782,6 +789,13 @@
             "ShipID": "618",
             "carrierJSON": "ships/by-id/618/carrier.json",
             "dataJSON": "ships/by-id/618/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/633",
+            "Name": "Formidable µ",
+            "ShipID": "633",
+            "carrierJSON": "ships/by-id/633/carrier.json",
+            "dataJSON": "ships/by-id/633/ship.json"
         }
     ]
 }

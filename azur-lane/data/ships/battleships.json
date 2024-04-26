@@ -817,6 +817,13 @@
             "ShipID": "628",
             "battleshipJSON": "ships/by-id/628/battleship.json",
             "dataJSON": "ships/by-id/628/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/636",
+            "Name": "Kongou µ",
+            "ShipID": "636",
+            "battleshipJSON": "ships/by-id/636/battleship.json",
+            "dataJSON": "ships/by-id/636/ship.json"
         }
     ]
 }
