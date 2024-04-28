@@ -29,10 +29,10 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Heavy",
-    "Artist": null,
+    "Artist": "羽織イオ",
     "ArtistLink": null,
-    "ArtistPixiv": null,
-    "ArtistTwitter": null,
+    "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3211072 羽織イオ]",
+    "ArtistTwitter": "[https://twitter.com/haori_crescendo 羽織イオ]",
     "CNName": "罗德尼·META",
     "Class": null,
     "ConstructTime": "META",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "0",
     "Type": "Battleship",
-    "VA": null
+    "VA": "[[wikipedia:Yō Taichi|You Taichi]]"
 }
