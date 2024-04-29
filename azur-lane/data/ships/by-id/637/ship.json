@@ -29,7 +29,7 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Light",
-    "Artist": null,
+    "Artist": "Manjuu Art Group",
     "ArtistLink": null,
     "ArtistPixiv": null,
     "ArtistTwitter": null,
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "365",
     "Type": "Destroyer",
-    "VA": null
+    "VA": "[[:wikipedia:Mai_Goto_(voice_actress)|Mai Goto]]"
 }
