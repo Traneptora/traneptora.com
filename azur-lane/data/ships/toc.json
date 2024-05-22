@@ -741,6 +741,13 @@
             "dataJSON": "ships/by-id/30032/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30033",
+            "Name": "Béarn META",
+            "ShipID": "30033",
+            "carrierJSON": "ships/by-id/30033/carrier.json",
+            "dataJSON": "ships/by-id/30033/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
@@ -4455,6 +4462,37 @@
             "Name": "Friedrich Carl",
             "ShipID": "640",
             "dataJSON": "ships/by-id/640/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/641",
+            "Name": "Alsace",
+            "ShipID": "641",
+            "battleshipJSON": "ships/by-id/641/battleship.json",
+            "dataJSON": "ships/by-id/641/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/642",
+            "Name": "Mogador",
+            "ShipID": "642",
+            "dataJSON": "ships/by-id/642/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/643",
+            "Name": "Brennus",
+            "ShipID": "643",
+            "dataJSON": "ships/by-id/643/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/645",
+            "Name": "Fleuret",
+            "ShipID": "645",
+            "dataJSON": "ships/by-id/645/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/646",
+            "Name": "Épée",
+            "ShipID": "646",
+            "dataJSON": "ships/by-id/646/ship.json"
         }
     ]
 }

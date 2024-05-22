@@ -824,6 +824,13 @@
             "ShipID": "636",
             "battleshipJSON": "ships/by-id/636/battleship.json",
             "dataJSON": "ships/by-id/636/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/641",
+            "Name": "Alsace",
+            "ShipID": "641",
+            "battleshipJSON": "ships/by-id/641/battleship.json",
+            "dataJSON": "ships/by-id/641/ship.json"
         }
     ]
 }
