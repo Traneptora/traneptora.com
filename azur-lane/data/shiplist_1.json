@@ -24222,13 +24222,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Heavy",
-                "Artist": null,
-                "ArtistLink": null,
+                "Artist": "肥肥肥海",
+                "ArtistLink": "[https://weibo.com/u/3220983561 肥肥肥海]",
                 "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistTwitter": "[https://twitter.com/Ccc47143337 肥肥肥海]",
                 "CNName": "阿尔萨斯",
                 "Class": "Alsace",
-                "ConstructTime": null,
+                "ConstructTime": "06:12:20",
                 "ConsumptionInitial": "9",
                 "ConsumptionMax": "17",
                 "Eq1BaseKai": null,
@@ -24270,7 +24270,7 @@
                 "HealthKai120": "0",
                 "HealthKai125": "0",
                 "HealthMax": "8283",
-                "JPName": null,
+                "JPName": "アルザス",
                 "Luck": "34",
                 "Name": "Alsace",
                 "Nationality": "Iris Libre",
@@ -24305,7 +24305,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Battleship",
-                "VA": null
+                "VA": "[[wikipedia:Aki Toyosaki|Aki Toyosaki]]"
             }
         },
         {
@@ -24340,13 +24340,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
+                "Artist": "ミモザ",
                 "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistPixiv": "[https://www.pixiv.net/en/users/29811192 mimo]",
+                "ArtistTwitter": "[https://twitter.com/96mimo414 ミモザ]",
                 "CNName": "莫加多尔",
                 "Class": "Mogador",
-                "ConstructTime": null,
+                "ConstructTime": "Cannot Be Constructed",
                 "ConsumptionInitial": "7",
                 "ConsumptionMax": "12",
                 "Eq1BaseKai": null,
@@ -24388,7 +24388,7 @@
                 "HealthKai120": "0",
                 "HealthKai125": "0",
                 "HealthMax": "2044",
-                "JPName": null,
+                "JPName": "モガドール",
                 "Luck": "61",
                 "Name": "Mogador",
                 "Nationality": "Vichya Dominion",
@@ -24423,7 +24423,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "351",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[https://www.animenewsnetwork.com/encyclopedia/people.php?id=97566 Mari Hino]"
             }
         },
         {
@@ -24464,7 +24464,7 @@
                 "ArtistTwitter": null,
                 "CNName": "布伦努斯",
                 "Class": "Brennus",
-                "ConstructTime": null,
+                "ConstructTime": "01:50:00",
                 "ConsumptionInitial": "4",
                 "ConsumptionMax": "12",
                 "Eq1BaseKai": null,
@@ -24506,7 +24506,7 @@
                 "HealthKai120": "0",
                 "HealthKai125": "0",
                 "HealthMax": "4748",
-                "JPName": null,
+                "JPName": "ブレンヌス",
                 "Luck": "50",
                 "Name": "Brennus",
                 "Nationality": "Iris Libre",
@@ -24541,7 +24541,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "211",
                 "Type": "Heavy Cruiser",
-                "VA": null
+                "VA": "[[wikipedia:Sayaka Kikuchi|Sayaka Kikuchi]]"
             }
         },
         {
@@ -24576,13 +24576,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
+                "Artist": "NAMYO",
                 "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistPixiv": "[https://www.pixiv.net/en/users/6390291 NAMYO]",
+                "ArtistTwitter": "[https://twitter.com/NAMYOooo NAMYO]",
                 "CNName": "花剑",
-                "Class": "L'Intrépide",
-                "ConstructTime": null,
+                "Class": "Le Hardi",
+                "ConstructTime": "00:26:00",
                 "ConsumptionInitial": "2",
                 "ConsumptionMax": "9",
                 "Eq1BaseKai": null,
@@ -24624,7 +24624,7 @@
                 "HealthKai120": "0",
                 "HealthKai125": "0",
                 "HealthMax": "1518",
-                "JPName": null,
+                "JPName": "フルーレ",
                 "Luck": "47",
                 "Name": "Fleuret",
                 "Nationality": "Vichya Dominion",
@@ -24659,7 +24659,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "396",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[https://www.imdb.com/name/nm14605192/ Miria Takagishi]"
             }
         },
         {
@@ -24694,13 +24694,13 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Light",
-                "Artist": null,
+                "Artist": "NAMYO",
                 "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistPixiv": "[https://www.pixiv.net/en/users/6390291 NAMYO]",
+                "ArtistTwitter": "[https://twitter.com/NAMYOooo NAMYO]",
                 "CNName": "重剑",
-                "Class": "L'Intrépide",
-                "ConstructTime": null,
+                "Class": "Le Hardi",
+                "ConstructTime": "Cannot be Constructed",
                 "ConsumptionInitial": "2",
                 "ConsumptionMax": "9",
                 "Eq1BaseKai": null,
@@ -24742,7 +24742,7 @@
                 "HealthKai120": "0",
                 "HealthKai125": "0",
                 "HealthMax": "1575",
-                "JPName": null,
+                "JPName": "エペ",
                 "Luck": "45",
                 "Name": "Épée",
                 "Nationality": "Vichya Dominion",
@@ -24777,7 +24777,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "393",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[https://www.imdb.com/name/nm12605665/ Minami Kurisaka]"
             }
         }
     ]
