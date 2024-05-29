@@ -63,8 +63,8 @@ async function getSlots() {
             classLevel = casterLevel > 0 ? null : 3 * n;
         }
         casterLevel += 3 * n;
+        casterLevel -= casterLevel % 6;
     }
-    casterLevel -= casterLevel % 6;
 
     for (const clazz of classes.halfup) {
         let n = +document.getElementById('levels-' + clazz).value;
@@ -72,8 +72,8 @@ async function getSlots() {
             classLevel = casterLevel > 0 ? null : 3 * n;
         }
         casterLevel += 3 * n;
+        casterLevel += 5 - (casterLevel + 5) % 6;
     }
-    casterLevel += 5 - (casterLevel + 5) % 6;
 
     for (const clazz of classes.third) {
         let n = +document.getElementById('levels-' + clazz).value;
@@ -84,8 +84,8 @@ async function getSlots() {
             classLevel = casterLevel > 0 ? null : 2 * n;
         }
         casterLevel += 2 * n;
+        casterLevel -= casterLevel % 6;
     }
-    casterLevel -= casterLevel % 6;
 
     if (classLevel !== null) {
         casterLevel = classLevel + 5 - (classLevel + 5) % 6;
