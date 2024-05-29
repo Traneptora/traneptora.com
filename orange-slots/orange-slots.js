@@ -45,59 +45,61 @@ const slotTable = [
 
 async function getSlots() {
     let casterLevel = 0;
-    let classLevel = null;
+    let singleClassLevel = undefined;
 
     for (const clazz of classes.full) {
-        let n = +document.getElementById('levels-' + clazz).value;
-        if (n > 0) {
-            classLevel = casterLevel > 0 ? null : 6 * n;
-        }
+        const inp = +document.getElementById('levels-' + clazz).value;
+        const n = inp > 0 && inp < 21 ? inp : 0;
         casterLevel += 6 * n;
+        if (singleClassLevel === undefined) {
+            singleClassLevel = casterLevel;
+        } else if (singleClassLevel !== null) {
+            singleClassLevel = null;
+        }
     }
 
     for (const clazz of classes.half) {
-        let n = +document.getElementById('levels-' + clazz).value;
-        if (n < 2)
-            n = 0;
-        if (n > 0) {
-            classLevel = casterLevel > 0 ? null : 3 * n;
-        }
+        const inp = +document.getElementById('levels-' + clazz).value;
+        const n = inp > 1 && inp < 21 ? inp : 0;
         casterLevel += 3 * n;
+        if (singleClassLevel === undefined) {
+            singleClassLevel = casterLevel;
+        } else if (singleClassLevel !== null) {
+            singleClassLevel = null;
+        }
         casterLevel -= casterLevel % 6;
     }
 
     for (const clazz of classes.halfup) {
-        let n = +document.getElementById('levels-' + clazz).value;
-        if (n > 0) {
-            classLevel = casterLevel > 0 ? null : 3 * n;
-        }
+        const inp = +document.getElementById('levels-' + clazz).value;
+        const n = inp > 0 && inp < 21 ? inp : 0;
         casterLevel += 3 * n;
+        if (singleClassLevel === undefined) {
+            singleClassLevel = casterLevel;
+        } else if (singleClassLevel !== null) {
+            singleClassLevel = null;
+        }
         casterLevel += 5 - (casterLevel + 5) % 6;
     }
 
     for (const clazz of classes.third) {
-        let n = +document.getElementById('levels-' + clazz).value;
-        if (n < 3) {
-            n = 0;
-        }
-        if (n > 0) {
-            classLevel = casterLevel > 0 ? null : 2 * n;
-        }
+        const inp = +document.getElementById('levels-' + clazz).value;
+        const n = inp > 2 && inp < 21 ? inp : 0;
         casterLevel += 2 * n;
+        if (singleClassLevel === undefined) {
+            singleClassLevel = casterLevel;
+        } else if (singleClassLevel !== null) {
+            singleClassLevel = null;
+        }
         casterLevel -= casterLevel % 6;
     }
 
-    if (classLevel !== null) {
-        casterLevel = classLevel + 5 - (classLevel + 5) % 6;
+    if (singleClassLevel !== null && singleClassLevel !== undefined) {
+        casterLevel = singleClassLevel + 5 - (singleClassLevel + 5) % 6;
     }
 
-    if (casterLevel < 0) {
-        casterLevel = 0;
-    }
+    casterLevel = casterLevel < 0 ? 0 : casterLevel > 120 ? 120 : casterLevel;
     casterLevel = Math.trunc(casterLevel / 6);
-    if (casterLevel > 20) {
-        casterLevel = 20;
-    }
 
     for (let i = 0; i < 9; i++) {
         document.getElementById('slots-' + (1 + i)).textContent = slotTable[casterLevel][i];
