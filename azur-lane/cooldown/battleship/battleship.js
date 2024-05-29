@@ -130,15 +130,14 @@ async function ready() {
         const cache = document.getElementById('select-ship-cache');
         handle_toc(j, cache.value || 'Georgia');
     });
-    document.querySelectorAll('#bb-mg-1-dropdown option').forEach((elem) => {
-        const src = elem.dataset.imgname;
-        if (src){
-            elem.style.background = 'url("/azur-lane/img/equip/gun/bb/' + src + '") no-repeat -200% -200%';
-        }
-    }).then(() => {
-        calculate_reload();
+    return toc.then(() => {
+        document.querySelectorAll('#bb-mg-1-dropdown option').forEach((elem) => {
+            const src = elem.dataset.imgname;
+            if (src) {
+                elem.style.background = 'url("/azur-lane/img/equip/gun/bb/' + src + '") no-repeat -200% -200%';
+            }
+        });
     });
-    return toc;
 }
 
 update_guntextfields();
