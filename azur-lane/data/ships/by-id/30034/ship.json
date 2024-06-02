@@ -29,12 +29,12 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Medium",
-    "Artist": null,
+    "Artist": "お久しぶり",
     "ArtistLink": null,
-    "ArtistPixiv": null,
-    "ArtistTwitter": null,
+    "ArtistPixiv": "[https://www.pixiv.net/en/users/1079073 お久しぶり]",
+    "ArtistTwitter": "[https://twitter.com/imlllsn お久しぶり]",
     "CNName": "福煦·META",
-    "Class": "Foch META",
+    "Class": null,
     "ConstructTime": "META",
     "ConsumptionInitial": "7",
     "ConsumptionMax": "12",
@@ -77,7 +77,7 @@
     "HealthKai120": "0",
     "HealthKai125": "0",
     "HealthMax": "3777",
-    "JPName": null,
+    "JPName": "フォッシュ(META)",
     "Luck": "45",
     "Name": "Foch META",
     "Nationality": "META",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "247",
     "Type": "Heavy Cruiser",
-    "VA": null
+    "VA": "[https://rushstyle.net/talent/aino_shimada/ Aino Shimada]"
 }
