@@ -761,6 +761,12 @@
             "dataJSON": "ships/by-id/30034/ship.json"
         },
         {
+            "DataDir": "ships/by-id/30035",
+            "Name": "Wichita META",
+            "ShipID": "30035",
+            "dataJSON": "ships/by-id/30035/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/20011",
             "Name": "Friedrich der Große",
             "ShipID": "20011",
