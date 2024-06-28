@@ -4512,6 +4512,31 @@
             "Name": "Épée",
             "ShipID": "646",
             "dataJSON": "ships/by-id/646/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/648",
+            "Name": "Alvitr",
+            "ShipID": "648",
+            "battleshipJSON": "ships/by-id/648/battleship.json",
+            "dataJSON": "ships/by-id/648/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/649",
+            "Name": "Z47",
+            "ShipID": "649",
+            "dataJSON": "ships/by-id/649/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/650",
+            "Name": "U-31",
+            "ShipID": "650",
+            "dataJSON": "ships/by-id/650/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/651",
+            "Name": "Z43",
+            "ShipID": "651",
+            "dataJSON": "ships/by-id/651/ship.json"
         }
     ]
 }

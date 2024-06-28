@@ -838,6 +838,13 @@
             "ShipID": "641",
             "battleshipJSON": "ships/by-id/641/battleship.json",
             "dataJSON": "ships/by-id/641/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/648",
+            "Name": "Alvitr",
+            "ShipID": "648",
+            "battleshipJSON": "ships/by-id/648/battleship.json",
+            "dataJSON": "ships/by-id/648/ship.json"
         }
     ]
 }
