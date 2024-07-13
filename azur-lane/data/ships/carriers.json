@@ -248,6 +248,13 @@
             "dataJSON": "ships/by-id/20028/ship.json"
         },
         {
+            "DataDir": "ships/by-id/20036",
+            "Name": "Admiral Nakhimov",
+            "ShipID": "20036",
+            "carrierJSON": "ships/by-id/20036/carrier.json",
+            "dataJSON": "ships/by-id/20036/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/Plan021",
             "Name": "August von Parseval",
             "ShipID": "Plan021",

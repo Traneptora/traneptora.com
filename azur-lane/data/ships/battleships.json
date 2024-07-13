@@ -199,6 +199,13 @@
             "dataJSON": "ships/by-id/20032/ship.json"
         },
         {
+            "DataDir": "ships/by-id/20034",
+            "Name": "Daisen",
+            "ShipID": "20034",
+            "battleshipJSON": "ships/by-id/20034/battleship.json",
+            "dataJSON": "ships/by-id/20034/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/Plan002",
             "Name": "Monarch",
             "ShipID": "Plan002",

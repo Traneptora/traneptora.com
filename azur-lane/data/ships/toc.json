@@ -852,6 +852,38 @@
             "dataJSON": "ships/by-id/20032/ship.json"
         },
         {
+            "DataDir": "ships/by-id/20033",
+            "Name": "Halford",
+            "ShipID": "20033",
+            "dataJSON": "ships/by-id/20033/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20034",
+            "Name": "Daisen",
+            "ShipID": "20034",
+            "battleshipJSON": "ships/by-id/20034/battleship.json",
+            "dataJSON": "ships/by-id/20034/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20035",
+            "Name": "Napoli",
+            "ShipID": "20035",
+            "dataJSON": "ships/by-id/20035/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20036",
+            "Name": "Admiral Nakhimov",
+            "ShipID": "20036",
+            "carrierJSON": "ships/by-id/20036/carrier.json",
+            "dataJSON": "ships/by-id/20036/ship.json"
+        },
+        {
+            "DataDir": "ships/by-id/20037",
+            "Name": "Bayard",
+            "ShipID": "20037",
+            "dataJSON": "ships/by-id/20037/ship.json"
+        },
+        {
             "DataDir": "ships/by-id/Plan001",
             "Name": "Neptune",
             "ShipID": "Plan001",
