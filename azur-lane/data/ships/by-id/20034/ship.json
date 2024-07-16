@@ -29,10 +29,10 @@
     "AirMax": "0",
     "Ammo": "0",
     "Armor": "Heavy",
-    "Artist": null,
+    "Artist": "山×2",
     "ArtistLink": null,
-    "ArtistPixiv": null,
-    "ArtistTwitter": null,
+    "ArtistPixiv": "[http://www.pixiv.net/member.php?id=101608 山×２]",
+    "ArtistTwitter": "[https://twitter.com/yamakakeru2 ШXZ]",
     "CNName": "鳝",
     "Class": "Daisen",
     "ConstructTime": "Research",
@@ -112,5 +112,5 @@
     "TorpKai125": "0",
     "TorpMax": "241",
     "Type": "Battleship",
-    "VA": null
+    "VA": "[[:wikipedia:Hina_Tachibana|Hina Tachibana]]"
 }

@@ -15573,7 +15573,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "313",
                 "Type": "Destroyer",
-                "VA": null
+                "VA": "[[:wikipedia:Yurie_Igoma|Yurie Igoma]]"
             }
         },
         {
@@ -15608,10 +15608,10 @@
                 "AirMax": "0",
                 "Ammo": "0",
                 "Armor": "Heavy",
-                "Artist": null,
+                "Artist": "山×2",
                 "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "ArtistPixiv": "[http://www.pixiv.net/member.php?id=101608 山×２]",
+                "ArtistTwitter": "[https://twitter.com/yamakakeru2 ШXZ]",
                 "CNName": "鳝",
                 "Class": "Daisen",
                 "ConstructTime": "Research",
@@ -15691,7 +15691,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "241",
                 "Type": "Battleship",
-                "VA": null
+                "VA": "[[:wikipedia:Hina_Tachibana|Hina Tachibana]]"
             }
         },
         {
@@ -15809,7 +15809,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "201",
                 "Type": "Heavy Cruiser",
-                "VA": null
+                "VA": "[[:wikipedia:Sayumi_Suzushiro|Sayumi Suzushiro]]"
             }
         },
         {
@@ -15844,10 +15844,10 @@
                 "AirMax": "421",
                 "Ammo": "0",
                 "Armor": "Medium",
-                "Artist": null,
-                "ArtistLink": null,
-                "ArtistPixiv": null,
-                "ArtistTwitter": null,
+                "Artist": "Kincora",
+                "ArtistLink": "[http://weibo.com/u/2061731981 KIncora]",
+                "ArtistPixiv": "[https://www.pixiv.net/member.php?id=3054186 KIn]",
+                "ArtistTwitter": "[https://twitter.com/KIncoraK KIncora]",
                 "CNName": "纳希莫夫海军上将",
                 "Class": "Admiral Nakhimov",
                 "ConstructTime": "Research",
@@ -15927,7 +15927,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "0",
                 "Type": "Aircraft Carrier",
-                "VA": null
+                "VA": "[[wikipedia:Chika Anzai|Chika Anzai]]"
             }
         },
         {
@@ -16045,7 +16045,7 @@
                 "TorpKai125": "0",
                 "TorpMax": "331",
                 "Type": "Light Cruiser",
-                "VA": null
+                "VA": "[[:wikipedia:Megumi_Han|Megumi Han]]"
             }
         },
         {
