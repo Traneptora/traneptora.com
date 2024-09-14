@@ -83,6 +83,7 @@ function update_textfields(idnumber){
 }
 
 var fighters = [
+    { 'value': '11.70', 'text': 'Lavochkin La-9', 'name': 'lavochkin-la-9'},
     { 'value': '11.10', 'text': 'FW-190 A-6/R6 Prototype', 'name': 'fuck-wolf'},
     { 'value': '11.00', 'text': 'XF5U Flying Flapjack', 'name': 'xf5u-flapjack' },
     { 'value': '10.90', 'text': 'F6F Hellcat', 'name': 'hellcat' },
@@ -121,6 +122,7 @@ var torp_bombers = [
     { 'value': '12.17', 'text': 'XTB2D-1 Sky Pirate', 'name': 'skypirate' },
     { 'value': '12.04', 'text': 'TBM Avenger (VT-18)', 'name': 'vt-18', },
     { 'value': '11.64', 'text': 'Westland Wyvern', 'name': 'wyvern' },
+    { 'value': '11.60', 'text': 'Polikarpov VIT-2', 'name': 'poli-vit2'},
     { 'value': '11.37', 'text': 'B7A Ryusei', 'name': 'ryusei' },
     { 'value': '11.17', 'text': 'Junkers Ju-87 D-4', 'name': 'ju-87d4' },
     { 'value': '10.97', 'text': 'Swordfish (818 Squadron)', 'name': 'swordfish-818' },
