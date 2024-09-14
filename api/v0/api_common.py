@@ -5,6 +5,7 @@
 import base64
 import cgi
 import hashlib
+import traceback
 
 import requests
 import wand.image

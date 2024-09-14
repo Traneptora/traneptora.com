@@ -3,14 +3,13 @@
 
 import collections
 import json
-import os
 import sqlite3
 import sys
 import time
 
 import requests
 
-from api_common import get_post_form, image_hash, send_to_webhook
+from api_common import get_post_form, image_hash
 
 PrDataEntry = collections.namedtuple('PrDataEntry', [
     'imagehash', 'crtime', 'mtime', 'original', 'extension',

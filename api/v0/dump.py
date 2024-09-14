@@ -8,11 +8,8 @@ import hashlib
 import json
 import re
 import time
-import traceback
 import sqlite3
 import zlib
-
-import requests
 
 from api_common import get_post_form, image_hash, send_to_webhook
 
