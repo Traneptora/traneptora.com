@@ -21,3 +21,5 @@ __pycache__
 # DBs
 *.db
 
+# webhook URLs
+webhook_url_*
