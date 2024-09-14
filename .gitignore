@@ -17,3 +17,7 @@
 
 #python
 __pycache__
+
+# DBs
+*.db
+
