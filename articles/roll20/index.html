@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/fonts/work-sans.css">
+
+    <link rel="icon" type="image/png" sizes="256x256" href="/images/avatar/256.png?v=3">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="/images/avatar/favicon.ico?v=3">
+
+    <title>Roll20 Tips and Tricks</title>
+    <meta name="description" content="Roll20 Tips and Tricks">
+    <meta name="author" content="Leo Izen">
+    <meta property="og:image" content="https://traneptora.com/images/avatar/256.png?v=3">
+    <meta property="og:title" content="Roll20 Tips and Tricks">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://traneptora.com/articles/roll20/">
+    <meta property="og:description" content="Various Tips and Tricks for wrangling roll20 character sheets.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <header>
+        Roll20 Tips and Tricks
+    </header>
+    <main>
+        <section>
+            Here's a few common issues when wrangling Roll20 and how to solve them, as well as some cool macros.
+            <ol class="linklist" id="toc">
+                <li><a href="#divine-smite">Divine Smite</a></li>
+                <li><a href="#elven-accuracy">Elven Accuracy</a></li>
+                <li><a href="#experimental-elixir">Experimental Elixir</a></li>
+            </ol>
+        </section>
+        <section id="divine-smite">
+            <div class="section-header">Divine Smite</div>
+            <p>
+                Make sure you have Global Damage Modifier enabled in the settings tab.
+                <div class="figure">
+                    <img class="shadow" src="global-damage-modifier.png">
+                </div>
+            </p>
+            <p>
+                Then, copy and paste the following into the Global Damage Modifier, and name it Divine Smite.
+                <div class="figure">
+                    <pre class="shadow"><code>?{Divine Smite Strength|Divine Smite I,2d8|Divine Smite II,3d8|Divine Smite III,4d8|Divine Smite IV,5d8|Divine Smite V,6d8}</code></pre>
+                </div>
+                <div class="figure">
+                    <img class="shadow" src="divine-smite-gdm.png">
+                </div>
+            </p>
+            <p>
+                If you have the <strong>Great Weapon Fighting</strong> <i>Fighting Style</i>, then use this macro here instead of the one above. (Not to be confused with the Great Weapon Master feat.)
+                <div class="figure">
+                    <pre class="shadow"><code>?{Divine Smite Strength|Divine Smite I,2d8ro<2|Divine Smite II,3d8ro<2|Divine Smite III,4d8ro<2|Divine Smite IV,5d8ro<2|Divine Smite V,6d8ro<2}</code></pre>
+                </div>
+            </p>
+            <p>
+                It will ask you what level you want to smite at when you roll damage.
+                <div class="figure">
+                    <img class="shadow" src="divine-smite-menu.png">
+                </div>
+                Pick the level you're smiting at. Don't forget that Smite caps out at a 4th level slot spent. You can spend a higher level slot but it doesn't increase the damage. Also don't forget that if the target is a Fiend or Undead, it increases the level by one. This is why Divine Smite V is an option - if you smite a fiend or undead with a 4th-level slot, you should pick this one.
+            </p>
+            <p>
+                When you roll damage, it'll automatically roll the extra dice for crits as well, if you crit.
+                <div class="figure">
+                    <img class="shadow" src="divine-smite-damage.png">
+                </div>
+            </p>
+            <a href="#wrapper">Back to top</a>
+        </section>
+        <section id="elven-accuracy">
+            <div class="section-header">Elven Accuracy</div>
+            <p>
+                Go to the Attributes and Traits tab at the very top of the sheet.
+                <div class="figure">
+                    <img class="shadow" src="attributes-and-abilities.png">
+                </div>
+            </p>
+            <p>
+                Add a new ability on the right column called "Elven-Accuracy" and copy and paste this text into it.
+                <div class="figure">
+                    <img class="shadow" src="add-new-ability.png">
+                    <div class="small-help">You can actually call it whatever you want.</div>
+                </div>
+                <div class="figure">
+                    <pre class="shadow"><code>@{wtype}&{template:atk} {{mod=@{repeating_attack_$0_atkbonus}}} {{rname=[@{repeating_attack_$0_atkname}](~@{character_name}|repeating_attack_$0_attack_dmg)}} {{rnamec=[@{repeating_attack_$0_atkname}](~@{character_name}|repeating_attack_$0_attack_crit)}} {{r1=[[1d20cs>[[{@{default_critical_range},@{repeating_attack_$0_atkcritrange}}kl1]] + @{pb}[PB] + [[@{repeating_attack_$0_atkattr_base}+0]][Ability] + [[@{repeating_attack_$0_atkmod}+0]][Bonus] + [[@{repeating_attack_$0_atkmagic}+0]][Magic]]]}} {{always=1}} {{r2=[[2d20k1cs>[[{@{default_critical_range},@{repeating_attack_$0_atkcritrange}}kl1]] + @{pb}[PB] + [[@{repeating_attack_$0_atkattr_base}+0]][Ability] + [[@{repeating_attack_$0_atkmod}+0]][Bonus] + [[@{repeating_attack_$0_atkmagic}+0]][Magic]]]}} {{range=@{repeating_attack_$0_atkrange}}} {{desc=@{repeating_attack_$0_atk_desc}}} {{spelllevel=spelllevel}} {{ammo=ammo}} {{charname=@{character_name}}} {{globalattack=@{global_attack_mod}}}</code></pre>
+                    <div class="small-help">Yes, it's a mess.</div>
+                </div>
+                <div class="figure">
+                    <img class="shadow" src="abilities-save-screen.png">
+                    <div class="small-help">Push the checkmark to save.</div>
+                </div>
+            </p>
+            <p>
+                That "t" button is what actually makes it work. Push it to roll with elven accuracy. It causes the <em>first</em> attack you have to roll with elven accuracy advantage.
+                <div class="figure">
+                    <img class="shadow" src="push-that-t.png">
+                    <div class="small-help">"t" stands for Tarrasque</div>
+                </div>
+                <div class="figure">
+                    <img class="shadow" src="first-entry-show.png">
+                    <div class="small-help">Double-Bladed Scimitar of Immolation. Nasty.</div>
+                </div>
+                <div class="figure">
+                    <img class="shadow" src="first-entry-roll.png">
+                </div>
+            </p>
+            <p>
+                It looks like a standard roll with advantage, but if you mouse over the second number, notice that it rolled with advantage. The three numbers here were 3, 10, and 16.
+                <div class="figure">
+                    <img class="shadow" src="actually-with-eadv.png">
+                </div>
+            </p>
+            <p>
+                This macro works with crits as well, including expanded critical range. This is a Champion Fighter.
+                <div class="figure">
+                    <img class="shadow" src="works-with-crits.png">
+                </div>
+            </p>
+            <p>
+                If you want to make it work with the <em>second</em> entry instead of the first, you change all the <code>$0</code> you see in the big mess of macro to <code>$1</code> instead. A search and replace will work. You will need to create a second ability with a different name if you want to have both.
+            </p>
+            <a href="#wrapper">Back to top</a>
+        </section>
+        <section id="experimental-elixir">
+            <div class="section-header">Experimental Elixir</div>
+            <p>
+                Put this inside a Features and Traits entry on the right-hand side.
+                <div class="figure">
+                    <pre class="shadow"><code>}}
+&{template:default} {{name=Experimental Elixir}} {{1=**Healing.** The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier.}} {{2=**Swiftness.** The drinker's walking speed increases by 10 feet for 1 hour.}} {{3=**Resilience.** The drinker gains a +1 bonus to AC for 10 minutes.}} {{4=**Boldness.** The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.}} {{5=**Flight.** The drinker gains a flying speed of 10 feet for 10 minutes.}} {{6=**Transformation.** The drinker's body is transformed as if by the [alter self](https://www.5esrd.com/database/spell/alter-self/) spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.</code></pre>
+                    <div class="small-help">The line break after the initial <code>}}</code> is intentional. Make sure it's there.</div>
+                </div>
+                <div class="figure">
+                    <img class="shadow" src="elixir-table.png">
+                    <div class="small-help">It's not possible to make it roll the d6 for you without a Pro subscription and API access.</div>
+                </div>
+            </p>
+            <a href="#wrapper">Back to top</a>
+        </section>
+    </main>
+</div>
+</body>
+</html>
