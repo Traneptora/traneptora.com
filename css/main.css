@@ -6,6 +6,9 @@
  /* work sans font self-hosted */
 @import '/fonts/work-sans.css';
 
+/* droid sans mono font self-hosted */
+@import '/fonts/droid-sans-mono.css';
+
 html {
     /* allows the scrollbar to not interrupt flow */
     padding-right: calc(100vw - 100%);
@@ -156,7 +159,7 @@ a img:hover {
 
 code {
     display: inline-block;
-    font-family: "Noto Mono";
+    font-family: "Droid Sans Mono";
 }
 
 code.codeblock {
@@ -427,4 +430,24 @@ ol.linklist {
  */
 .hidden {
     display: none;
+}
+
+.figure {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.figure img {
+    display: inline-block;
+}
+
+.figure pre {
+    text-align: left;
+    display: inline-block;
+    width: 75%;
+    white-space: pre-wrap;
+    word-break: break-all;
+    overflow-wrap: anywhere;
 }
