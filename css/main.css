@@ -425,13 +425,6 @@ ol.linklist {
     text-align: left;
 }
 
-/*
- * Hidden!
- */
-.hidden {
-    display: none;
-}
-
 .figure {
     text-align: center;
     margin-top: 1.5em;
