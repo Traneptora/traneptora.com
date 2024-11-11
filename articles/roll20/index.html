@@ -24,12 +24,70 @@
     </header>
     <main>
         <section>
-            Here's a few common issues when wrangling Roll20 and how to solve them, as well as some cool macros.
+            Here’s a few common issues when wrangling Roll20 and how to solve them, as well as some cool macros.
             <ol class="linklist" id="toc">
+                <li><a href="#delete-anyway">Remove an Unremovable Character</a></li>
                 <li><a href="#divine-smite">Divine Smite</a></li>
                 <li><a href="#elven-accuracy">Elven Accuracy</a></li>
                 <li><a href="#experimental-elixir">Experimental Elixir</a></li>
             </ol>
+        </section>
+        <section id="delete-anyway">
+            <div class="section-header">Remove an Unremovable Character</div>
+            <p>
+                Every been in a position where a character has been imported into a game room with the characters page, so you right click on the character and click “remove from game” but nothing actually happens? It feels as though the character is stuck in your game room. So you rename the character “Delete Me” and put it in a quarantine folder or something.
+                <div class="figure">
+                    <img class="shadow" src="delete-anyway/remove-from-game.png">
+                    <div class="small-help">This red button does not actually work.</div>
+                </div>
+            </p>
+            <p>
+                If this happens, open the character sheet, and pop it out into a new window by pushing out the pop out button.
+                <div class="figure">
+                    <img class="shadow" src="delete-anyway/pop-out-button.png">
+                </div>
+            </p>
+            <p>
+                Then, you should see something that looks like this at the top in a new browser window.
+                <div class="figure">
+                    <img class="shadow" src="delete-anyway/popped-out-window.png">
+                </div>
+            </p>
+            <p>
+                There’s a portion of this URL that we want. It’s the portion between the two <code>/</code> (slash) right before the word <code>true</code>. Copy that portion of the URL, including the leading <code>-</code> hyphen if there is one.
+                <div class="figure">
+                    <img class="shadow" src="delete-anyway/popped-out-url-portion.png">
+                </div>
+            </p>
+            <p>
+                Now, open your browser’s console. On Firefox, this can be done by pushing Ctrl + Shift + K (or Cmd + Option + K on macOS), and on Chrome it can be done by pushing Ctrl + Shift + J (or Cmd + Option + J on macOS). On other browsers, you can Google how to do it.
+            </p>
+            <p>
+                In the console, you need to type and paste the following code, except replace <code>FOO</code> with the portion of the URL you copied earlier:
+                <div class="figure">
+                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("FOO").attributes["ownedBy"] = null;</code></pre>
+                </div>
+            </p>
+            <p>
+                In my case, based on my screenshots, I would have typed this:
+                <div class="figure">
+                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("-1535590185_9767394").attributes["ownedBy"] = null;</code></pre>
+                </div>
+            </p>
+            <p>
+                Push enter to run this little snippet of code. Then, you can delete the character as normal.
+                <div class="figure">
+                    <img class="shadow" src="delete-anyway/delete-item.png">
+                </div>
+                <div class="small-help">Dewit.</div>
+            </p>
+            <p>
+                Sure enough, it won’t be there anymore, and it won’t even be there if you reload the page! How about that.
+                <div class="figure">
+                    <img class="shadow" src="delete-anyway/it-is-gone.png">
+                </div>
+            </p>
+            <a href="#wrapper">Back to top</a>
         </section>
         <section id="divine-smite">
             <div class="section-header">Divine Smite</div>
@@ -59,10 +117,10 @@
                 <div class="figure">
                     <img class="shadow" src="divine-smite-menu.png">
                 </div>
-                Pick the level you're smiting at. Don't forget that Smite caps out at a 4th level slot spent. You can spend a higher level slot but it doesn't increase the damage. Also don't forget that if the target is a Fiend or Undead, it increases the level by one. This is why Divine Smite V is an option - if you smite a fiend or undead with a 4th-level slot, you should pick this one.
+                Pick the level you’re smiting at. Don’t forget that Smite caps out at a 4th level slot spent. You can spend a higher level slot but it doesn’t increase the damage. Also don’t forget that if the target is a Fiend or Undead, it increases the level by one. This is why Divine Smite V is an option - if you smite a fiend or undead with a 4th-level slot, you should pick this one.
             </p>
             <p>
-                When you roll damage, it'll automatically roll the extra dice for crits as well, if you crit.
+                When you roll damage, it’ll automatically roll the extra dice for crits as well, if you crit.
                 <div class="figure">
                     <img class="shadow" src="divine-smite-damage.png">
                 </div>
@@ -85,7 +143,7 @@
                 </div>
                 <div class="figure">
                     <pre class="shadow"><code>@{wtype}&{template:atk} {{mod=@{repeating_attack_$0_atkbonus}}} {{rname=[@{repeating_attack_$0_atkname}](~@{character_name}|repeating_attack_$0_attack_dmg)}} {{rnamec=[@{repeating_attack_$0_atkname}](~@{character_name}|repeating_attack_$0_attack_crit)}} {{r1=[[1d20cs>[[{@{default_critical_range},@{repeating_attack_$0_atkcritrange}}kl1]] + @{pb}[PB] + [[@{repeating_attack_$0_atkattr_base}+0]][Ability] + [[@{repeating_attack_$0_atkmod}+0]][Bonus] + [[@{repeating_attack_$0_atkmagic}+0]][Magic]]]}} {{always=1}} {{r2=[[2d20k1cs>[[{@{default_critical_range},@{repeating_attack_$0_atkcritrange}}kl1]] + @{pb}[PB] + [[@{repeating_attack_$0_atkattr_base}+0]][Ability] + [[@{repeating_attack_$0_atkmod}+0]][Bonus] + [[@{repeating_attack_$0_atkmagic}+0]][Magic]]]}} {{range=@{repeating_attack_$0_atkrange}}} {{desc=@{repeating_attack_$0_atk_desc}}} {{spelllevel=spelllevel}} {{ammo=ammo}} {{charname=@{character_name}}} {{globalattack=@{global_attack_mod}}}</code></pre>
-                    <div class="small-help">Yes, it's a mess.</div>
+                    <div class="small-help">Yes, it’s a mess.</div>
                 </div>
                 <div class="figure">
                     <img class="shadow" src="abilities-save-screen.png">
@@ -129,12 +187,12 @@
                 Put this inside a Features and Traits entry on the right-hand side.
                 <div class="figure">
                     <pre class="shadow"><code>}}
-&{template:default} {{name=Experimental Elixir}} {{1=**Healing.** The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier.}} {{2=**Swiftness.** The drinker's walking speed increases by 10 feet for 1 hour.}} {{3=**Resilience.** The drinker gains a +1 bonus to AC for 10 minutes.}} {{4=**Boldness.** The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.}} {{5=**Flight.** The drinker gains a flying speed of 10 feet for 10 minutes.}} {{6=**Transformation.** The drinker's body is transformed as if by the [alter self](https://www.5esrd.com/database/spell/alter-self/) spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.</code></pre>
-                    <div class="small-help">The line break after the initial <code>}}</code> is intentional. Make sure it's there.</div>
+&{template:default} {{name=Experimental Elixir}} {{1=**Healing.** The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier.}} {{2=**Swiftness.** The drinker’s walking speed increases by 10 feet for 1 hour.}} {{3=**Resilience.** The drinker gains a +1 bonus to AC for 10 minutes.}} {{4=**Boldness.** The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.}} {{5=**Flight.** The drinker gains a flying speed of 10 feet for 10 minutes.}} {{6=**Transformation.** The drinker’s body is transformed as if by the [alter self](https://www.5esrd.com/database/spell/alter-self/) spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.</code></pre>
+                    <div class="small-help">The line break after the initial <code>}}</code> is intentional. Make sure it’s there.</div>
                 </div>
                 <div class="figure">
                     <img class="shadow" src="elixir-table.png">
-                    <div class="small-help">It's not possible to make it roll the d6 for you without a Pro subscription and API access.</div>
+                    <div class="small-help">It’s not possible to make it roll the d6 for you without a Pro subscription and API access.</div>
                 </div>
             </p>
             <a href="#wrapper">Back to top</a>
