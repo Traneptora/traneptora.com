@@ -31,6 +31,7 @@
                 <li><a href="#divine-smite">Divine Smite</a></li>
                 <li><a href="#elven-accuracy">Elven Accuracy</a></li>
                 <li><a href="#experimental-elixir">Experimental Elixir</a></li>
+                <li><a href="#vampiric-touch">Vampiric Touch</a></li>
             </ol>
         </section>
         <section id="delete-anyway">
@@ -66,13 +67,13 @@
             <p>
                 In the console, you need to type and paste the following code, except replace <code>FOO</code> with the portion of the URL you copied earlier:
                 <div class="figure">
-                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("FOO").attributes["ownedBy"] = null;</code></pre>
+                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("FOO").attributes.ownedBy = null;</code></pre>
                 </div>
             </p>
             <p>
                 In my case, based on my screenshots, I would have typed this:
                 <div class="figure">
-                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("-1535590185_9767394").attributes["ownedBy"] = null;</code></pre>
+                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("-1535590185_9767394").attributes.ownedBy = null;</code></pre>
                 </div>
             </p>
             <p>
@@ -194,6 +195,95 @@
                 <div class="figure">
                     <img class="shadow" src="elixir-table.png">
                     <div class="small-help">It’s not possible to make it roll the d6 for you without a Pro subscription and API access.</div>
+                </div>
+            </p>
+            <a href="#wrapper">Back to top</a>
+        </section>
+        <section id="vampiric-touch">
+            <div class="section-header">Vampiric Touch</div>
+            <p>
+                We’re going to put some garbage in the damage and crit fields of this macro. If you know the spell <i>Vampiric Touch</i> then don’t code it into the spells section. Leave it set to display text via spellcard. Let’s add this macro manually:
+                <div class="figure">
+                    <img class="shadow" src="vampiric-touch/vampiric-touch-1.png">
+                    <div class="small-help">Set Spell Attack Bonus yourself if you have a +1 focus or similar. It won’t populate this one automatically.</div>
+                </div>
+            </p>
+            <p>
+                Now, in the damage field, copy and paste this entire thing.
+                <div class="figure">
+                    <pre class="shadow"><code>0]]}} [[[[floor(([[[[?{Cast at level|Level 3,3|Level 4,4|Level 5,5|Level 6,6|Level 7,7|Level 8,8|Level 9,9}]]d6[Level: ?{Cast at level}]]])/2)]][Half of the damage dealt]]] [[[[floor(([[[[?{Cast at level}]]d6[Level: ?{Cast at level}]]]+[[[[?{Cast at level}]]d6[Level: ?{Cast at level}]]])/2)]][Half of the damage dealt]]]  {{dmg1=$[[3</code></pre>
+                    <div class="small-help">Unholy mess.</div>
+                </div>
+            </p>
+            <p>
+                Put this one in the crit field:
+                <div class="figure">
+                    <pre class="shadow"><code>0]]}} {{dmg1=$[[4]]}} {{crit1=$[[9</code></pre>
+                </div>
+            </p>
+            <p>
+                Check the box on the second damage, and name the damage type Healing or similar. Then put this there:
+                <div class="figure">
+                    <pre class="shadow"><code>0]]}} {{dmg2=$[[7</code></pre>
+                </div>
+                Place this in the second crit field:
+                <div class="figure">
+                    <pre class="shadow"><code>0]]}} {{dmg2=$[[15</code></pre>
+                </div>
+            </p>
+            <p>
+                You should see something like this:
+                <div class="figure">
+                    <img class="shadow" src="vampiric-touch/vampiric-touch-2.png">
+                    <div class="small-help">Godless.</div>
+                </div>
+            </p>
+            <p>
+                When you roll damage for the macro, it’ll ask you which level you cast the spell at, and do all of the math accordingly. Notably, the “half of the damage” is actually half of what you rolled. It is not half of another roll of the dice. It’ll look like this:
+                <div class="figure">
+                    <img class="shadow" src="vampiric-touch/vampiric-touch-3.png">
+                </div>
+                It’s a bit more obvious if you crit though:
+                <div class="figure">
+                    <img class="shadow" src="vampiric-touch/vampiric-touch-4.png">
+                </div>
+            </p>
+            <p>
+                “Traneptora” I hear you cry. “I’m a life cleric.”
+            </p>
+            <p>
+                Life Domain Clerics restore additional hitpoints whenenver they restore hitpoints to a creature with a spell. This is the first-level feature. This includes themselves, and it includes restoring hitpoints with a spell after it is cast, so it works with Vampiric Touch. The extra HP restored is <code>L + 2</code> where <code>L</code> is the level of the spell that was used to restore hitpoints. (And by extension, <code>Ratio = 2</code>).
+            </p>
+            <p>
+                These macros can include the life cleric bonus baked in. Instead of using the above copypastas, you should use this one instead:
+                <div class="figure">
+                    <pre class="shadow"><code>0]]}} [[[[floor(([[[[?{Cast at level|Level 3,3|Level 4,4|Level 5,5|Level 6,6|Level 7,7|Level 8,8|Level 9,9}]]d6[Level: ?{Cast at level}]]])/2)]][Half of the damage dealt] + [[?{Cast at level} + 2]][Life Cleric]]] [[[[floor(([[[[?{Cast at level}]]d6[Level: ?{Cast at level}]]]+[[[[?{Cast at level}]]d6[Level: ?{Cast at level}]]])/2)]][Half of the damage dealt] + [[?{Cast at level} + 2]][Life Cleric]]]  {{dmg1=$[[3</code></pre>
+                    <div class="small-help">Holy mess.</div>
+                </div>
+                In the crit field:
+                <div class="figure">
+                    <div class="figure">
+                        <pre class="shadow"><code>0]]}} {{dmg1=$[[5]]}} {{crit1=$[[10</code></pre>
+                    </div>
+                </div>
+                “Damage” 2: (aka healing)
+                <div class="figure">
+                    <div class="figure">
+                        <pre class="shadow"><code>0]]}} {{dmg2=$[[8</code></pre>
+                    </div>
+                </div>
+                Crit 2:
+                <div class="figure">
+                    <div class="figure">
+                        <pre class="shadow"><code>0]]}} {{dmg2=$[[17</code></pre>
+                    </div>
+                </div>
+            </p>
+            <p>
+                Executing it should look something like this:
+                <div class="figure">
+                    <img class="shadow" src="vampiric-touch/vampiric-touch-5.png">
+                    <div class="small-help">Godful.</div>
                 </div>
             </p>
             <a href="#wrapper">Back to top</a>
