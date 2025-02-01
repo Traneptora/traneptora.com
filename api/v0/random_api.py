@@ -25,7 +25,7 @@ def get(env, relative_uri):
                 return ('404 Not Found', 'Not Enough Space For Length')
             length = int.from_bytes(payload[index : index+4], byteorder='little', signed=False)
             index += 4
-            if length == 0 or index + length >= maxlen:
+            if length == 0 or index + length > maxlen:
                 return ('404 Not Found', 'Bad Length')
             url = payload[index : index + length].decode()
             index += length
