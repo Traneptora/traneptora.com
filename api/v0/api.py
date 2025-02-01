@@ -8,6 +8,7 @@ import traceback
 from pr_data import post as pr_data_post
 from dump import post as dump_post
 from dump import get as dump_get
+from random_api import get as random_get
 
 endpoints = {
     '/azur-lane/pr-data/': {
@@ -16,6 +17,9 @@ endpoints = {
     '/dump/': {
         'post': dump_post,
         'get': dump_get,
+    },
+    '/random/': {
+        'get': random_get,
     },
 }
 
