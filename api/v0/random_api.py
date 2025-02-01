@@ -25,7 +25,7 @@ def get(env, relative_uri):
             index += 4
             if length == 0 or index + length >= maxlen:
                 return ('404 Not Found', 'Bad Length')
-            url = int.from_bytes(payload[index : index + length], byteorder='little', signed=False)
+            url = payload[index : index + length].decode()
             index += length
             urls += [url]
         url = urls[random.randrange(count)]
