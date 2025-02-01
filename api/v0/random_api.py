@@ -12,7 +12,9 @@ def get(env, relative_uri):
         return ('404 Not Found', 'Not base64url')
     try:
         payload = zlib.decompress(comp_uri)
-        count = int.from_bytes(payload[0], byteorder='little', signed=False)
+        if len(payload) == 0:
+            return ('404 Not Found', 'Empty Payload')
+        count = payload[0]
         if count == 0:
             return ('404 Not Found', 'No Content')
         index = 1
