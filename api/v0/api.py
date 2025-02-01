@@ -43,12 +43,12 @@ def application(env, start_response):
 
 def response_checker(env):
     status, result, headers, *_ = *dispatch(env), [], None
-    headers += [('Content-Type', 'application/json')]
-    if status.startswith('200'):
-        return (status, headers, [json.dumps(result).encode()])
     if status.startswith('301') or status.startswith('302'):
         headers += [('location', result)]
         return (status, headers, [])
+    headers += [('Content-Type', 'application/json')]
+    if status.startswith('200'):
+        return (status, headers, [json.dumps(result).encode()])
     result_dict = {'success': False, 'status': status}
     if result:
         result_dict['result'] = result
