@@ -51,10 +51,12 @@ async function getSlots() {
         const inp = +document.getElementById('levels-' + clazz).value;
         const n = inp > 0 && inp < 21 ? inp : 0;
         casterLevel += 6 * n;
-        if (singleClassLevel === undefined) {
-            singleClassLevel = casterLevel;
-        } else if (singleClassLevel !== null) {
-            singleClassLevel = null;
+        if (n > 0) {
+            if (singleClassLevel === undefined) {
+                singleClassLevel = casterLevel;
+            } else if (singleClassLevel !== null) {
+                singleClassLevel = null;
+            }
         }
     }
 
@@ -62,10 +64,12 @@ async function getSlots() {
         const inp = +document.getElementById('levels-' + clazz).value;
         const n = inp > 1 && inp < 21 ? inp : 0;
         casterLevel += 3 * n;
-        if (singleClassLevel === undefined) {
-            singleClassLevel = casterLevel;
-        } else if (singleClassLevel !== null) {
-            singleClassLevel = null;
+        if (n > 0) {
+            if (singleClassLevel === undefined) {
+                singleClassLevel = casterLevel;
+            } else if (singleClassLevel !== null) {
+                singleClassLevel = null;
+            }
         }
         casterLevel -= casterLevel % 6;
     }
@@ -74,10 +78,12 @@ async function getSlots() {
         const inp = +document.getElementById('levels-' + clazz).value;
         const n = inp > 0 && inp < 21 ? inp : 0;
         casterLevel += 3 * n;
-        if (singleClassLevel === undefined) {
-            singleClassLevel = casterLevel;
-        } else if (singleClassLevel !== null) {
-            singleClassLevel = null;
+        if (n > 0) {
+            if (singleClassLevel === undefined) {
+                singleClassLevel = casterLevel;
+            } else if (singleClassLevel !== null) {
+                singleClassLevel = null;
+            }
         }
         casterLevel += 5 - (casterLevel + 5) % 6;
     }
@@ -86,10 +92,12 @@ async function getSlots() {
         const inp = +document.getElementById('levels-' + clazz).value;
         const n = inp > 2 && inp < 21 ? inp : 0;
         casterLevel += 2 * n;
-        if (singleClassLevel === undefined) {
-            singleClassLevel = casterLevel;
-        } else if (singleClassLevel !== null) {
-            singleClassLevel = null;
+        if (n > 0) {
+            if (singleClassLevel === undefined) {
+                singleClassLevel = casterLevel;
+            } else if (singleClassLevel !== null) {
+                singleClassLevel = null;
+            }
         }
         casterLevel -= casterLevel % 6;
     }
