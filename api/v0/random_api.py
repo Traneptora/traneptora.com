@@ -11,7 +11,7 @@ def get(env, relative_uri):
     except binascii.Error:
         return ('404 Not Found', 'Not base64url')
     try:
-        payload = zlib.decompress(comp_uri)
+        payload = zlib.decompress(comp_uri, wbits=-9)
         if len(payload) == 0:
             return ('404 Not Found', 'Empty Payload')
         count = payload[0]
