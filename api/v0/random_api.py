@@ -39,12 +39,12 @@ def get(env, relative_uri):
             index += length
             urls += [url]
         url = urls[random.randrange(count)]
-        if url.startswith('https://buzo.us/'):
+        if url.startswith('https://buzo.us/') or '/' not in url:
             fname = url.removeprefix('https://buzo.us/')
             for k, v in ext_map.items():
                 if fname.endswith(f'.{k}'):
                     with open(f'../../share/{fname}', 'rb') as file:
-                        return ('200 OK', file, [('content-type', v)])
+                        return ('200 OK', file.read(), [('content-type', v)])
         return ('302 Found', url)
     except Exception:
         return ('404 Not Found', 'Bad Format')
