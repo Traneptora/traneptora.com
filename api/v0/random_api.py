@@ -3,6 +3,14 @@ import binascii
 import random
 import zlib
 
+ext_map = {
+    'png': 'image/png',
+    'jpg': 'image/jpeg',
+    'webp': 'image/webp',
+    'gif': 'image/gif',
+    'jxl': 'image/jxl',
+}
+
 def get(env, relative_uri):
     # server still python 3.8
     encoded_tail = relative_uri[len('/random/'):]
@@ -31,6 +39,12 @@ def get(env, relative_uri):
             index += length
             urls += [url]
         url = urls[random.randrange(count)]
+        if url.startswith('https://buzo.us/'):
+            fname = url.removeprefix('https://buzo.us/')
+            for k, v in ext_map.items():
+                if fname.endswith(f'.{k}'):
+                    with open(f'../../share/{fname}', 'rb') as file:
+                        return ('200 OK', file, [('content-type', v)])
         return ('302 Found', url)
     except Exception:
         return ('404 Not Found', 'Bad Format')
