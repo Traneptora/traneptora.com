@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Traneptora's Roll20 Cleanup Script
 // @namespace    https://traneptora.com/
-// @version      2025-04-03
+// @version      2025-04-03-02
 // @description  Traneptora's Roll20 Cleanup Script
 // @author       Traneptora
 
@@ -17,11 +17,15 @@
 // @grant        none
 // ==/UserScript==
 
-await (async () => {
+(() => {
+    const d20tranep = window.d20tranep || {};
+    if (!window.d20tranep) {
+        window.d20tranep = d20tranep;
+    }
     const d20 = window.d20 || window.currentPlayer.d20;
     const $ = window.$;
     const permit_thorough = true;
-    const show_info = async function(title, message) {
+    d20tranep.show_info = async (title, message) => {
         const $dialog = $(`<div class='dialog'>${message}</div>`);
         return new Promise((resolve, reject) => {
             $dialog.dialog({
@@ -37,16 +41,38 @@ await (async () => {
             });
         });
     }
-    const open_sheet = async (model, hidden) => {
+    d20tranep.open_sheet = async (model, hidden) => {
         console.log(`Loading sheet: ${model.attributes.name}`);
         const cssrule = `div:has(div.characterdialog[data-characterid="${model.id}"]) { display: none !important; }`;
-        let idx = 0;
-        if (hidden)
-            idx = document.styleSheets[0].insertRule(cssrule);
+        const styleSheet = document.styleSheets[0];
+        const ruleList = styleSheet.cssRules;
+        const idx = hidden ? styleSheet.insertRule(cssrule) : 0;
+        const close_sheet = async () => {
+            model.view.remove();
+            if (!hidden)
+                return;
+            if (ruleList[idx].cssText === cssrule) {
+                styleSheet.deleteRule(idx);
+                return;
+            }
+            for (let i = 0; i < ruleList.length; i++) {
+                if (ruleList[i].cssText === cssrule) {
+                    styleSheet.deleteRule(i);
+                    return;
+                }
+            }
+            return Promise.reject(`Couldn't find rule that was inserted for model: ${model.id}`);
+        };
         document.querySelector(`li[data-itemid="${model.id}"]`).click();
         return new Promise((resolve, reject) => {
-            let mancer_checked = false;
+            let mancer_count = 0;
+            let count = 0;
             const wait_open = function() {
+                if (count++ >= 20) {
+                    model.view.remove();
+                    reject(`Timed out on loading page view for model: ${model.id}`);
+                    return;
+                }
                 if (!model.view.el.firstElementChild) {
                     setTimeout(wait_open, 100);
                     return;
@@ -61,26 +87,19 @@ await (async () => {
                 }
                 const mancer = model.view.el.firstElementChild.contentDocument
                     .querySelector(".mancer_confirm input[name=attr_mancer_cancel]");
-                if (!mancer && !mancer_checked) {
-                    mancer_checked = true;
+                if (!mancer && mancer_count++ < 2) {
                     setTimeout(wait_open, 100);
                     return;
                 }
                 if (mancer) {
                     mancer.click();
                 }
-                resolve(idx);
+                resolve(close_sheet);
             };
             wait_open();
         });
     };
-    const load_sheet = async (model, hidden) => {
-        const idx = await open_sheet(model, hidden);
-        model.view.remove();
-        if (hidden)
-            document.styleSheets[0].deleteRule(idx);
-    };
-    const detect_bad_token_default = async function(model) {
+    d20tranep.detect_bad_token_default = async (model) => {
         return model.getDefaultToken().then((token) => {
             if (token.represents === model.id) {
                 return { "correct": true, "found": true };
@@ -92,7 +111,7 @@ await (async () => {
             return { "correct": false, "found": !!repr, "repr": repr};
         });
     };
-    const detect_sheet_removal_issue = function(model) {
+    d20tranep.detect_sheet_removal_issue = (model) => {
         if (!model.attributes.ownedBy) {
             return { "owned" : false, "api_id": undefined };
         }
@@ -102,20 +121,20 @@ await (async () => {
         }
         return { "owned": true, "api_id": null };
     };
-    const _check_bad_whisper0 = (model) => {
+    d20tranep._check_bad_whisper0 = (model) => {
         const rtype = model.attribs.models.filter(m => m.attributes.name === "rtype");
         const wtype = model.attribs.models.filter(m => m.attributes.name === "wtype");
         return { "badwhisper": rtype.length > 0 && wtype.length > 0
             && rtype[0].attributes.current === "@{advantagetoggle}"
             && wtype[0].attributes.current.trim() === "", "wtype": (wtype.length > 0 ? wtype[0] : undefined) };
     };
-    const check_bad_whisper = (model) => {
+    d20tranep.check_bad_whisper = (model) => {
         if (model.attribs.models.length > 0) {
-            return _check_bad_whisper0(model);
+            return d20tranep._check_bad_whisper0(model);
         }
         return { "badwhisper": undefined };
     };
-    const safe_fix_incorrect_token = async (scan) => {
+    d20tranep.safe_fix_incorrect_token = async (scan) => {
         return new Promise((resolve, reject) => {
             const tscan = scan.tscan;
             if (tscan.correct || !tscan.found) {
@@ -146,7 +165,7 @@ await (async () => {
             });
         });
     };
-    const safe_fix_unremovable_sheet = async (scan) => {
+    d20tranep.safe_fix_unremovable_sheet = async (scan) => {
         return new Promise((resolve, reject) => {
             const rscan = scan.rscan;
             if (!rscan.owned || rscan.api_id) {
@@ -175,7 +194,7 @@ await (async () => {
             });
         });
     };
-    const safe_fix_bad_whisper = async (scan) => {
+    d20tranep.safe_fix_bad_whisper = async (scan) => {
         const wscan = scan.wscan;
         if (!wscan.badwhisper) {
             return {"match": false};
@@ -189,53 +208,55 @@ await (async () => {
         }
         return {"match": true, "fixed": !!selectbox};
     };
-    const scan_model = async (model, thorough) => {
+    d20tranep.scan_model = async (model, thorough) => {
         let all_clear = true;
         const scan = {"model": model, "thorough": thorough};
-        scan.rscan = detect_sheet_removal_issue(model);
-        const rfix = await safe_fix_unremovable_sheet(scan);
+        scan.rscan = d20tranep.detect_sheet_removal_issue(model);
+        const rfix = await d20tranep.safe_fix_unremovable_sheet(scan);
         if (rfix.match && rfix.fix) {
             return {"all_clear": false, "later": false};
         }
-        scan.tscan = await detect_bad_token_default(model);
-        const tfix = await safe_fix_incorrect_token(scan);
+        scan.tscan = await d20tranep.detect_bad_token_default(model);
+        const tfix = await d20tranep.safe_fix_incorrect_token(scan);
         if (tfix.match && tfix.fix) {
             all_clear = false;
         }
-        scan.wscan = check_bad_whisper(model);
-        let idx = -1;
+        scan.wscan = d20tranep.check_bad_whisper(model);
+        let close_callback = undefined;
         if (scan.wscan.badwhisper === undefined && thorough) {
-            idx = await open_sheet(model, true);
-            scan.wscan = check_bad_whisper(model);
+            close_callback = await d20tranep.open_sheet(model, true)
+                .catch((err) => { console.log(err); return null; } );
+            if (close_callback)
+                scan.wscan = d20tranep.check_bad_whisper(model);
         }
-        const wfix = await safe_fix_bad_whisper(scan);
+        const wfix = await d20tranep.safe_fix_bad_whisper(scan);
         if (wfix.match && wfix.fixed) {
             all_clear = false;
         }
-        if (idx >= 0) {
-            model.view.remove();
-            document.styleSheets[0].deleteRule(idx);
+        if (close_callback) {
+            await close_callback().catch((err) => { console.log(err); return null; });
         }
         return {"all_clear": all_clear, "later": false};
     };
-    const perform_scan = async (thorough) => {
+    d20tranep.perform_scan = async (thorough) => {
         let all_clear = true;
         const chars = d20.Campaign.activeCharacters();
         chars.sort();
         for (const model of chars) {
-            const result = await scan_model(model, thorough);
-            all_clear = result.all_clear && all_clear;
+            const result = await d20tranep.scan_model(model, thorough)
+                .catch((err) => { console.log(err); return null; });
+            all_clear = result && result.all_clear && all_clear;
         }
         return all_clear;
     };
-    const scan_type_query = async () => {
+    d20tranep.scan_type_query = async () => {
         if (!window.is_gm) {
             const message = "You must be a GM in the game room to run this script.";
-            await show_info("Must be GM", message);
+            await d20tranep.show_info("Must be GM", message);
             return Promise.reject(message);
         }
         if (!permit_thorough) {
-            await show_info("Performing Scan", "Performing a quick scan.");
+            await d20tranep.show_info("Performing Scan", "Performing a quick scan.");
             return "fast";
         }
         return new Promise((resolve, reject) => {
@@ -259,17 +280,25 @@ await (async () => {
             });
         });
     };
-    return scan_type_query().then((type) => {
+})();
+
+
+await (async () => {
+    const d20tranep = window.d20tranep;
+    return d20tranep.scan_type_query().catch((err) => {
+        console.log("Scan type query closed, doing nothing.");
+        return Promise.reject(err);
+    }).then((type) => {
         if (type === "fast") {
-            return perform_scan(false);
+            return d20tranep.perform_scan(false);
         } else if (type === "thorough") {
-            return perform_scan(true);
+            return d20tranep.perform_scan(true);
         }
     }).then((result) => {
         if (result) {
-            show_info("All Clear", "No sheet issues were found.");
+            return d20tranep.show_info("All Clear", "No sheet issues were found.");
         } else {
-            show_info("Scan completed.", "Scan completed.")
+            return d20tranep.show_info("Scan completed.", "Scan completed.")
         }
     });
 })();
