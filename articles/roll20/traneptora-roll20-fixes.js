@@ -222,7 +222,7 @@
                 resolve({ "match": false });
                 return;
             }
-            const $dialog = $(`<div class='dialog'>Found at least two sheets with the same name: ${scan.model.attributes.name}.<br>This sometimes causes problems. Would you like to rename this one?"`);
+            const $dialog = $(`<div class='dialog'>Found at least two sheets with the same name: ${scan.model.attributes.name}.<br>This sometimes causes problems. Would you like to rename this one?`);
             $dialog.dialog({
                 "modal": true,
                 "title": "Confirm Rename",
