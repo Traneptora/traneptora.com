@@ -9,6 +9,7 @@ from pr_data import post as pr_data_post
 from dump import post as dump_post
 from dump import get as dump_get
 from random_api import get as random_get
+from short_api import get as short_get
 
 endpoints = {
     '/azur-lane/pr-data/': {
@@ -20,6 +21,12 @@ endpoints = {
     },
     '/random/': {
         'get': random_get,
+    },
+}
+
+endpoints_0x2 = {
+    '': {
+        'get': short_get,
     },
 }
 
@@ -65,18 +72,23 @@ def response_checker(env):
     return (status, headers, result)
 
 def dispatch(env):
-    if not env['REQUEST_URI'].startswith('/api/v0/'):
+    host_is_0x2 = False
+    if env['HTTP_HOST'] == '0x2.us':
+        request_uri = env['REQUEST_URI'].removeprefix('/')
+        host_is_0x2 = True
+    elif not env['REQUEST_URI'].startswith('/api/v0/'):
         return ('404 Not Found', None)
-    # server still on 3.8
-    request_uri = env['REQUEST_URI'][len('/api/v0'):]
+    else:
+        request_uri = env['REQUEST_URI'][len('/api/v0'):]
     matched_endpoint = None
-    for endpoint in endpoints:
+    endpoints_list = endpoints_0x2 if host_is_0x2 else endpoints
+    for endpoint in endpoints_list:
         if request_uri.startswith(endpoint):
             matched_endpoint = endpoint
             break
     if matched_endpoint is None:
         return ('404 Not Found', None)
-    method_table = endpoints[matched_endpoint]
+    method_table = endpoints_list[matched_endpoint]
     post, formdata = is_post_request(env)
     if post:
         if matched_endpoint != request_uri:
