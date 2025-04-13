@@ -53,7 +53,7 @@ def response_checker(env):
     if status.startswith('301') or status.startswith('302'):
         headers += [('location', result)]
         return (status, headers, [])
-    ct = 'applicaton/json'
+    ct = 'application/json'
     for k, v in headers:
         if k.lower() == 'content-type':
             ct = v
