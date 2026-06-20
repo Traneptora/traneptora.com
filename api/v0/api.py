@@ -10,6 +10,17 @@ from dump import post as dump_post
 from dump import get as dump_get
 from random_api import get as random_get
 from short_api import get as short_get
+from api_common import get_post_form
+
+
+def clarissa_post(env, relative_uri):
+    form = get_post_form(env)
+    name = form.getvalue('clarissa', '')
+    if name == 'xXBrightWolfXx':
+        return ('200 OK', {'success': True, 'content': '/programs/banned.html'})
+    else:
+        return ('200 OK', {'success': False, 'content': 'You are not clarissa.'})
+
 
 endpoints = {
     '/azur-lane/pr-data/': {
@@ -21,6 +32,9 @@ endpoints = {
     },
     '/random/': {
         'get': random_get,
+    },
+    '/clarissa/': {
+        'post': clarissa_post,
     },
 }
 
