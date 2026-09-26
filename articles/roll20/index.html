@@ -67,24 +67,17 @@
             <p>
                 In the console, you need to type and paste the following code, except replace <code>FOO</code> with the portion of the URL you copied earlier:
                 <div class="figure">
-                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("FOO").attributes.ownedBy = null;</code></pre>
+                    <pre class="shadow"><code>(() => {const a = window.currentPlayer.d20.journal.findJournalItem("FOO"); if(a.isLinkedCharacter()){a.unlinkFromGame();};setTimeout(() => a.destroy(),500);})();</code></pre>
                 </div>
             </p>
             <p>
                 In my case, based on my screenshots, I would have typed this:
                 <div class="figure">
-                    <pre class="shadow"><code>window.currentPlayer.d20.journal.findJournalItem("-1535590185_9767394").attributes.ownedBy = null;</code></pre>
+                    <pre class="shadow"><code>(() => {const a = window.currentPlayer.d20.journal.findJournalItem("-1535590185_9767394"); if(a.isLinkedCharacter()){a.unlinkFromGame();};setTimeout(() => a.destroy(),500);})();</code></pre>
                 </div>
             </p>
             <p>
-                Push enter to run this little snippet of code. Then, you can delete the character as normal.
-                <div class="figure">
-                    <img class="shadow" src="delete-anyway/delete-item.png">
-                    <div class="small-help">Dewit.</div>
-                </div>
-            </p>
-            <p>
-                Sure enough, it won’t be there anymore, and it won’t even be there if you reload the page! How about that.
+                Push enter to run this little snippet of code. This will delete the character. Sure enough, it won’t be there anymore, and it won’t even be there if you reload the page! How about that.
                 <div class="figure">
                     <img class="shadow" src="delete-anyway/it-is-gone.png">
                 </div>
